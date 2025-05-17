@@ -12,7 +12,7 @@ const components: { title: string; href: string; description: string }[] = [
       "Return to the Homepage"
   },
   {
-    title: "Research",
+    title: "Research Highlights",
     href: "/research-highlights",
     description:
       ""
@@ -25,7 +25,7 @@ const components: { title: string; href: string; description: string }[] = [
   },
   {
     title: "Bibliography",
-    href: "/biobliography",
+    href: "/bibliography",
     description:
       ""
   },
