@@ -89,83 +89,33 @@ export default function Home() {
         </div>
 
 
-        <div className="pt-48 w-full bg-red-50 p-20">
+        <div className="pt-48 w-full bg-background-blue p-20">
           <div className="flex flex-row justify-between">
-            <h4 className="mb-2 max-w-md text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug tracking-tight text-gray-900 dark:text-white">
+            <h4 className="text-white mb-2 max-w-md text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug tracking-tight dark:text-white">
               Personal notes and thoughts about work I’m passionate about
             </h4>
 
             <div>
-              <h2 className="mb-3 text-right text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white">Research</h2>
-              <Link href="research-highlights" className="justify-self-end hover:underline hover:text-accent-foreground ">More Details</Link>
+              <h2 className="text-white mb-3 text-right text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight dark:text-white">Research</h2>
+              <Link href="research-highlights" className="text-white justify-self-end hover:underline hover:text-white ">More Details</Link>
             </div>
           </div>
-
 
           <div className="grid md:grid-cols-3 grid-cols-1 gap-18 py-24">
             {research.map((r) => {
               return (
                 <div key={r.title}>
-                  <h4 className="mb-2 text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug tracking-tight text-gray-900 dark:text-white">
+                  <h4 className="text-white mb-2 text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug tracking-tight dark:text-white">
                     {r.title}</h4>
-                  <p className="max-w-lg">{r.description}</p>
-                  <Link href="research-highlights" className="my-4 justify-self-end hover:underline hover:text-accent-foreground ">More Details</Link>
+                  <p className="max-w-lg text-white mb-8">{r.description}</p>
+                  <Link href="research-highlights" className="text-white justify-self-end hover:underline hover:text-white">More Details</Link>
                 </div>
 
               )
             })}
-
           </div>
         </div>
-
       </main >
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div >
   );
 }
