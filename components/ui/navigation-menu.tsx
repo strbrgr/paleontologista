@@ -36,12 +36,6 @@ const components: { title: string; href: string; description: string }[] = [
       ""
   },
   {
-    title: "News",
-    href: "/news",
-    description:
-      ""
-  },
-  {
     title: "Field",
     href: "/field-work",
     description:
