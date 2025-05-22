@@ -38,7 +38,7 @@ function HeaderFour(props: { text: string, className?: string }) {
   return (
     <h4
       className={cn(
-        "mb-2 max-w-md text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug tracking-tight",
+        "mb-2 text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug tracking-tight",
         props.className
       )}
     >{props.text}</h4>
@@ -49,7 +49,7 @@ function HeaderFive(props: { text: string, className?: string }) {
   return (
     <h4
       className={cn(
-        "mb-2 max-w-md text-xl md:text-2xl lg:text-3xl font-semibold leading-snug tracking-tight",
+        "mb-2 text-xl md:text-2xl lg:text-3xl font-semibold leading-snug tracking-tight",
         props.className
       )}
     >{props.text}</h4>
