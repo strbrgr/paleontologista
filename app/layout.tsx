@@ -34,10 +34,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${dmDisplay.variable} antialiased`}
       >
-        <header>
+        <main>
           <NavigationHeader />
-        </header>
-        {children}
+          {children}
+        </main>
       </body>
     </html>
   );
