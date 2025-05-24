@@ -1,7 +1,7 @@
-import { HeaderFour, HeaderThree } from "@/components/ui/typography";
+import { HeaderFour } from "@/components/ui/typography";
 
-const bibliography = {
-  "2025": [
+const bibliography: { year: number, publications: string[] }[] = [{
+  year: 2025, publications: [
     "Atterholt JA, <strong class=\"font-bold\">O'Connor</strong> JK, You H-L. 2025. Osteohistology of enantiornithine birds from the Lower Cretaceous Xiagou Formation. Geobios 90: 5-16.",
     "Bohus C, Pardo J, Mann A, <strong class=\"font-bold\">O'Connor</strong> JK, Devera J. In press. New tetrapod material, faunal assemblage, and geology of the Late Mississippian-aged red bed deposits near Goreville, Illinois. The Geological Society Special Publications.",
     "Castro-Terol J, Pérez-Ramos A, <strong class=\"font-bold\">O'Connor</strong> JK, Sanz JL, Serrano FJ. 2025. Micro-CT reconstruction reveals new information about the phylogeny and locomotion of the Early Cretaceous bird Iberomesornis romerali. Geobios 90: 17-30.",
@@ -9,8 +9,9 @@ const bibliography = {
     "<strong class=\"font-bold\">O'Connor</strong> JK. 2025. Insights into the early evolution of modern avian physiology from fossilized soft tissues from the Mesozoic. Philosophical Transactions of the Royal Society London B Biological Sciences 380: 20230426.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Atterholt JA, Bailleul AM, Wang M, Kuo P-C, Zhou Z-H. 2025. Description and osteohistology of two early immature enantiornithines (Aves: Ornithothoraces) from the Early Cretaceous Jehol Biota. Geobios 90: 103-122.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Atterholt JA, Clark AD, Zhou L-Q, Peng C, Zhang X-Q, You H-L. 2025. A new enantiornithine (Aves: Ornithothoraces) from the Lower Cretaceous Xiagou Formation with unusually short pubes. Geobios 90: 123-131."
-  ],
-  "2024": [
+  ]
+}, {
+  year: 2024, publications: [
     "Arnold P, Janiszewska K, Li Q, <strong class=\"font-bold\">O'Connor</strong> JK, Fostowicz-Frelik L. 2024. The Late Cretaceous eutherian Zalambdalestes reveals unique axis and complex evolution of the mammalian neck. Science Bulletin 69: 1767-1775.",
     "Clark AD, Atterholt JA, Scanella JB, Carroll N, <strong class=\"font-bold\">O'Connor</strong> JK. 2024. New enantiornithine diversity in the Hell Creek Formation and the functional morphology of the avisaurid tarsometatarsus. PLoS ONE 19(10): 1-25.",
     "Kiat Y, <strong class=\"font-bold\">O'Connor</strong> JK. Functional constraints on the number and shape of flight feathers. 2024. Proceedings of the National Academy of Sciences USA. 121(e2306639121): 1-11.",
@@ -22,15 +23,17 @@ const bibliography = {
     "Wang X-L, <strong class=\"font-bold\">O'Connor</strong> JK, Zheng X-T, Wang Y, Kiat Y. 2024. Earliest evidence of primary feather moult. Biology Letters 20(20240106): 1-6.",
     "Wu Q, <strong class=\"font-bold\">O'Connor</strong> JK, Wang S-Y, Zhou Z-H. 2024. Transformation of the pectoral girdle in pennaraptorans: critical steps in the formation of the modern avian shoulder joint. PeerJ 12: 1-42."
   ],
-  "2023": [
+}, {
+  year: 2023, publications: [
     "Clark AD, Hu H, Benson RBJ, <strong class=\"font-bold\">O'Connor</strong> JK. 2023. Reconstructing the dietary habits and trophic positions of the Longipterygidae (Aves: Enantiornithes) using neontological and comparative morphological methods. PeerJ 11:1-32.",
     "Kiat Y, <strong class=\"font-bold\">O'Connor</strong> JK. 2023. Rarity of molt evidence in early pennaraptoran dinosaurs suggests annual molt evolved later among Neornithes. Communications Biology 6(687): 1-4.",
     "Liu S-M, Li Z-H, Liu D, <strong class=\"font-bold\">O'Connor</strong> JK. 2023. Quantifying the gastral mass in Early Cretaceous ornithuromorphs (Aves: Ornithothoraces) from the Jehol avifauna. Palaeontology, e12677: 1-17.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Kiat Y, Ma H-D, Ai T-Y, Wang L-H, Bi S-D. 2023. Immature feathers preserved in Burmite provide evidence of rapid molting in enantiornithines. Cretaceous Research, 149: 105572.",
     "Stidham T, <strong class=\"font-bold\">O'Connor</strong> JK, Li Z-H. 2023. The Pleistocene Zhoukoudian ‘Peking Man’ site records the first Beijing (China) evidence of the Northern Raven (Corvus corax). Journal of Ornithology, 165(1): 269-276.",
     "Wang Y, Li Z-H, Wang C-C, Bailleul AM, Wang M, <strong class=\"font-bold\">O'Connor</strong> JK, Li J-H, Zheng X-T, Pei R, Teng F-F, Wang X-L, Zhou Z-H. Comparative microstructural study on the teeth of Mesozoic birds and non-avian dinosaurs. Royal Society Open Science, 10(5): 230147."
-  ],
-  "2022": [
+  ]
+}, {
+  year: 2022, publications: [
     "Fabbri M, Navalón G, Benson RBJ, Pol D, <strong class=\"font-bold\">O'Connor</strong> J, Bhullar B-A, Erickson GM, Norell MA, Orkney A, Lamanna MC, Zouhri S, Becker J, Emke A, Dal Sasso C, Bindellini G, Maganuco S, Auditore M, Ibrahim N. 2022. Subaqeuous foraging among carnivorous dinosaurs. Nature, 603:852-857.",
     "Hendrickx C, Bell PR, Ezcurra M, Cuesta E, Milner AR, Xu X, <strong class=\"font-bold\">O'Connor</strong> JK, Loewen M, Sereno PC, Mateus O. 2022. Morphology and distribution of epidermal structures (excluding feathers) in non-avian theropod dinosaurs. Biological Reviews (Cambridge), 97(3): 960-1004.",
     "Hu H, Wang Y, McDonald PG, Wroe S, <strong class=\"font-bold\">O'Connor</strong> JK, Bjarnason A, Bevitt JJ, Yin X-W, Zheng X-T, Zhou Z-H, Benson RBJ. 2022. Earliest evidence for fruit consumption and potential seed dispersal by birds. eLife, 11(74751): 1-19.",
@@ -38,8 +41,9 @@ const bibliography = {
     "<strong class=\"font-bold\">O'Connor</strong> JK, Stidham TA, Harris JD, Lamanna M, Bailleul AM, Hu H, Wang M, You H-L. 2022. Avian skulls represent a diverse ornithuromorph fauna from the Lower Cretaceous Xiagou Formation, Gansu Province, China. Journal of Systematics and Evolution, 60(5): 1172-1198.",
     "Rothschild BM, <strong class=\"font-bold\">O'Connor</strong> JK, Lozada MC. 2022. Closer examination does not support infection as cause for enigmatic Tyrannosaurus rex mandibular pathologies. Cretaceous Research, 140(105353): 1-11.",
     "Wang M, Stidham TA, <strong class=\"font-bold\">O'Connor</strong> JK, Zhou Z-H. 2022. Insight into the evolutionary assemblage of cranial kinesis from a Cretaceous bird. eLife 11:1-18."
-  ],
-  "2021": [
+  ]
+}, {
+  year: 2021, publications: [
     "Atterholt JA, Poust AW, Erickson GM, <strong class=\"font-bold\">O'Connor</strong> JK. 2021. Intraskeletal osteohistovariability reveals complex growth strategies in a Late Cretaceous enantiornithine. Frontiers in Earth Science, 9:640220.",
     "Clark AD, <strong class=\"font-bold\">O'Connor</strong> JK. 2021. Exploring the ecomorphology of two Cretaceous enantiornithines with unique pedal morphology. Frontiers in Ecology and Evolution, 15:654156.",
     "Kiat Y, Pyle P, Balaban A, <strong class=\"font-bold\">O'Connor</strong> JK. 2021. Reinterpretation of purported molting evidence in the Thermopolis Archaeopteryx. Communications Biology, 4:837",
@@ -50,8 +54,9 @@ const bibliography = {
     "Wu Q, <strong class=\"font-bold\">O'Connor</strong> JK, Li Z-H, Bailleul AM. 2021. Cartilage on the furculae of living birds and the extinct bird Confuciusornis: a preliminary analysis and implications for flight style inferences in Mesozoic birds. Vertebrata Palasiatica, 59(2): 110-124.",
     "Wu Q, Bailleul AM, Li Z-H, <strong class=\"font-bold\">O'Connor</strong> JK, Zhou Z-H. 2021. Osteohistology of the scapulocoracoid of Confuciusornis and preliminary analysis of the shoulder joint in Aves. Frontiers in Earth Science, 9: 617124.",
     "Xu L, Buffetaut E, <strong class=\"font-bold\">O'Connor</strong> JK, Zhang X-L, Jia S-H, Zhang J-M, Chang H-L, Tong H-Y. 2021. A new, remarkably preserved, enantiornithine bird from the Late Cretaceous of Henan (central China) and convergent evolution between enantiornithines and modern birds. Geological Magazine, 158(11), 2087-2094."
-  ],
-  "2020": [
+  ]
+}, {
+  year: 2020, publications: [
     "Bailleul AM, <strong class=\"font-bold\">O'Connor</strong> JK, Li Z-H, Wu Q, Zhao T, Martinez Monleon MA, Wang M, Zheng X-T. 2020. Confirmation of ovarian follicles in an enantiornithine (Aves) from the Jehol Biota using soft tissue analyses. Communications Biology, 3: 1-8.",
     "Ding A, Pittman M, Upchurch P, <strong class=\"font-bold\">O'Connor</strong> JK, Field DJ, and Xu X. (2020). \"The biogeography of coelurosaurian theropods and its impact on their evolutionary history\", in: Pennaraptoran theropod dinosaurs: past progress and new frontiers. (eds.) M Pittman & X Xu). Bulletin of the American Museum of Natural History 40(440): 117-157.",
     "Hu H, <strong class=\"font-bold\">O'Connor</strong> JK, Wang M, McDonald PG, Wroe S, Zhou Z-H. 2020. New anatomical information of bohaiornithid Longusunguis confirms plesiomorphic diapsid skull retained in Enantiornithes. Journal of Systematic Palaeontology 18(18):1481-1495.",
@@ -69,8 +74,9 @@ const bibliography = {
     "Yang S-H, He H-Y, Jin F, Zhang F-C, Wu Y-B, Yu Z-Q, Li Q-L, Wang M, <strong class=\"font-bold\">O'Connor</strong> JK, Deng, C-L, Zhu R-X, Zhou Z-H. 2020. The appearance and duration of the Jehol Biota: Constraint from SIMS U-Pb zircon dating for the Huajiying Formation in northern China. Proceedings of the National Academy of Sciences U.S.A., 117: 14299-14305.",
     "Zheng X-T, <strong class=\"font-bold\">O'Connor</strong> JK, Wang Y, Wang X-L, Yin X-W, Zhang, X-M, Zhou Z-H. 2020. New information on the keratinous beak of Confuciusornis (Aves: Pygostylia) from two new specimens. Frontiers in Earth Science, 8 (367): 1-14.",
     "Zheng X-T, Sullivan C, <strong class=\"font-bold\">O'Connor</strong> JK, Wang X-L, Wang Y, Zhang X-M, Zhou Z-H. 2020. Structure and possible ventilatory function of unusual, expanded sternal ribs in the Early Cretaceous bird Jeholornis. Cretaceous Research, 116 (104597): 1-10."
-  ],
-  "2019": [
+  ]
+}, {
+  year: 2019, publications: [
     "Bailleul AM, Li Z-H, <strong class=\"font-bold\">O'Connor</strong> JK, Zhou Z-H. 2019. Origin of the avian predentary and evidence of a unique form of cranial kinesis in Cretaceous ornithuromorphs. Proceedings of the National Academy of Sciences U.S.A., 116(49): 24696-24706.",
     "Bailleul AM, <strong class=\"font-bold\">O'Connor</strong> JK, Schweitzer MH. 2019. Dinosaur paleohistology: review, trends and new avenues of investigation. PeerJ 7: e7764.",
     "Bailleul AM, <strong class=\"font-bold\">O'Connor</strong> JK, Zhang S-K, Li Z-H, Wang Q, Lamanna M, Zhu X-F, Zhou Z-H. 2019. An Early Cretaceous enantiornithine (Aves) preserving an unlaid egg and probable medullary bone. Nature Communications, 10(1275): 1-10.",
@@ -87,8 +93,9 @@ const bibliography = {
     "Xing L-D, McKellar RC, <strong class=\"font-bold\">O'Connor</strong> JK, Bai M, Tseng K-W, Chiappe LM. 2019. A fully feathered enantiornithine foot and wing fragment preserved in mid-Cretaceous Burmese amber. Scientific Reports, 9(927): 1-9",
     "Xing L-D, <strong class=\"font-bold\">O'Connor</strong> JK, Chiappe LM, McKellar RC, Carroll N, Hu H, Bai M, Lei F-M. 2019. A new enantiornithine with unusual pedal proportions found in amber. Current Biology, 29(14): 2396-2401 (co-first author)",
     "Xing L-D, McKellar RC, <strong class=\"font-bold\">O'Connor</strong> JK, Niu K-C, Mai H-J. 2019. A mid-cretaceous enantiornithine foot and tail feather preserved in Burmese amber. Scientific Reports, 9:15513."
-  ],
-  "2018": [
+  ]
+}, {
+  year: 2018, publications: [
     "Atterholt JA, Hutchison JH, <strong class=\"font-bold\">O'Connor</strong> JK. 2018. The most complete enantiornithine from North America and a phylogenetic analysis of the Avisauridae. PeerJ 6, e5910.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Erickson GM, Norell MA, Bailleul AM, Hu H, Zhou Z-H. 2018. Medullary bone in an Early Cretaceous enantiornithine (Aves) and discussion regarding its identification in fossils. Nature Communications 9, 5169",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Wang X-L, Sullivan C, Wang Y, Zheng X-T, Hu H, Zhang X-M, Zhou Z-H. 2018. First report of gastroliths in the Early Cretaceous basal bird Jeholornis. Cretaceous Research 84, 200-208",
@@ -99,8 +106,9 @@ const bibliography = {
     "Xing L-D, Cockx O, McKellar RC, <strong class=\"font-bold\">O'Connor</strong> JK. 2018. Ornamental feathers in Cretaceous Burmese amber: resolving the enigma of rachis-dominated feather structure. Journal of Palaeogeography 7(13):1-18",
     "Xing L-D, <strong class=\"font-bold\">O'Connor</strong> JK, McKellar RC, Chiappe LM, Bai M, Tseng K-W, Zhang J, Yang H-D, Fang J, Li G. 2018. A flattened enantiornithine in mid-Cretaceous Burmese amber: Morphology and preservation. Science Bulletin 63(4), 235-243.",
     "Zheng X-T, <strong class=\"font-bold\">O'Connor</strong> JK, Wang X-L, Wang Y, Zhou Z-H. 2018. Reinterpretation of a previously described Jehol bird clarifies early trophic evolution in the Ornithuromorpha. Proceedings of the Royal Society B: Biological Sciences 285, 20172494."
-  ],
-  "2017": [
+  ]
+}, {
+  year: 2017, publications: [
     "Hu H, <strong class=\"font-bold\">O'Connor</strong> JK. 2017. First species of Enantiornithes from Sihedang elucidates skeletal development in Early Cretaceous enantiornithines. Journal of Systematic Palaeontology 15(11): 909-926.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Zheng X-T, Hu H, Wang X-L, Zhou Z-H. 2017. The morphology of Chiappeavis magnapremaxillo (Pengornithidae: Enantiornithes) and a comparison of aerodynamic function in Early Cretaceous avian tail fans. Vertebrata Palasiatica 55, 1-18.",
     "Sullivan C, Xu X, <strong class=\"font-bold\">O'Connor</strong> JK. 2017. Complexities and novelties in the early evolution of avian flight, as seen in the Mesozoic Yanliao and Jehol Biotas of northeast China. Palaeoworld 26(2): 212-229.",
@@ -109,8 +117,9 @@ const bibliography = {
     "Wang W, <strong class=\"font-bold\">O'Connor</strong> JK. 2017 Morphological coevolution of the pygostyle and tail feathers in Early Cretaceous birds. Vertebrata Palasiatica 55(4): 289-314.",
     "Xing L-D, <strong class=\"font-bold\">O'Connor</strong> JK, McKellar RC, Chiappe LM, Tseng K-W, Li G, Bai M. 2017 A mid-Cretaceous enantiornithine (Aves) hatchling preserved in Burmese amber with unusual plumage. Gondwana Research 49: 264-277.",
     "Zheng X-T, <strong class=\"font-bold\">O'Connor</strong> JK, Pan Y-H, Wang X-L, Wang Y, Wang M & Zhou Z-H. 2017. Exceptional preservation of soft tissue in a new specimen of Eoconfuciusornis and its biological implications. National Science Review 4(3): 441-452."
-  ],
-  "2016": [
+  ]
+}, {
+  year: 2016, publications: [
     "Botelho JB, Smith-Paredes D,  Soto-Acuña S, <strong class=\"font-bold\">O'Connor</strong> JK, Palma V, Vargas A. 2016. Molecular development of fibular reduction in birds and its evolution from dinosaurs. Evolution DOI: 10.1111/evo.12882.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Li D-Q, Lamanna M, Wang M, Harris JD, Atterholt J, You H-L. 2016. A new Early Cretaceous enantiornithine (Aves: Ornithothoraces) from northwestern China with elaborate tail ornamentation. Journal of Vertebrate Paleontology, 36(1): e1054035.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Wang X-L, Zheng X-T, Hu H, Zhang X-M, Zhou Z-H. 2016. An enantiornithine with a fan-shaped tail, and the evolution of the rectricial complex in early birds. Current Biology, 26(1): 114-119.",
@@ -118,8 +127,9 @@ const bibliography = {
     "Pan Y-H, Zheng W-X, Moyer A, <strong class=\"font-bold\">O'Connor</strong> JK, Wang M, Zheng X-T, Wang X-L, Schroeter E, Zhou Z-H, Schweitzer MH. 2016. Molecular evidence of keratin and melanosomes in feathers of the Early Cretaceous bird Eoconfuciusornis. Proceedings of the National Academy of Sciences U.S.A. 113(49): E7900-E7907.",
     "Wang Y, Wang M, <strong class=\"font-bold\">O'Connor</strong> JK, Zhou Z-H, Wang X-L, Zheng X-T, Zhang X-M. 2016. A new three dimensionally preserved Jehol enantiornithine bird with ovarian follicles. Journal of Vertebrate Paleontology 36(2): e1054496.",
     "Xing L, McKellar RC, Wang M, Bai M, <strong class=\"font-bold\">O'Connor</strong> JK, Benton MJ, Zhang J, Wang Y, Tseng K, Lockley MG, Li G. 2016. Mummified precocial bird wings in mid-Cretaceous Burmese amber. Nature Communications 7, 12089."
-  ],
-  "2015": [
+  ]
+}, {
+  year: 2015, publications: [
     "Brusatte SL, <strong class=\"font-bold\">O'Connor</strong> JK, Jarvis ED. 2015. The origin and diversification of birds. Current Biology 25: R888–R898.",
     "Hu H, <strong class=\"font-bold\">O'Connor</strong> JK & Zhou Z-H. 2015. A new species of Pengornithidae (Aves: Enantiornithes) from the Lower Cretaceous of China suggests a specialized scansorial habitat previously unknown in early birds. PLoS ONE 10: e0126791.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Zheng X-T, Sullivan C, Chuong C-M, Wang X-L, Li A, Wang Y, Zhang X-M & Zhou Z-H. 2015. Evolution and functional significance of derived sternal ossification patterns in ornithothoracine birds. Journal of Evolutionary Biology 28: 1550-1567.",
@@ -131,8 +141,9 @@ const bibliography = {
     "Wang Y-M, <strong class=\"font-bold\">O'Connor</strong> JK, Li D-Q, You H-L. 2015. New information on the postcranial skeleton of the Early Cretaceous Gansus yumenensis (Aves: Ornithuromorpha). Historical Biology DOI:10.1080/08912963.2015.1006217",
     "Wang M, Li D-Q, <strong class=\"font-bold\">O'Connor</strong> JK, Zhou Z-H, You H-L. 2015. Second species of enantiornithine bird from the Lower Cretaceous Changma Basin, northwestern China with implications for the taxonomic diversity of the Changma avifauna. Cretaceous Research 55:56-65.",
     "Xu X, Zheng X-T, Sullivan C, Zhang F-C, <strong class=\"font-bold\">O'Connor</strong> JK, et al. 2015. A bizarre Jurassic maniraptoran theropod with preserved evidence of membranous wings. Nature 521: 70-73."
-  ],
-  "2014": [
+  ]
+}, {
+  year: 2014, publications: [
     "Chiappe LM, Zhao B, <strong class=\"font-bold\">O'Connor</strong> JK, Gao C-L, Habib M, Marugan-Lobon J, Meng Q-J, Cheng X-D. 2014. A new specimen of the early cretaceous bird Hongshanornis longicresta: Insights into the aerodynamics and diet of a basal ornithuromorph. PeerJ 2:e234; DOI 10.7717/peerj.234",
     "Hu H, Zhou Z-H, <strong class=\"font-bold\">O'Connor</strong> JK. 2014. A subadult specimen of Pengornis and character evolution in Enantiornithes. Vertebrata Palasiatica 52(1):77-97.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Sullivan C. 2014. Reinterpretation of the Early Cretaceous maniraptoran (Dinosauria: Theropoda) Zhongornis haoae as a scansoriopterygid-like non-avian, and the morphological resemblances between scansoriopterygids and basal oviraptorosaurs. Vertebrata Palasiatica 52(1):3-30.",
@@ -149,8 +160,9 @@ const bibliography = {
     "Zheng X-T, <strong class=\"font-bold\">O'Connor</strong> JK, Wang X-L, Zhou Z-H, Zhang X-M. 2014. New information on Hongshanornithidae (Aves: Ornithuromorpha) from a new subadult specimen. Vertebrata Palasiatica 52(2):217-232.",
     "Zheng X-T, <strong class=\"font-bold\">O'Connor</strong> JK, Huchzermeyer F, Wang X-L, Wang Y, Zhang X-M, Zhou Z-H. 2014. New specimens of Yanornis indicate a piscivorous diet and modern alimentary canal. PlosOne 9(4): e95036. doi:10.1371/journal.pone.0095036. (corresponding author)",
     "Zhou S, <strong class=\"font-bold\">O'Connor</strong> JK, Wang M. A new species from an ornithuromorph (Aves: Ornithothoraces) dominated locality of the Jehol Biota. 2014. Chinese Science Bulletin 59(36): 5366-5378. (corresponding author)"
-  ],
-  "2013": [
+  ]
+}, {
+  year: 2013, publications: [
     "<strong class=\"font-bold\">O'Connor</strong> JK, Zhou Z-H. 2013. A redescription of Chaoyangia beishanensis (Aves) and a comprehensive phylogeny of Mesozoic birds. Journal of Systematic Palaeontology 11(7):889-906.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Zelenkov NV. 2013. The phylogenetic position of Ambiortus: comparison with Early Cretaceous birds from Asia. Paleontological Journal RAS 47(11):1270–1281.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Wang X-L, Sullivan C, Zheng X-T, Tubaro P, Zhang X-M, Zhou Z-H. 2013. The unique caudal plumage of Jeholornis and complex tail evolution in early birds. Proceedings of the National Academy of Sciences 43(110): 17404-17408.",
@@ -162,55 +174,63 @@ const bibliography = {
     "Zheng X-T, <strong class=\"font-bold\">O'Connor</strong> JK, Huchzermeyer FH, Wang X-L, Wang Y, Wang M, Zhou Z-H. Exceptional preservation of ovarian follicles in Early Cretaceous birds and implications for early evolution of avian reproductive behaviour. 2013. Nature 495: 507-511. (corresponding author)",
     "Zhou S, Zhou Z-H, <strong class=\"font-bold\">O'Connor</strong> JK. 2013. Anatomy of Archaeorhynchus spathula from the Early Cretaceous. Journal of Vertebrate Paleontology 33(1): 141-152.",
     "Zhou S, Zhou Z-H, <strong class=\"font-bold\">O'Connor</strong> JK. 2013. A new piscivorous ornithuromorph from the Jehol Biota. Historical Biology DOI: 10.1080/08912963.2013.819504."
-  ],
-  "2012": [
+  ]
+}, {
+  year: 2012, publications: [
     "Brocklehurst N, Upchurch P, Mannion PD, <strong class=\"font-bold\">O'Connor</strong> JK. 2012. The Completeness of the Fossil Record of Mesozoic birds: Implications for Early Avian Evolution. PLoS ONE 7(6): e39056",
     "<strong class=\"font-bold\">O'Connor</strong> JK. 2012. A revised look at Liaoningornis longidigitrus (Aves). Vertebrata Palasiatica 50(1): 25-37.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Sun C-K, Xu X, Wang X-L, Zhou Z-H. 2012. A new species of Jeholornis with complete caudal integument. Historical Biology 4(1): 29-41.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Chiappe LM, Chuong C-M, Bottjer DJ, You H-L. 2012. Homology and potential cellular and molecular mechanisms for the development of unique feather morphologies in early birds. Geosciences 2: 157-177.",
     "Zheng Z-T, Wang X-L, <strong class=\"font-bold\">O'Connor</strong> JK, Zhou Z-H. 2012. Insight into the early evolution of the avian sternum from juvenile enantiornithines (Aves: Ornithothoraces). Nature Communications 3:1116, DoI: 10.1038/ncomms2104. (corresponding author)",
     "Zhou S, Zhou Z-H, <strong class=\"font-bold\">O'Connor</strong> JK. 2012. A new basal beaked ornithurine bird from the Lower Cretaceous of western Liaoning, China. Vertebrata Palasiatica 50(1): 9-24."
-  ],
-  "2011": [
+  ]
+}, {
+  year: 2011, publications: [
     "Ji S-A, Atterholt J, <strong class=\"font-bold\">O'Connor</strong> JK, Lamanna MC, Harris JD, Li D-Q, You H-L, Dodson P. 2011. A new, three-dimensionally preserved enantiornithine (Aves: Ornithothoraces) from Gansu Province, China. Zoological Journal of the Linnean Society 162: 201-219.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Chiappe LM. 2011. A revision of enantiornithine (Aves: Ornithothoraces) skull morphology. Journal of Systematic Palaeontology 9(1): 135-147.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Zhou Z-H, Xu X. 2011. Additional specimen of Microraptor provides first evidence of dinosaurs preying on birds. Proceedings of the National Academy of Sciences 108(49):19662–19665. http://blogs.nature.com/news/2011/11/fossil_flying_dino_enjoyed_tas.html",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Chiappe LM, Gao C-L, Zhao B. 2011. Anatomy of the Early Cretaceous bird Rapaxavis pani (Aves: Enantiornithes). Acta Palaeontologica Polonica 56(3): 463–475.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Zhou Z-H, Zhang F-C. 2011. A reappraisal of Boluochia zhengi (Aves: Enantiornithes) and a discussion of intraclade diversity in the Jehol avifauna, China. Journal of Systematic Palaeontology 9(1): 51-63."
-  ],
-  "2010": [
+  ]
+}, {
+  year: 2010, publications: [
     "<span class=\"font-bold\"><strong class=\"font-bold\">O'Connor</strong></span> JK, Chiappe LM, Gao K-Q. 2010. A new species of ornithuromorph (Aves: Ornithothoraces) bird from the Jehol Group indicative of higher-level diversity. Journal of Vertebrate Paleontology 30(2): 311-321 [featured article]",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Dyke GD. 2010. Synonyms and the taxonomy of Mesozoic birds: the case of Sinornis and Cathayornis (Aves: Enantiornithes). Proceedings from the 7th meetingof the Society of Avian Palaeontology and Evolution.  62(1): 7-20.",
     "Wang X-R, <strong class=\"font-bold\">O'Connor</strong> JK, Zhao B, Chiappe LM, Gao C-H, Cheng X-D. 2010. A new species of Enantiornithes (Aves: Ornithothoraces) based on a well-preserved specimen from the Yixian Formation of northwestern China. Acta Geologica Sinica 84(2): 247-256. (corresponding author)",
     "You H-L, Atterholt J, <strong class=\"font-bold\">O'Connor</strong> JK, Lamanna MC, Harris JD, Li D-Q. 2010. A second ornithuromorph from the Changma Basin, Gansu Province, northwestern China. Acta Palaeontologica Polonica 55(4): 617 - 625."
-  ],
-  "2009": [
+  ]
+}, {
+  year: 2009, publications: [
     "Close RA, Vickers-Rich P, Chiappe LM, <strong class=\"font-bold\">O'Connor</strong> JK, Rich TH, Kool L. 2009. Earliest Gondwanan bird from the Cretaceous of southeastern Australia. Journal of Vertebrate Paleontology 29(2):616–619.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Wang X-R, Chiappe LM, Gao C-H, Meng Q-J, Cheng X-D, Liu J-Y. 2009. Phylogenetic support for a specialized clade of Cretaceous enantiornithine birds with information from a new species. Journal of Vertebrate Paleontology 29(1):188-204.",
     "Tseng Z-J, <strong class=\"font-bold\">O'Connor</strong> JK, Wang X-M, and Prothero D. 2009. The first Old World occurrence of the North American mustelid Sthenictis (Carnivora, Mammalia). Geodiversitas 31(4): 743 - 751."
-  ],
-  "2008": [
+  ]
+}, {
+  year: 2008, publications: [
     "Gao C-L, Chiappe LM, Meng Q-J, <strong class=\"font-bold\">O'Connor</strong> JK, Wang X-R, Cheng X, Liu J. 2008. A new basal lineage of Early Cretaceous birds from China and its implications on the evolution of the avian tail. Palaeontology 51:775-791.",
     "<strong class=\"font-bold\">O'Connor</strong> JK, Prothero D, Wang X-M, Li Q, Qiu Z-D. 2008. Magnetic stratigraphy of the Lower Pliocene Gaotege beds, Inner Mongolia. New Mexico Museum of Natural History and Science Bulletin 44:431-436."
-  ],
-  "2006": [
+  ]
+}, {
+  year: 2006, publications: [
     "You H-L, Lamanna MC, Harris JD, Chiappe LM, <strong class=\"font-bold\">O'Connor</strong> JK, Ji S-A, Lü J-C, Yuan C-X, Li D-Q, Zhang X, Lacovara KJ, Dodson P, Ji Q. 2006. A nearly modern amphibious bird from the Early Cretaceous of northwestern China. Science 312:1640-1643.",
     "Zhang Z-H, Hou L-H, Hasegawa Y, <strong class=\"font-bold\">O'Connor</strong> JK, Martin LD, Chiappe LM. 2006. The first Mesozoic heterodactyl bird from China. Acta Geologica Sinica (English Edition)"
-  ],
-  "2005": [
+  ]
+}, {
+  year: 2005, publications: [
     "You H-L, <strong class=\"font-bold\">O'Connor</strong> JK, Chiappe LM, Ji Q. 2005. A new fossil bird from the Early Cretaceous of Gansu Province, northwestern China. Historical Biology 17:7-14."
   ]
 }
+]
 
 export default function Page() {
   return (
-    <section>
+    <section className="max-w-2xl mx-auto">
       <p className="pb-4">Down below you will find the full bibliography of my recent studies</p>
-      {Object.entries(bibliography).reverse().map(([key, value]) => (
+      {bibliography.map((item) => (
         <>
-          <HeaderFour text={key} />
-          <div className="flex flex-col gap-2">
-            {value.map((v, idx) => (
+          <HeaderFour text={item.year.toString()} />
+          <div className="flex flex-col gap-2 mb-12">
+            {item.publications.map((v, idx) => (
               <p key={idx} dangerouslySetInnerHTML={{ __html: v }} />
             ))}
           </div>
