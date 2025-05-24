@@ -44,48 +44,66 @@ const field_work: { year: number; excursion: { location: string; description: st
   },
   {
     year: 2017,
-    location: "Romania.",
-    description: ["American Museum of Natural History expedition prospecting and quarrying in Cretaceous deposits in the Hateg Basin and near Sebes"]
+    excursion: [{
+      location: "Romania.",
+      description: "American Museum of Natural History expedition prospecting and quarrying in Cretaceous deposits in the Hateg Basin and near Sebes"
+    }]
   },
   {
     year: 2016,
-    location: "Free State, South Africa.",
-    description: ["University of Witswatersrand expedition prospecting and quarrying in Jurassic deposits collecting dinosaurs and mammals", ""]
+    excursion: [{
+      location: "Free State, South Africa.",
+      description: "University of Witswatersrand expedition prospecting and quarrying in Jurassic deposits collecting dinosaurs and mammals",
+    }]
   },
   {
     year: 2014,
-    location: "Utah, USA",
-    description: ["University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation"]
+    excursion: [{
+      location: "Utah, USA",
+      description: "University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation"
+    }]
   },
   {
     year: 2011,
-    location: "Utah, USA",
-    description: ["University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation"]
+    excursion: [{
+      location: "Utah, USA",
+      description: "University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation"
+    }]
   },
   {
     year: 2010,
-    location: "Utah, USA",
-    description: ["University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation"]
+    excursion: [{
+      location: "Utah, USA",
+      description: "University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation"
+    }]
   },
   {
     year: 2007,
-    location: "Utah, USA",
-    description: ["University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation"]
+    excursion: [{
+      location: "Utah, USA",
+      description: "University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation"
+    }]
   },
   {
     year: 2006,
-    location: "Utah, USA",
-    description: ["University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation"]
+    excursion: [{
+      location: "Utah, USA",
+      description: "University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation"
+    }]
   },
   {
     year: 2005,
-    location: "Utah, USA",
-    description: ["University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation"]
+    excursion: [{
+      location: "Utah, USA",
+      description: "University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation"
+    }]
   },
   {
     year: 2003,
-    location: "Utah, USA",
-    description: ["University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation"]
+    excursion: [{
+      location: "Utah, USA",
+      description: "University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation"
+    }]
   },
 ]
 
