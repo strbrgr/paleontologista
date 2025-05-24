@@ -25,7 +25,7 @@ export default function Page() {
         <div>
           <p>Follow me on Social Media: </p>
           {socialLinks.map(link => (
-            <div>
+            <div key={link.platform}>
               <a href={link.url} className="underline">{link.platform}</a>
             </div>
           ))}
