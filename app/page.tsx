@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { HeaderOne, HeaderTwo, HeaderThree, HeaderFour } from "@/components/ui/typography";
-import { CustomImage, ImageType } from "@/components/ui/image";
 import { SeparatorLine } from "@/components/ui/separator-line";
 import Link from "next/link";
+import jingmai from "../public/img/JingmaiOConnor2019.jpg"
+import Image from "next/image";
 
 const expertise: { title: string; description: string }[] = [{
   title: "Mesozoic bird phylogeny",
@@ -43,9 +44,8 @@ export default function Page() {
   return (
     <div className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start my-8">
       <div className="flex flex-col md:flex-row p-6 sm:p-10 md:p-20 gap-12">
-        <div className="relative">
-          <CustomImage src="/img/JingmaiOConnor2019.jpg" alt="Portrait of Jingmai O'Connor" type={ImageType.Vertical} priority={true} />
-
+        <div className="relative w-[375px] h-[500px]">
+          <Image src={jingmai} alt="Portrait of Jingmai O'Connor" width={375} height={500} placeholder="blur" priority={true} />
         </div>
         <div className="flex flex-col gap-4 flex-1">
           <HeaderOne text="Hi!" />
