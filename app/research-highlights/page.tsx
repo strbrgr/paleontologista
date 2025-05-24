@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { getImageFromKey } from './image-map'
 
 export const metadata = {
-  title: 'Research Highlights - Jingmai O\'Connor',
+  title: "Research Highlights - Jingmai O'Connor",
   description: 'Read my blog.',
 }
 
@@ -29,7 +29,7 @@ export default function Page() {
             className="flex flex-col max-w-sm h-full"
             href={`/research-highlights/${post.slug}`}
           >
-            <div className="aspect-[4/3] w-full relative">
+            <div className="aspect-[1/1] w-full relative">
               <Image
                 src={getImageFromKey(post.metadata.staticImportLookupKey)}
                 alt={post.metadata.imageAlt}
