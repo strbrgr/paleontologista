@@ -1,4 +1,4 @@
-import { HeaderFive, HeaderFour, HeaderThree } from "@/components/ui/typography";
+import { HeaderFive, HeaderFour, HeaderSix } from "@/components/ui/typography";
 
 const currentPosition: { year: string, content: string[] }[] =
   [
@@ -424,7 +424,6 @@ const postdoctoralResearchersSupervised: { year: string, content: string[] }[] =
     }
   ]
 
-// TODO: 
 const undergraduateStudentsSupervised: { year: string, content: string[] }[] = [
   {
     year: "2024–present",
@@ -501,9 +500,252 @@ const undergraduateInterns: { year: string, content: string[] }[] = [
   }
 ];
 
+const fieldWork: { year: string, content: string[] }[] = [
+  {
+    year: "2024",
+    content: ["<span class=\"font-bold\">Montana, USA</span> – microsite excavation and sediment processing, prospecting Hell Creek Formation (expedition leader)"]
+  },
+  {
+    year: "2023",
+    content: ["<span class=\"font-bold\">Montana, USA</span> – microsite excavation and sediment processing, Hell Creek Formation (expedition leader)", "Wyoming, USA. – quarrying limestones of the Fossil Lake member, Green River Fm, Stones & Bones class (University of Chicago)"]
+  },
+  {
+    year: "2022",
+    content: ["<span class=\"font-bold\">Montana, USA</span> – microsite sediment processing, Hell Creek Formation (expedition leader)", "Dinosaur Provincial Park, Alberta, Canada – joint expedition with the University of Alberta, centennial celebration of Elmer Riggs 1922 fieldwork"]
+  },
+  {
+    year: "2021",
+    content: ["<span class=\"font-bold\">Utah</span>, University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation"]
+  },
+  {
+    year: "2019",
+    content: ["<span class=\"font-bold\">Romania</span>, American Museum of Natural History expedition prospecting and quarrying in Cretaceous deposits in the Hateg Basin and near Sebes"]
+  },
+  {
+    year: "2017",
+    content: ["<span class=\"font-bold\">Romania</span>, American Museum of Natural History expedition prospecting and quarrying in Cretaceous deposits in the Hateg Basin and near Sebes"]
+  },
+  {
+    year: "2016",
+    content: [
+      "<span class=\"font-bold\">Free State, South Africa</span>, University of Witswatersrand expedition prospecting and quarrying in Jurassic deposits collecting dinosaurs and mammals",
+      "<span class=\"font-bold\">Alberta, Canada</span>, Phil J. Currie Dinosaur Museum and University of Alberta expedition prospecting in Cretaceous deposits in the Grand Prairie region (PJC Dinosaur Museum, University of Alberta)"
+    ]
+  },
+  {
+    year: "2014",
+    content: ["<span class=\"font-bold\">Gansu Province, China</span>, Institute of Vertebrate Paleontology and Paleoanthropology expedition quarrying for Early Cretaceous birds in the Xiagou Formation"]
+  },
+  {
+    year: "2011",
+    content: ["<span class=\"font-bold\">Mongolia</span>, American Museum of Natural History expedition prospecting for Cretaceous dinosaurs and lizards and Paleogene mammals"]
+  },
+  {
+    year: "2010",
+    content: ["<span class=\"font-bold\">Xinjiang, China</span>, Institute of Vertebrate Paleontology and Paleoanthropology expedition prospecting for dinosaurs in the Jurassic Shishugou Formation in the Junggar Basin"]
+  },
+  {
+    year: "2007",
+    content: [
+      "<span class=\"font-bold\">Utah, USA</span>, The University of Southern California-Los Angeles County Museum of Natural History Southern Utah Dinosaur Expedition prospecting in the Kaiparowits Formation in Grand Staircase Escalante (expedition leader)"
+    ]
+  },
+  {
+    year: "2006",
+    content: ["<span class=\"font-bold\">Montana, USA</span>, Los Angeles County Museum of Natural History expedition prospecting and quarrying in the Late Cretaceous Hell Creek Formation"]
+  },
+  {
+    year: "2005",
+    content: [
+      "<span class=\"font-bold\">Qinghai, Gansus, Xingjiang, China</span>, Prospecting for mammals in Neogene deposits identified by oil geologists in the 1950’s"
+    ]
+  },
+  {
+    year: "2003",
+    content: [
+      "<span class=\"font-bold\">Montana, USA</span>, Los Angeles County Museum of Natural History expedition prospecting and quarrying in the Late Cretaceous Hell Creek Formation",
+      "<span class=\"font-bold\">Inner Mongolia, China</span>, Institute of Vertebrate Paleontology and Paleoanthropology expedition to prospect and screen-wash for mammals in Neogene deposits"
+    ]
+  }
+]
+
+const memberships: { year: string; content: string[] }[] = [
+  {
+    year: "2018–2023",
+    content: ["Palaeontological Association", "Paleontological Society"]
+  },
+  {
+    year: "2005–present",
+    content: ["Society of Avian Paleontology and Evolution"]
+  },
+  {
+    year: "2003–present",
+    content: ["Society of Vertebrate Paleontology"]
+  }
+];
+
+const invitedPresentations: { year: string; content: string[] }[] = [
+  {
+    year: "2025",
+    content: ["Museum of the Rockies, Montana State University, Clemson University"]
+  },
+  {
+    year: "2024",
+    content: ["University of California, San Diego, Burke Museum, University of Washington, Carter County Museum DinoShindig"]
+  },
+  {
+    year: "2023",
+    content: ["Fortnightly, University of Reading, Cranbrook Women Rock Science Speaker Series, Carter County Museum DinoShindig, Polish Academy of Sciences, Benedictine University, Columbia College Chicago, University of Alberta"]
+  },
+  {
+    year: "2022",
+    content: ["Milwaukee Public Museum, Burpee Museum Paleofest, Virginia Tech, Montana State University, UC Berkeley, Carter County Museum DinoShindig, University of Illinois Chicago, Misericordia Fossil Freestyle, ESCONI"]
+  },
+  {
+    year: "2021",
+    content: ["Illinois Natural History Survey, Denver Museum of Nature and Science, South Coast Geological Society, Montana State University, Dead Lizard Society, University of Chicago EvMorph, Glencoe Public Library, University of Chicago Geophysical Sciences Department"]
+  },
+  {
+    year: "2020",
+    content: ["SoCal Paleontology Society, Paleontological Society, Philip J. Currie Museum"]
+  },
+  {
+    year: "2019",
+    content: ["Field Museum, International Meeting of Early-Stage Researchers in Paleontology"]
+  },
+  {
+    year: "2018",
+    content: ["Palaeontological Association"]
+  },
+  {
+    year: "2016",
+    content: ["CAS SELF (Science Education Life Future) talk: Fascinating early birds"]
+  }
+];
+
+const outreach: { year: string, content: string[] }[] = [
+  {
+    year: "2025",
+    content: ["Presumpscot Elementary Interview a Scientist", "Drummond Elementary"]
+  },
+  {
+    year: "2024",
+    content: [
+      "Presumpscot Elementary Interview a Scientist",
+      "USC Dornsife Earth Sciences Month Q&A",
+      "Dinopalooza",
+      "Member’s Night",
+      "Archaeopteryx public lecture",
+      "Arc’teryx community lecture",
+      "Holy Redeemer Elementary visit",
+      "Field Ambassadors"
+    ]
+  },
+  {
+    year: "2023",
+    content: [
+      "Dino Day with a Paleontologist, Chicago Public Library",
+      "Rye Country Day School virtual classroom visit",
+      "Junior Achievement of Chicago",
+      "John C. Haines Elementary School Career Day",
+      "Presumpscot Elementary Interview a Scientist",
+      "Chicago Comic and Entertainment Expo (4 panels)",
+      "FMNH Dinofest",
+      "Institute for the Study of Mongolian Dinosaurs – Young Scientist Program",
+      "Chicago Council on Science and Technology, \"Ask a Scientist!\"",
+      "FMNH Evolve"
+    ]
+  },
+  {
+    year: "2022",
+    content: [
+      "WeDigBio",
+      "Milwaukee Public Museum School Program",
+      "FMNH ‘Meet a Scientist’ Grainger Science Hub",
+      "National Academy of Sciences LabX Wrong Answers Only",
+      "USC Dornslife Dialogues",
+      "Chicago Council on Science and Technology panel at Chicago Comic and Entertainment Expo",
+      "Women’s Board Science Salon",
+      "Schaumburg Public Library \"Office hours\"",
+      "FMNH EVOLVE",
+      "FMNH Women’s Board Gala",
+      "Make a Wish Foundation"
+    ]
+  },
+  {
+    year: "2021",
+    content: [
+      "SUE Science Saturday",
+      "Collection’s Club",
+      "Mason Elementary Career Day",
+      "FMNH Founder’s Council",
+      "FMNH Dinosaur Day",
+      "William & Mary \"Introduction to Dinosaurs class\""
+    ]
+  },
+  {
+    year: "2020",
+    content: [
+      "WeDigBio",
+      "Collection’s Club",
+      "FMNH Member’s Night",
+      "Pomona College \"Dinosaur History class\"",
+      "FMNH Instagram Live",
+      "FMNH Evolve"
+    ]
+  },
+  {
+    year: "2009",
+    content: [
+      "Ph.D.",
+      "University of Southern California, Department of Geological Sciences",
+      "Advisors Prof. David Bottjer (USC) and Dr. Luis Chiappe (Los Angeles Natural History Museum)",
+      "Dissertation title: A Systematic Review of Enantiornithes (Aves: Ornithothoraces)"
+    ]
+  },
+  {
+    year: "2004",
+    content: [
+      "B.A.",
+      "Occidental College",
+      "Earth Sciences undergraduate thesis title (under Prof. Donald Prothero and Dr. Xiaoming Wang, LANHM): New specimen of the Miocene mustelid Sthenictis from the Miocene of Inner Mongolia, China"
+    ]
+  }
+];
+
+const exhibitions: { year: string, content: string[] }[] = [
+  {
+    year: "2026",
+    content: ["Field Museum: Pokémon Museum"]
+  },
+  {
+    year: "2025",
+    content: ["Field Museum: After the Impact"]
+  },
+  {
+    year: "2024",
+    content: ["Field Museum: Chicago Archaeopteryx (lead scientific advisor; permanent)", "Field Museum: Chicago Archaeopteryx (lead scientific advisor; temporary)"]
+  },
+  {
+    year: "2023",
+    content: ["Field Museum: The Changing Face of Science (lead scientific advisor)"]
+  },
+];
+
+const symposiaOrganized: { year: string, content: string[] }[] = [
+  {
+    year: "2022",
+    content: ["The appearance and loss of flight in paravians, 6th International Palaeontological Congress"]
+  },
+  {
+    year: "2014",
+    content: ["Origin and early evolution of birds, 4th International Palaeontological"]
+  }
+];
+
 function Content(props: { header: string; content: { year: string; content: string[] }[] }) {
   return (
-    <div>
+    <div className="mb-12">
       <HeaderFive text={props.header} />
       {props.content.map((item) => (
         <div className="flex flex-row" key={item.year}>
@@ -519,9 +761,10 @@ function Content(props: { header: string; content: { year: string; content: stri
   );
 }
 
-export default function Home() {
+export default function Page() {
+
   return (
-    <section className="max-w-5xl">
+    <section className="max-w-2xl mx-auto">
       <HeaderFive text="Jingmai Kathleen O'Connor" />
       <HeaderFive text="邹晶梅" />
       <Content header="Current Position" content={currentPosition} />
@@ -536,7 +779,49 @@ export default function Home() {
       <Content header="Undergraduate Students Supervised" content={undergraduateStudentsSupervised} />
       <Content header="Recent Graduates Supervised" content={recentGraduatesSupervised} />
       <Content header="Undergraduate Interns" content={undergraduateInterns} />
+      <Content header="Field Work in Paleontology" content={fieldWork} />
+      <Content header="Memberships" content={memberships} />
+      <Content header="Invited Presentations" content={invitedPresentations} />
 
+      <HeaderFive text="Media Coverage & Appearances" />
+      <div className="mb-6">
+        <HeaderSix text="Printed interviews" />
+        <p>
+          Current Biology (2016), Nature (2017), Smithsonian Magazine (2018), Geo Kompakt (2018), Rewire (2019), Massive Science (2020), USC Trojan Family (2020), Chicago Sun Times (2020, 2023), Medium (2021), Lion’s Roar Magazine (2021), Chicago Magazine (2023)
+        </p>
+      </div>
+      <div className="mb-6">
+        <HeaderSix text="Podcasts" />
+        <p>
+          Friends Like Us (2015), We Know Dino (2018), VitalCorps Salon (2019), Paleonerds (2020), BBC One Earth (2021), If/Then (2021), Brains On (2021), Pulsar (2021), Unexplainable (2021), NPR Everyone & Their Mom (2022), Solve It (2022), Talk Nerdy (2022), Cranbook Museum (2022), Jura-sick (2023), Ignition Sequence (2024), NPR Shortwave (2024), Moment of Um (2025), Brains On (2025)
+        </p>
+      </div>
+      <div className="mb-6">
+        <HeaderSix text="Documentaries" />
+        <p>
+          Science Skills! Paleontology (Science Insider, 2022), Breakthrough: Women in STEM (Science Friday, 2019), SELF scientist profile (CAS, 2018), When Whales Walked (PBS, 2019), Why Dinosaurs (2023), The Bones (2024), End Cretaceous extinction (release and title TBD), Le rêve de Léonard, les secrets du vol dans la nature (2024), IMAX T. rex (2024), Prehistoric Beasts Season 2 (2024), Dino-birds (PBS, 2025), Mission Unstoppable (2025)
+        </p>
+      </div>
+
+      <Content header="Outreach" content={outreach} />
+      <Content header="Exhibitions" content={exhibitions} />
+
+      <HeaderFive text="Additional Services" />
+      <div className="mb-6">
+        <HeaderSix text="Peer Reviews" />
+        <p>
+          Anales de Paleontologie, Atti della Società Italiana di Scienze Naturali e del Museo Civico di Storia Naturale di Milano, Avian Research, Biology Letters, BMC Biology (2), Communications Biology (2), Cretaceous Research (11), Current Biology (7), eLife (4), Evolution, Fossil Studies, Frontiers in Earth Science, Geoconservation Research, Geodiversitas, Historical Biology (5), iScience (2), Journal of Anatomy, Journal of Evolutionary Biology (3), Journal of Morphology (2), Journal of Ornithology, Journal of Paleontology (3), Journal of Systematic Palaeontology (6), Journal of Vertebrate Paleontology (13), Lethaia, National Science Review (3), Nature (6), Nature Communications, Nature Ecology and Evolution (2), Naturwissenschaften, New Mexico Natural History Museum Bulletin (3), Paleobiology, Palaeontology (3), Palaeontological Polonica, Palaeoworld, PeerJ (4), Philosophical Transactions of the Royal Society B, PLoS ONE (5), Proceedings of the National Academy of Science (1), Proceedings of the Royal Society B (3), Science (4), Science Advances (4), Scientific Reports (3), Spanish Journal of Palaeontology, Systematic Palaeontology (2), The Anatomical Record, The Innovation (2), Vertebrata Palasiatica (6), Zoological Journal of the Linnean Society (2)
+        </p>
+      </div>
+
+      <div className="mb-6">
+        <HeaderSix text="Grant Reviews" />
+        <p>
+          Hong Kong Research Grants Council (6); Medical Research Council, UKRI (2); Royal Society University Research Fellowship (1); Swiss National Science Foundation.
+        </p>
+      </div>
+
+      <Content header="Symposia Organized" content={symposiaOrganized} />
     </section >
   )
 }
