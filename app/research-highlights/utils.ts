@@ -4,7 +4,7 @@ import path from 'path'
 type Metadata = {
   title: string
   publishedAt: string
-  imageUrl: string
+  staticImportLookupKey: string
   imageAlt: string
   summary: string
 }
