@@ -27,16 +27,16 @@ export const metadata: Metadata = {
 };
 
 function Footer() {
-  const links = [
+  const links: { name: string, url: string }[] = [
     { name: 'Instagram', url: 'https://instagram.com/paleontologista' },
     { name: 'Twitter', url: 'https://x.com/paleontologista' },
-    { name: 'Facebook', url: 'https://x.com/paleontologista' },
-    { name: 'ResearchGate', url: 'https://x.com/paleontologista' },
-    { name: 'Google Scholar', url: 'https://x.com/paleontologista' },
+    { name: 'Facebook', url: 'https://www.facebook.com/jingmai.oconnor/' },
+    { name: 'ResearchGate', url: 'https://www.researchgate.net/profile/Jingmai-Oconnor' },
+    { name: 'Google Scholar', url: 'https://scholar.google.com/citations?user=BzgZsCoAAAAJ&hl=en' },
   ];
 
   return (
-    <footer className="mt-12 text-center">
+    <footer className="m-6 text-center">
       <div className="flex justify-center space-x-4 tracking-tight">
         {links.map((link) => (
           <a
@@ -44,7 +44,7 @@ function Footer() {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 dark:text-gray-500 hover:text-blue-500 transition-colors duration-200"
+            className="hover:underline"
           >
             {link.name}
           </a>
@@ -62,9 +62,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <main>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}>
+        <main className="flex-1">
           <NavigationHeader />
           {children}
         </main>
