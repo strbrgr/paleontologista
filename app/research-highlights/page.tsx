@@ -9,7 +9,7 @@ export const metadata = {
 }
 
 export default function Page() {
-  let allResearchHighlights = getResearchHighlights()
+  const allResearchHighlights = getResearchHighlights()
 
   return (
     <section className="flex justify-center flex-row gap-14 flex-wrap">
