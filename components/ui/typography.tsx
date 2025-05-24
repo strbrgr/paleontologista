@@ -1,65 +1,50 @@
 import { cn } from "@/lib/utils";
+import { ComponentPropsWithoutRef } from "react";
 
-function HeaderOne(props: { text: string, className?: string }) {
+type HeaderLevel = 1 | 2 | 3 | 4 | 5 | 6;
+type HeaderTag = `h${HeaderLevel}`;
+
+type HeaderProps = {
+  text: string;
+  className?: string;
+} & ComponentPropsWithoutRef<HeaderTag>;
+
+function Header({
+  level,
+  text,
+  className,
+  ...rest
+}: HeaderProps & { level: HeaderLevel }) {
+  const Tag = `h${level}` as HeaderTag;
+
+  const baseStyles: Record<HeaderLevel, string> = {
+    1: "mb-4 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight",
+    2: "mb-3 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight",
+    3: "mb-3 text-3xl md:text-4xl lg:text-5xl font-semibold leading-snug tracking-tight",
+    4: "mb-2 text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug tracking-tight",
+    5: "mb-2 text-xl md:text-2xl lg:text-3xl font-semibold leading-snug tracking-tight",
+    6: "mb-1 text-lg md:text-xl lg:text-2xl font-medium leading-snug tracking-tight",
+  };
+
   return (
-    <h1
-      className={cn(
-        "mb-4 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight",
-        props.className
-      )}>
-      {props.text}</h1>
-  )
+    <Tag className={cn(baseStyles[level], className)} {...rest}>
+      {text}
+    </Tag>
+  );
 }
 
-function HeaderTwo(props: { text: string, className?: string }) {
-  return (
-    <h2
-      className={cn(
-        "mb-3 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight",
-        props.className
-      )}>
-      {props.text}</h2>
-  )
-}
-
-function HeaderThree(props: { text: string, className?: string }) {
-  return (
-    <h3
-      className={cn(
-        "mb-3 text-3xl md:text-4xl lg:text-5xl font-semibold leading-snug tracking-tight",
-        props.className
-      )}>
-      {props.text}
-    </h3>
-  )
-}
-
-function HeaderFour(props: { text: string, className?: string }) {
-  return (
-    <h4
-      className={cn(
-        "mb-2 text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug tracking-tight",
-        props.className
-      )}
-    >{props.text}</h4>
-  )
-}
-
-function HeaderFive(props: { text: string, className?: string }) {
-  return (
-    <h4
-      className={cn(
-        "mb-2 text-xl md:text-2xl lg:text-3xl font-semibold leading-snug tracking-tight",
-        props.className
-      )}
-    >{props.text}</h4>
-  )
-}
+const HeaderOne = (props: HeaderProps) => <Header {...props} level={1} />;
+const HeaderTwo = (props: HeaderProps) => <Header {...props} level={2} />;
+const HeaderThree = (props: HeaderProps) => <Header {...props} level={3} />;
+const HeaderFour = (props: HeaderProps) => <Header {...props} level={4} />;
+const HeaderFive = (props: HeaderProps) => <Header {...props} level={5} />;
+const HeaderSix = (props: HeaderProps) => <Header {...props} level={6} />;
 
 export {
   HeaderOne,
   HeaderTwo,
   HeaderThree,
   HeaderFour,
-  HeaderFive
-}
+  HeaderFive,
+  HeaderSix,
+};
