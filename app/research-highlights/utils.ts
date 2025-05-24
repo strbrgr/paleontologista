@@ -5,7 +5,6 @@ type Metadata = {
   title: string
   publishedAt: string
   imageUrl: string
-  blurDataUrl: string
   imageAlt: string
   summary: string
 }

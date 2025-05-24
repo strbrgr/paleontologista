@@ -29,7 +29,7 @@ export default function Page() {
             href={`/research-highlights/${post.slug}`}
           >
             {/* TODO: Make above the fold image priority true other ones should be false */}
-            <CustomImage src={post.metadata.imageUrl} alt={post.metadata.imageAlt} blurDataUrl={post.metadata.blurDataUrl} type={ImageType.Square} priority={false} />
+            <CustomImage src={post.metadata.imageUrl} alt={post.metadata.imageAlt} type={ImageType.Square} priority={false} />
             <div className="w-full flex mt-8 flex-col space-x-0 md:space-x-2">
               <HeaderFour text={post.metadata.title} />
               <p>{post.metadata.summary}</p>

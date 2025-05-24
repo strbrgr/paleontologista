@@ -44,7 +44,7 @@ export default function Page() {
     <div className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start my-8">
       <div className="flex flex-col md:flex-row p-6 sm:p-10 md:p-20 gap-12">
         <div className="relative">
-          <CustomImage src={`/img/JingmaiOConnor2019.jpg`} blurDataUrl={`/img/JingmaiOConnor2019_blur.jpg`} alt="Portrait of Jingmai O'Connor" type={ImageType.Vertical} priority={true} />
+          <CustomImage src="/img/JingmaiOConnor2019.jpg" alt="Portrait of Jingmai O'Connor" type={ImageType.Vertical} priority={true} />
 
         </div>
         <div className="flex flex-col gap-4 flex-1">
