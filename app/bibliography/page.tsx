@@ -1,4 +1,4 @@
-import { HeaderFour } from "@/components/ui/typography";
+import { HeaderFive } from "@/components/ui/typography";
 
 const bibliography: { year: number, publications: string[] }[] = [{
   year: 2025, publications: [
@@ -228,7 +228,7 @@ export default function Page() {
       <p className="pb-4">Down below you will find the full bibliography of my recent studies</p>
       {bibliography.map((item) => (
         <>
-          <HeaderFour text={item.year.toString()} />
+          <HeaderFive text={item.year.toString()} />
           <div className="flex flex-col gap-2 mb-12">
             {item.publications.map((v, idx) => (
               <p key={idx} dangerouslySetInnerHTML={{ __html: v }} />
