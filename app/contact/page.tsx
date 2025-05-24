@@ -1,7 +1,7 @@
 import { SeparatorLine } from "@/components/ui/separator-line";
 import { HeaderOne } from "@/components/ui/typography";
 
-const socialLinks = [
+const socialLinks: { platform: string, url: string }[] = [
   {
     platform: "Twitter", url: "https://twitter.com/paleontologista"
   },
