@@ -26,7 +26,7 @@ export function CustomImage(props: Props) {
       )
     case ImageType.Horizontal:
       return (
-        <Image className="w-full h-auto rounded-sm mx-auto" src={props.src} alt={props.alt} width={800} height={600} placeholder="blur" />
+        <Image className="w-full h-auto rounded-sm mx-auto" src={props.src} alt={props.alt} width={800} height={600} placeholder="blur" blurDataURL={props.blurDataUrl} />
       )
   }
 }
