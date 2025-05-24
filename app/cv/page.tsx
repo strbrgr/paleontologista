@@ -1,4 +1,4 @@
-import { HeaderFive, HeaderFour, HeaderSix } from "@/components/ui/typography";
+import { HeaderFive, HeaderSix } from "@/components/ui/typography";
 
 const currentPosition: { year: string, content: string[] }[] =
   [
