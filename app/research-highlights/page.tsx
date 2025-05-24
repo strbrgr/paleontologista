@@ -1,7 +1,8 @@
 import { getResearchHighlights } from '@/app/research-highlights/utils'
 import Link from 'next/link'
-import { CustomImage, ImageType } from '@/components/ui/image'
 import { HeaderFour } from '@/components/ui/typography'
+import Image from 'next/image'
+import { getImageFromKey } from './image-map'
 
 export const metadata = {
   title: 'Research Highlights - Jingmai O\'Connor',
@@ -12,7 +13,7 @@ export default function Page() {
   const allResearchHighlights = getResearchHighlights()
 
   return (
-    <section className="flex justify-center flex-row gap-14 flex-wrap">
+    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
       {allResearchHighlights
         .sort((a, b) => {
           if (
@@ -22,21 +23,28 @@ export default function Page() {
           }
           return 1
         })
-        .map((post) => (
+        .map((post, idx) => (
           <Link
             key={post.slug}
-            className="flex flex-col space-y-1 mb-4 max-w-sm"
+            className="flex flex-col max-w-sm h-full"
             href={`/research-highlights/${post.slug}`}
           >
-            {/* TODO: Make above the fold image priority true other ones should be false */}
-            <CustomImage src={post.metadata.imageUrl} alt={post.metadata.imageAlt} type={ImageType.Square} priority={false} />
-            <div className="w-full flex mt-8 flex-col space-x-0 md:space-x-2">
+            <div className="aspect-[4/3] w-full relative">
+              <Image
+                src={getImageFromKey(post.metadata.staticImportLookupKey)}
+                alt={post.metadata.imageAlt}
+                width={500}
+                height={500}
+                placeholder="blur"
+                priority={idx < 3}
+              />
+            </div>
+            <div className="flex flex-col flex-grow mt-4">
               <HeaderFour text={post.metadata.title} />
-              <p>{post.metadata.summary}</p>
+              <p className='flex-grow'>{post.metadata.summary}</p>
             </div>
           </Link>
-        ))
-      }
+        ))}
     </section>
   )
 }
