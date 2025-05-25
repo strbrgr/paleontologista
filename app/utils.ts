@@ -52,6 +52,18 @@ function getMDXData(dir: string) {
 
 export function getResearchHighlights() {
   return getMDXData(path.join(process.cwd(), 'app', 'research-highlights', 'posts'))
+    .sort((a, b) => {
+      if (
+        new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
+      ) {
+        return -1
+      }
+      return 1
+    })
+}
+
+export function getFirstThreeResearchHighlights() {
+  return getResearchHighlights().slice(0, 3);
 }
 
 export function formatDate(date: string, includeRelative = false) {
