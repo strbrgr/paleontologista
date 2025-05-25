@@ -4,6 +4,8 @@ import { SeparatorLine } from "@/components/ui/separator-line";
 import Link from "next/link";
 import jingmai from "../public/img/JingmaiOConnor2019.jpg"
 import Image from "next/image";
+import { getFirstThreeResearchHighlights } from "./utils";
+import { getImageFromKey } from "./research-highlights/image-map";
 
 const expertise: { title: string; description: string }[] = [{
   title: "Mesozoic bird phylogeny",
@@ -19,38 +21,17 @@ const expertise: { title: string; description: string }[] = [{
   description: "In an age of Science denialism and environmental crisis, research must be paired with community outreach. I am passionate about promoting diversity in STEM and igniting scientific interest in peoples of all ages through the exciting stories uncovered from spectacular fossil birds and their closest relatives."
 }]
 
-const research: { title: string; href: string; description: string }[] = [
-  {
-    title: "A mystery of tyrannosaur proportions",
-    href: "/",
-    description:
-      "Pathology is one of the most difficult things to unravel in an extinct organism."
-  },
-  {
-    title: "Best preserved Late Cretaceous enantiornithine",
-    href: "/",
-    description:
-      "Late Cretaceous fossil birds are rare. When found, they are usually very incomplete hindering attempts to understand broad trends in avian evolution across the Cretaceous."
-  },
-  {
-    title: "Mystery of the stomach crystals",
-    href: "/",
-    description:
-      "There is almost no evidence of enantiornithine diet in the form of ingested remains. This is strange because thousands of well-preserved specimens have been recovered and such evidence exists for contemporaneous ornithuromorphs known from far fewer specimens. As such, any evidence pertaining to enantiornithine diet and digestive function is important."
-  },
-]
-
 export default function Page() {
+  const researchHighlights = getFirstThreeResearchHighlights();
   return (
     <div className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start my-8">
-      <div className="flex flex-col md:flex-row p-6 sm:p-10 md:p-20 gap-12">
-        <div className="relative w-[375px] h-[500px]">
+      <div className="flex flex-wrap md:flex-nowrap p-6 sm:p-10 md:p-20 gap-12 justify-center md:justify-start">
+        <div className="relative w-[375px] h-[500px] shrink-0">
           <Image src={jingmai} alt="Portrait of Jingmai O'Connor" width={375} height={500} placeholder="blur" priority={true} />
         </div>
-        <div className="flex flex-col gap-4 flex-1">
+        <div className="flex flex-col gap-4 flex-1 min-w-[300px]">
           <HeaderOne text="Hi!" />
-          <HeaderThree text="I’m paleontologist Jingmai O'Connor
-            aka paleontologista aka the punk rock paleontologist." />
+          <HeaderThree text="I’m paleontologist Jingmai O'Connor aka paleontologista aka the punk rock paleontologist." />
           <div className="flex flex-col gap-4 rounded-4xl w-fit">
             <Button asChild variant="outline">
               <Link href="/bio">Read my full bio</Link>
@@ -69,7 +50,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="pt-48 w-full p-20">
+      <div className="w-full pt-24 px-4 sm:px-6 md:px-12 lg:p-20">
         <HeaderTwo text="Areas of Expertise" />
 
         <SeparatorLine />
@@ -86,27 +67,61 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="pt-48 w-full bg-background-blue p-20">
-        <div className="flex flex-row justify-between">
-          <HeaderFour text="
-          Personal notes and thoughts about work I’m passionate about" className="text-white" />
-          <div>
+      <div className="pt-48 w-full bg-background-blue px-4 sm:px-6 md:px-12 lg:p-20">
+        <div className="flex flex-col md:flex-row justify-between gap-4">
+          <HeaderFour
+            text="Personal notes and thoughts about work I’m passionate about"
+            className="text-white max-w-full md:max-w-sm"
+          />
+          <div className="flex flex-col items-end text-right">
             <HeaderTwo text="Research" className="text-white" />
-            <Link href="research-highlights" className="text-white justify-self-end hover:underline hover:text-white ">More Details</Link>
+            <Link
+              href="research-highlights"
+              className="text-white justify-self-end hover:underline hover:text-white"
+            >
+              More Details
+            </Link>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-18 py-24">
-          {research.map((r) => {
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-18 py-24 justify-items-center md:justify-items-start">
+          {researchHighlights.map((r) => {
             return (
-              <div key={r.title}>
-                <HeaderFour text={r.title} className="text-white" />
-                <p className="max-w-lg text-white mb-8">{r.description}</p>
-                <Link href="research-highlights" className="text-white justify-self-end hover:underline hover:text-white">Read More</Link>
+              <div key={r.metadata.title}>
+                <div className="aspect-[1/1] w-full relative">
+                  <Image
+                    src={getImageFromKey(r.metadata.staticImportLookupKey)}
+                    alt={r.metadata.imageAlt}
+                    width={500}
+                    height={500}
+                    placeholder="blur"
+                  />
+                </div>
+                <HeaderFour text={r.metadata.title} className="text-white mt-8" />
+                <p className="max-w-lg text-white mb-8">{r.metadata.summary}</p>
+                <Link
+                  href={`research-highlights/${r.slug}`}
+                  className="text-white justify-self-end hover:underline hover:text-white"
+                >
+                  Read More
+                </Link>
               </div>
             )
           })}
         </div>
+      </div>
+
+      <div className="w-full pt-24 px-4 sm:px-6 md:px-12 lg:p-20">
+        <HeaderTwo text="Outreach" />
+        <SeparatorLine />
+
+      </div>
+
+      <div className="w-full pt-24 px-4 sm:px-6 md:px-12 lg:p-20">
+        <HeaderTwo text="Field Work" className="text-right" />
+        <SeparatorLine />
+
       </div>
     </div >
   );
