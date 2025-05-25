@@ -1,8 +1,8 @@
-import { getResearchHighlights } from '@/app/research-highlights/utils'
 import Link from 'next/link'
 import { HeaderFour } from '@/components/ui/typography'
 import Image from 'next/image'
 import { getImageFromKey } from './image-map'
+import { getResearchHighlights } from '../utils'
 
 export const metadata = {
   title: "Research Highlights - Jingmai O'Connor",
