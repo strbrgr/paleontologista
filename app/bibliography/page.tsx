@@ -1,4 +1,4 @@
-import { HeaderFive } from "@/components/ui/typography";
+import { HeaderFive, HeaderFour } from "@/components/ui/typography";
 
 const bibliography: { year: number, publications: string[] }[] = [{
   year: 2025, publications: [
@@ -222,10 +222,26 @@ const bibliography: { year: number, publications: string[] }[] = [{
 }
 ]
 
+const bookChapter: string[] = [
+  'Button DJ, Chin K, Nabavizadeh A, <span class="font-bold">O’Connor</span> JK. In press (TBA). Feeding in extinct dinosaurs. In: Zanno L, Arbour V, Holtz T (ed), <span class="underline">The Complete Dinosaur</span>. Indiana University Press.',
+  '<span class="font-bold">O’Connor</span> JK. In press. The early evolution of birds. In: Edwards S, Reed M (eds), <span class="underline">New Perspectives in Ornithology</span>. Oxford University Press.',
+  '<span class="font-bold">O’Connor</span> JK. In press. <span class="italic">Archaeopteryx</span> Quick Guide. Current Biology',
+  '<span class="font-bold">O’Connor</span> JK. 2022. Enantiornithes. <span class="italic">Current Biology</span> 32 (20), R1166-R1172.',
+  '<span class="font-bold">O’Connor</span> JK. 2022. Sparrows with teeth and claws? Reconstructing the Cretaceous Enantiornithes (Aves: Ornithothoraces). In: Bienvenue V and Chare N (eds), <span class="underline">Animals, Plants and Afterimages</span>. New York: Berghahn. Pp. 169-190. ISBN 978-1-80073-425-8',
+  '<span class="font-bold">O’Connor</span> JK. 2022. The plumage of basal birds. In: Foth C, Rauhut O (eds), <span class="underline">The evolution of feathers: a palaeontological perspective</span>. Springer. Pp. 147-172. ISBN 978-3-030-27223-4',
+  'Sanz JL, Chamero B, Chiappe LM, Marugán-Lobón J, <span class="font-bold">O’Connor</span> JK</span>, Ortega F, Escaso F. 2016. Aves. In: Poyato-Ariza FJ & Buscalioni AD (eds), <span class="underline">Las Hoyas: A Cretaceous Wetland. A multidisciplinary synthesis after 25 years of research on an exceptional fossil Lagerstatte from Spain</span>. Pfeil Verlag, Munich, Alemania. Pp. 183-189. ISBN 978-3-89937-153-6',
+  '<span class="font-bold">O’Connor</span> JK, Chiappe LM, Bell A. 2011. Pre-modern birds: avian divergences in the Mesozoic. In: Dyke GJ, Kaiser G (eds), <span class="underline">Living Dinosaurs: the evolutionary history of modern birds</span>. UC Press. Pp. 39-116. ISBN 978-0-470-65666-2'
+];
+
+// TODO: Do this
+// const conferenceAbstracts: { year: number, content: string[] }[] = []
+
+
 export default function Page() {
   return (
     <section className="max-w-2xl mx-auto">
       <p className="pb-4">Down below you will find the full bibliography of my recent studies</p>
+      <HeaderFour text="Peer-reviewed Scientific Papers" />
       {bibliography.map((item) => (
         <>
           <HeaderFive text={item.year.toString()} />
@@ -236,6 +252,22 @@ export default function Page() {
           </div>
         </>
       ))}
+
+      <HeaderFour text="Book Chapters, Primers, & Editorials" />
+      <div className="flex flex-col gap-2 mb-12">
+        {bookChapter.map((v, idx) => (
+          <p key={idx} dangerouslySetInnerHTML={{ __html: v }} />
+        ))}
+      </div>
+
+      <HeaderFour text="Books" />
+      <p><span className="italic">Zoom out: Prehistoric World,</span> DK (in prep.)</p>
+      <p><span className="italic">When Dinosaurs Conquered the Skies,</span> Quarto Publishing (2022)
+      </p>
+      <p className="ml-8 mb-12">Winner of the Society of Midland Authors Children’s Non-fiction Award (2023)</p>
+
+      <HeaderFour text="Conference Abstracts" />
+
     </section>
   )
 }
