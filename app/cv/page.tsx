@@ -1,4 +1,6 @@
 import { HeaderFive, HeaderSix } from "@/components/ui/typography";
+import { fieldWork } from "./fieldWork";
+import { outreach } from "./outreach";
 
 const currentPosition: { year: string, content: string[] }[] =
   [
@@ -14,36 +16,36 @@ const currentPosition: { year: string, content: string[] }[] =
 
 const facultyPositions: { year: string, content: string[] }[] = [
   {
-    "year": "2022–present",
-    "content": [
+    year: "2022–present",
+    content: [
       "Trainer",
       "Committee of Evolutionary Biology, University of Chicago"
     ]
   },
   {
-    "year": "2020–present",
-    "content": [
+    year: "2020–present",
+    content: [
       "Adjunct Professor",
       "Institute of Vertebrate Paleontology and Paleoanthropology (CAS)"
     ]
   },
   {
-    "year": "2018–2020",
-    "content": [
+    year: "2018–2020",
+    content: [
       "Adjunct Professor",
       "University of Chinese Academy of Sciences (Beijing)"
     ]
   },
   {
-    "year": "2015-2020",
-    "content": [
+    year: "2015-2020",
+    content: [
       "Senior Professor",
       "Institute of Vertebrate Paleontology and Paleoanthropology (CAS)"
     ]
   },
   {
-    "year": "2013-2015",
-    "content": [
+    year: "2013-2015",
+    content: [
       "Associate Professor",
       "Institute of Vertebrate Paleontology and Paleoanthropology (CAS)"
     ]
@@ -53,8 +55,8 @@ const facultyPositions: { year: string, content: string[] }[] = [
 const educationAndTraining: { year: string, content: string[] }[] =
   [
     {
-      "year": "2010–2013",
-      "content": [
+      year: "2010–2013",
+      content: [
         "Postdoctoral Research Associate",
         "Institute of Vertebrate Paleontology and Paleoanthropology (Beijing)",
         "Chinese Academy of Sciences",
@@ -62,8 +64,8 @@ const educationAndTraining: { year: string, content: string[] }[] =
       ]
     },
     {
-      "year": "2009",
-      "content": [
+      year: "2009",
+      content: [
         "Ph.D.",
         "University of Southern California, Department of Geological Sciences",
         "Advisors Prof. David Bottjer (USC) and Dr. Luis Chiappe (Los Angeles Natural History Museum)",
@@ -71,8 +73,8 @@ const educationAndTraining: { year: string, content: string[] }[] =
       ]
     },
     {
-      "year": "2004",
-      "content": [
+      year: "2004",
+      content: [
         "B.A.",
         "Occidental College",
         "Earth Sciences undergraduate thesis title (under Prof. Donald Prothero and Dr. Xiaoming Wang, LANHM): New specimen of the Miocene mustelid <span class=\"italic\">Sthenictis</span> from the Miocene of Inner Mongolia, China"
@@ -83,69 +85,69 @@ const educationAndTraining: { year: string, content: string[] }[] =
 const professionalAppointments: { year: string, content: string[] }[] =
   [
     {
-      "year": "2025–present",
-      "content": [
+      year: "2025–present",
+      content: [
         "Ornithology editor, <span class=\"italic\">Palaeoworld</span>"
       ]
     },
     {
-      "year": "2024–present",
-      "content": [
+      year: "2024–present",
+      content: [
         "Ornithology editor, <span class=\"italic\">Comptes Rendus Palevol</span>"
       ]
     },
     {
-      "year": "2023–present",
-      "content": [
+      year: "2023–present",
+      content: [
         "Vice President",
         "Society of Avian Paleontology and Evolution"
       ]
     },
     {
-      "year": "2022–present",
-      "content": [
+      year: "2022–present",
+      content: [
         "Planetary change and Paleosciences Section Head, <span class=\"italic\">All Earth</span>"
       ]
     },
     {
-      "year": "2020–present",
-      "content": [
+      year: "2020–present",
+      content: [
         "Research Associate, American Museum of Natural History, New York"
       ]
     },
     {
-      "year": "2019–2022",
-      "content": [
+      year: "2019–2022",
+      content: [
         "Editorial Board Member, <span class=\"italic\">Frontiers in Earth Science</span>"
       ]
     },
     {
-      "year": "2016–2021",
-      "content": [
+      year: "2016–2021",
+      content: [
         "Honorary Reader, The University of Witwatersrand, South Africa"
       ]
     },
     {
-      "year": "2014–2024",
-      "content": [
+      year: "2014–2024",
+      content: [
         "Editorial Board Member, <span class=\"italic\">Scientific Reports</span>"
       ]
     },
     {
-      "year": "2014–2015",
-      "content": [
+      year: "2014–2015",
+      content: [
         "Research Associate, Tomsk University, Russia"
       ]
     },
     {
-      "year": "2013–2020",
-      "content": [
+      year: "2013–2020",
+      content: [
         "Adjunct Professor, Lingyi University"
       ]
     },
     {
-      "year": "2009–present",
-      "content": [
+      year: "2009–present",
+      content: [
         "Research Associate, Los Angeles Natural History Museum"
       ]
     }
@@ -154,98 +156,98 @@ const professionalAppointments: { year: string, content: string[] }[] =
 const awardsAndFellowships: { year: string, content: string[] }[] =
   [
     {
-      "year": "2024",
-      "content": [
+      year: "2024",
+      content: [
         "Rock Star Award, Cranbrook Institute of Science",
         "Negaunee Seed Fund ($35,000 USD)"
       ]
     },
     {
-      "year": "2023",
-      "content": [
-        "Negaunee Innovation Award (S55,000 USD)"
+      year: "2023",
+      content: [
+        "Negaunee Innovation Award ($55,000 USD)"
       ]
     },
     {
-      "year": "2019",
-      "content": [
+      year: "2019",
+      content: [
         "Outstanding achievements in scientific research in 2019, Institute of Vertebrate Paleontology and Paleoanthropology",
         "The Charles Schuchert Award, Paleontological Society",
         "Chinese Paleontological Association Award for Top 10 Discoveries of 2018"
       ]
     },
     {
-      "year": "2015",
-      "content": [
+      year: "2015",
+      content: [
         "IVPP Research grant, <span class=\"italic\">Archaeopteryx and a better understanding of early avian evolution</span> (No. KN205509)"
       ]
     },
     {
-      "year": "2014",
-      "content": [
+      year: "2014",
+      content: [
         "IVPP Research grant, <span class=\"italic\">Ecological evolution of Mesozoic birds</span> (No. KN214404)"
       ]
     },
     {
-      "year": "2013",
-      "content": [
+      year: "2013",
+      content: [
         "Award for outstanding paper published in the <span class=\"italic\">Journal of Systematic Paleontology</span> for, \"A redescription of <span class=\"italic\">Chaoyangia beishanensis</span> (Aves) and a comprehensive phylogeny of Mesozoic birds.\""
       ]
     },
     {
-      "year": "2012–2014",
-      "content": [
+      year: "2012–2014",
+      content: [
         "National Natural Science Foundation of China research grant, <span class=\"italic\">Ontogeny and phylogeny of Mesozoic birds</span> (No. 41102009)"
       ]
     },
     {
-      "year": "2012",
-      "content": [
+      year: "2012",
+      content: [
         "Fellowship for Young International Scientists, Chinese Academy of Sciences"
       ]
     },
     {
-      "year": "2011",
-      "content": [
+      year: "2011",
+      content: [
         "National Geographic Waitt Grant: Hunting for Jurassic Dinosaurs in Western Mongolia",
         "Research Fund for International Young Scientists, from the National Natural Science Foundation of China (No. 41050110438)"
       ]
     },
     {
-      "year": "2010",
-      "content": [
+      year: "2010",
+      content: [
         "Fellowship for Young International Scientists, Chinese Academy of Sciences"
       ]
     },
     {
-      "year": "2008",
-      "content": [
+      year: "2008",
+      content: [
         "East Asia and Pacific Summer Institute participant, National Science Foundation"
       ]
     },
     {
-      "year": "2007",
-      "content": [
+      year: "2007",
+      content: [
         "Explorer’s Club Research Grant",
         "Graduate Professionalism Initiative Grant, University of Southern California"
       ]
     },
     {
-      "year": "2006",
-      "content": [
+      year: "2006",
+      content: [
         "Keck Fellow, University of Southern California"
       ]
     },
     {
-      "year": "2004",
-      "content": [
+      year: "2004",
+      content: [
         "Avery China Adventure Recipient",
         "Keck Fellow, University of Southern California"
       ]
     },
     {
-      "year": "2003",
-      "content": [
+      year: "2003",
+      content: [
         "Richter Undergraduate Research Grant, Occidental College"
       ]
     }
@@ -254,62 +256,62 @@ const awardsAndFellowships: { year: string, content: string[] }[] =
 const teachingExperience: { year: string, content: string[] }[] =
   [
     {
-      "year": "2025",
-      "content": [
+      year: "2025",
+      content: [
         "Guest lecturer: Life during the age of dinosaurs (UC Berkeley)"
       ]
     },
     {
-      "year": "2024",
-      "content": [
+      year: "2024",
+      content: [
         "Guest lecturer: Origins and Extinctions: Rocks and Life in Deep Time (Macalaster College); Life during the age of dinosaurs (UC Berkeley); Dinosaur Evolution and Extinction (Columbia College Chicago)"
       ]
     },
     {
-      "year": "2022",
-      "content": [
+      year: "2022",
+      content: [
         "Guest lecturer: Life during the age of dinosaurs (UC Berkeley); Dinosaur Evolution and Extinction (Columbia College Chicago)"
       ]
     },
     {
-      "year": "2021",
-      "content": [
+      year: "2021",
+      content: [
         "Guest lecturer: Dinosaur Evolution and Extinction (Columbia College Chicago)"
       ]
     },
     {
-      "year": "2019",
-      "content": [
+      year: "2019",
+      content: [
         "Guest lecturer on \"The origin of dinosaurian flight and early avian diversity.\" Sino-German Field School, Yizhou Sino-German Paleontological Museum (organized by the Senckenberg Museum, Frankfurt, Germany)"
       ]
     },
     {
-      "year": "2018–2019",
-      "content": [
+      year: "2018–2019",
+      content: [
         "Comparative Vertebrate Osteology. University of the Chinese Academy of Sciences. Under-graduate, Master’s and PhD course. Title: Professor (responsible for lectures on non-dinosaurian archosaurs)"
       ]
     },
     {
-      "year": "2008",
-      "content": [
+      year: "2008",
+      content: [
         "Teaching Assistant: Crises of a Planet (under-graduate course), University of Southern California"
       ]
     },
     {
-      "year": "2007",
-      "content": [
+      year: "2007",
+      content: [
         "Guest lecturer on \"The origin of flight.\" Institute of Vertebrate Paleontology and Paleoanthropology. Graduate course (Paleobiology; Instructors: David Hone and Corwin Sullivan)"
       ]
     },
     {
-      "year": "2004–2005",
-      "content": [
+      year: "2004–2005",
+      content: [
         "Teaching Assistant: Crises of a Planet (under-graduate course), University of Southern California"
       ]
     },
     {
-      "year": "2003",
-      "content": [
+      year: "2003",
+      content: [
         "Teaching Assistant: Introduction to Field Methods (under-graduate course), Occidental College"
       ]
     }
@@ -319,38 +321,38 @@ const studentsSupervised: { year: string, content: string[] }[] =
 
   [
     {
-      "year": "2025–incoming",
-      "content": [
+      year: "2025–incoming",
+      content: [
         "<span class=\"font-bold\">Isaiah McKinney</span>, University of Chicago"
       ]
     },
     {
-      "year": "2023–present",
-      "content": [
+      year: "2023–present",
+      content: [
         "<span class=\"font-bold\">Alexander Clark</span>, University of Chicago, Ph.D. thesis title pending."
       ]
     },
     {
-      "year": "2018–2022",
-      "content": [
+      year: "2018–2022",
+      content: [
         "<span class=\"font-bold\">Wu Qian</span>, IVPP. Co-supervised with Li Zhiheng. Ph.D. thesis title: The morphology, histology and evolution of the avian pectoral girdle and its function during flight."
       ]
     },
     {
-      "year": "2018–2020",
-      "content": [
+      year: "2018–2020",
+      content: [
         "<span class=\"font-bold\">Liu Shumin</span>, IVPP. Co-supervised with Li Zhiheng. Master’s thesis title: Investigating possible gastroliths in a referred specimen of Bohaiornis guoi (Aves: Enantiornithes)"
       ]
     },
     {
-      "year": "2016–present",
-      "content": [
+      year: "2016–present",
+      content: [
         "<span class=\"font-bold\">Luis Vega-Jorquera</span>, Universidad de Chile. Co-supervised with Alexander Vargas. M.Sc. thesis title pending"
       ]
     },
     {
-      "year": "2013–2017",
-      "content": [
+      year: "2013–2017",
+      content: [
         "<span class=\"font-bold\">Hu Han</span>, IVPP. Co-supervised with Zhou Zhonghe. Ph.D. thesis title: Skull and other character evolution of Early Cretaceous birds of China"
       ]
     }
@@ -359,38 +361,38 @@ const studentsSupervised: { year: string, content: string[] }[] =
 const studentsUnofficiallySupervised: { year: string, content: string[] }[] =
   [
     {
-      "year": "2016–2017",
-      "content": [
+      year: "2016–2017",
+      content: [
         "<span class=\"font-bold\">Wang Wei</span>, IVPP, M.Sc. Official supervisor: Zhou Zhonghe"
       ]
     },
     {
-      "year": "2013–2016",
-      "content": [
+      year: "2013–2016",
+      content: [
         "<span class=\"font-bold\">Wang Min</span>, IVPP, Ph.D. Official supervisor: Zhou Zhonghe"
       ]
     },
     {
-      "year": "2013–2014",
-      "content": [
+      year: "2013–2014",
+      content: [
         "<span class=\"font-bold\">Zhao Tao</span>, IVPP, M.Sc. Official supervisor: Zhou Zhonghe"
       ]
     },
     {
-      "year": "2011–2015",
-      "content": [
+      year: "2011–2015",
+      content: [
         "<span class=\"font-bold\">Wang Yaming</span>, IVPP, Ph.D. Official supervisor: You Hailu"
       ]
     },
     {
-      "year": "2010–2013",
-      "content": [
+      year: "2010–2013",
+      content: [
         "<span class=\"font-bold\">Zhou Shuang</span>, IVPP, Ph.D. Official supervisor: Zhou Zhonghe"
       ]
     },
     {
-      "year": "2009–2010",
-      "content": [
+      year: "2009–2010",
+      content: [
         "<span class=\"font-bold\">Li Dongsheng</span>, IVPP, M.Sc. Official supervisor: Zhou Zhonghe"
       ]
     }
@@ -399,26 +401,26 @@ const studentsUnofficiallySupervised: { year: string, content: string[] }[] =
 const postdoctoralResearchersSupervised: { year: string, content: string[] }[] =
   [
     {
-      "year": "2023–present",
-      "content": [
+      year: "2023–present",
+      content: [
         "<span class=\"font-bold\">Pei-Chen Kuo</span>, Field Museum – Avian palatal evolution"
       ]
     },
     {
-      "year": "2022–2024",
-      "content": [
+      year: "2022–2024",
+      content: [
         "<span class=\"font-bold\">Yosef Kiat</span>, Field Museum – Evolution of feathers"
       ]
     },
     {
-      "year": "2021–2023",
-      "content": [
+      year: "2021–2023",
+      content: [
         "<span class=\"font-bold\">Matteo Fabbri</span>, Field Museum – Evo-devo of the avian form"
       ]
     },
     {
-      "year": "2017–2019",
-      "content": [
+      year: "2017–2019",
+      content: [
         "<span class=\"font-bold\">Alida Bailleul</span>, IVPP – Soft tissues in Cretaceous birds"
       ]
     }
@@ -500,75 +502,6 @@ const undergraduateInterns: { year: string, content: string[] }[] = [
   }
 ];
 
-const fieldWork: { year: string, content: string[] }[] = [
-  {
-    year: "2024",
-    content: ["<span class=\"font-bold\">Montana, USA</span> – microsite excavation and sediment processing, prospecting Hell Creek Formation (expedition leader)"]
-  },
-  {
-    year: "2023",
-    content: ["<span class=\"font-bold\">Montana, USA</span> – microsite excavation and sediment processing, Hell Creek Formation (expedition leader)", "Wyoming, USA. – quarrying limestones of the Fossil Lake member, Green River Fm, Stones & Bones class (University of Chicago)"]
-  },
-  {
-    year: "2022",
-    content: ["<span class=\"font-bold\">Montana, USA</span> – microsite sediment processing, Hell Creek Formation (expedition leader)", "Dinosaur Provincial Park, Alberta, Canada – joint expedition with the University of Alberta, centennial celebration of Elmer Riggs 1922 fieldwork"]
-  },
-  {
-    year: "2021",
-    content: ["<span class=\"font-bold\">Utah</span>, University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation"]
-  },
-  {
-    year: "2019",
-    content: ["<span class=\"font-bold\">Romania</span>, American Museum of Natural History expedition prospecting and quarrying in Cretaceous deposits in the Hateg Basin and near Sebes"]
-  },
-  {
-    year: "2017",
-    content: ["<span class=\"font-bold\">Romania</span>, American Museum of Natural History expedition prospecting and quarrying in Cretaceous deposits in the Hateg Basin and near Sebes"]
-  },
-  {
-    year: "2016",
-    content: [
-      "<span class=\"font-bold\">Free State, South Africa</span>, University of Witswatersrand expedition prospecting and quarrying in Jurassic deposits collecting dinosaurs and mammals",
-      "<span class=\"font-bold\">Alberta, Canada</span>, Phil J. Currie Dinosaur Museum and University of Alberta expedition prospecting in Cretaceous deposits in the Grand Prairie region (PJC Dinosaur Museum, University of Alberta)"
-    ]
-  },
-  {
-    year: "2014",
-    content: ["<span class=\"font-bold\">Gansu Province, China</span>, Institute of Vertebrate Paleontology and Paleoanthropology expedition quarrying for Early Cretaceous birds in the Xiagou Formation"]
-  },
-  {
-    year: "2011",
-    content: ["<span class=\"font-bold\">Mongolia</span>, American Museum of Natural History expedition prospecting for Cretaceous dinosaurs and lizards and Paleogene mammals"]
-  },
-  {
-    year: "2010",
-    content: ["<span class=\"font-bold\">Xinjiang, China</span>, Institute of Vertebrate Paleontology and Paleoanthropology expedition prospecting for dinosaurs in the Jurassic Shishugou Formation in the Junggar Basin"]
-  },
-  {
-    year: "2007",
-    content: [
-      "<span class=\"font-bold\">Utah, USA</span>, The University of Southern California-Los Angeles County Museum of Natural History Southern Utah Dinosaur Expedition prospecting in the Kaiparowits Formation in Grand Staircase Escalante (expedition leader)"
-    ]
-  },
-  {
-    year: "2006",
-    content: ["<span class=\"font-bold\">Montana, USA</span>, Los Angeles County Museum of Natural History expedition prospecting and quarrying in the Late Cretaceous Hell Creek Formation"]
-  },
-  {
-    year: "2005",
-    content: [
-      "<span class=\"font-bold\">Qinghai, Gansus, Xingjiang, China</span>, Prospecting for mammals in Neogene deposits identified by oil geologists in the 1950’s"
-    ]
-  },
-  {
-    year: "2003",
-    content: [
-      "<span class=\"font-bold\">Montana, USA</span>, Los Angeles County Museum of Natural History expedition prospecting and quarrying in the Late Cretaceous Hell Creek Formation",
-      "<span class=\"font-bold\">Inner Mongolia, China</span>, Institute of Vertebrate Paleontology and Paleoanthropology expedition to prospect and screen-wash for mammals in Neogene deposits"
-    ]
-  }
-]
-
 const memberships: { year: string; content: string[] }[] = [
   {
     year: "2018–2023",
@@ -620,96 +553,6 @@ const invitedPresentations: { year: string; content: string[] }[] = [
   {
     year: "2016",
     content: ["CAS SELF (Science Education Life Future) talk: Fascinating early birds"]
-  }
-];
-
-const outreach: { year: string, content: string[] }[] = [
-  {
-    year: "2025",
-    content: ["Presumpscot Elementary Interview a Scientist", "Drummond Elementary"]
-  },
-  {
-    year: "2024",
-    content: [
-      "Presumpscot Elementary Interview a Scientist",
-      "USC Dornsife Earth Sciences Month Q&A",
-      "Dinopalooza",
-      "Member’s Night",
-      "Archaeopteryx public lecture",
-      "Arc’teryx community lecture",
-      "Holy Redeemer Elementary visit",
-      "Field Ambassadors"
-    ]
-  },
-  {
-    year: "2023",
-    content: [
-      "Dino Day with a Paleontologist, Chicago Public Library",
-      "Rye Country Day School virtual classroom visit",
-      "Junior Achievement of Chicago",
-      "John C. Haines Elementary School Career Day",
-      "Presumpscot Elementary Interview a Scientist",
-      "Chicago Comic and Entertainment Expo (4 panels)",
-      "FMNH Dinofest",
-      "Institute for the Study of Mongolian Dinosaurs – Young Scientist Program",
-      "Chicago Council on Science and Technology, \"Ask a Scientist!\"",
-      "FMNH Evolve"
-    ]
-  },
-  {
-    year: "2022",
-    content: [
-      "WeDigBio",
-      "Milwaukee Public Museum School Program",
-      "FMNH ‘Meet a Scientist’ Grainger Science Hub",
-      "National Academy of Sciences LabX Wrong Answers Only",
-      "USC Dornslife Dialogues",
-      "Chicago Council on Science and Technology panel at Chicago Comic and Entertainment Expo",
-      "Women’s Board Science Salon",
-      "Schaumburg Public Library \"Office hours\"",
-      "FMNH EVOLVE",
-      "FMNH Women’s Board Gala",
-      "Make a Wish Foundation"
-    ]
-  },
-  {
-    year: "2021",
-    content: [
-      "SUE Science Saturday",
-      "Collection’s Club",
-      "Mason Elementary Career Day",
-      "FMNH Founder’s Council",
-      "FMNH Dinosaur Day",
-      "William & Mary \"Introduction to Dinosaurs class\""
-    ]
-  },
-  {
-    year: "2020",
-    content: [
-      "WeDigBio",
-      "Collection’s Club",
-      "FMNH Member’s Night",
-      "Pomona College \"Dinosaur History class\"",
-      "FMNH Instagram Live",
-      "FMNH Evolve"
-    ]
-  },
-  {
-    year: "2009",
-    content: [
-      "Ph.D.",
-      "University of Southern California, Department of Geological Sciences",
-      "Advisors Prof. David Bottjer (USC) and Dr. Luis Chiappe (Los Angeles Natural History Museum)",
-      "Dissertation title: A Systematic Review of Enantiornithes (Aves: Ornithothoraces)"
-    ]
-  },
-  {
-    year: "2004",
-    content: [
-      "B.A.",
-      "Occidental College",
-      "Earth Sciences undergraduate thesis title (under Prof. Donald Prothero and Dr. Xiaoming Wang, LANHM): New specimen of the Miocene mustelid Sthenictis from the Miocene of Inner Mongolia, China"
-    ]
   }
 ];
 
@@ -822,6 +665,7 @@ export default function Page() {
       </div>
 
       <Content header="Symposia Organized" content={symposiaOrganized} />
+      {/* TODO: Special Volumes organized */}
     </section >
   )
 }
