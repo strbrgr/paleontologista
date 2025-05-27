@@ -30,7 +30,6 @@ export const metadata: Metadata = {
 function Footer() {
   const links: { name: string, url: string }[] = [
     { name: 'Instagram', url: 'https://instagram.com/paleontologista' },
-    { name: 'Twitter', url: 'https://x.com/paleontologista' },
     { name: 'Facebook', url: 'https://www.facebook.com/jingmai.oconnor/' },
     { name: 'ResearchGate', url: 'https://www.researchgate.net/profile/Jingmai-Oconnor' },
     { name: 'Google Scholar', url: 'https://scholar.google.com/citations?user=BzgZsCoAAAAJ&hl=en' },
