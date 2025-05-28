@@ -14,74 +14,95 @@ export const metadata = {
 }
 
 const researchHighlights: { title: string, image: StaticImageData, alt: string, summary: string, url: string }[] = [{
+  title: "Chicago archeopteryx",
+  image: mabirds,
+  alt: "Alt",
+  summary: "A summary",
+  url: "/chicago-archeopteryx"
+},
+{
+  title: "Attenborough’s strange bird",
+  image: mabirds,
+  alt: "Alt",
+  summary: "A summary",
+  url: "/attenboroughs-strange-bird"
+},
+{
+  title: "Enantiornithines had it tough",
+  image: mabirds,
+  alt: "Alt",
+  summary: "A summary",
+  url: "/baby-enantiornithines-had-it-tough"
+},
+{
   title: "A mystery of tyrannosaur proportions",
   image: mabirds,
   alt: "Alt",
   summary: "A summary",
-  url: "/href"
+  url: "/a-mystery-of-tyrannosaur-proportions"
 },
 {
   title: "Best preserved Late Cretaceous enantiornithine",
   image: mabirds,
   alt: "Alt",
   summary: "A summary",
-  url: "/href"
+  url: "/best-preserved-late-cretaceous-enantiornithine"
 },
 {
   title: "Mystery of the stomach crystals",
   image: mabirds,
   alt: "Alt",
   summary: "A summary",
-  url: "/href"
+  url: "/mystery-of-stomach-crystals"
 },
 {
   title: "Enantiornithine with sexy tail",
   image: mabirds,
   alt: "Alt",
   summary: "A summary",
-  url: "/href"
+  url: "/enantiornithine-with-sexy-tail"
 },
 {
   title: "99 Ma birds in amber",
   image: mabirds,
   alt: "Alt",
   summary: "A summary",
-  url: "/href"
+  url: "/99-ma-birds-in-amber"
 },
 {
   title: "Fossilized lungs",
   image: fossilizedLungs,
   alt: "Alt",
   summary: "A summary",
-  url: "/href"
+  url: "/fossilized-lungs"
 },
 {
   title: "Death by…",
   image: deathBy,
   alt: "Alt",
   summary: "A summary",
-  url: "/href"
+  url: "/death-by"
 },
 {
   title: "A controversial bone tissue",
   image: medullaryBone,
   alt: "Alt",
   summary: "A summary",
-  url: "/href"
+  url: "/a-controversial-bone-tissue"
 },
 {
   title: "Fossilized ovaries",
   image: fossilizedOvaries,
   alt: "Alt",
   summary: "A summary",
-  url: "/href"
+  url: "/fossilized-ovaries"
 },
 {
   title: "Microraptor’s last meal",
   image: microraptor,
   alt: "Alt",
   summary: "A summary",
-  url: "/href"
+  url: "/microraptors-last-meal"
 },
 ]
 
