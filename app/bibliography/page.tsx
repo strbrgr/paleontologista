@@ -397,15 +397,15 @@ export default function Page() {
     <section className="max-w-2xl mx-auto">
       <p className="pb-4">Down below you will find the full bibliography of my recent studies</p>
       <HeaderFour text="Peer-reviewed Scientific Papers" />
-      {bibliography.map((item) => (
-        <>
+      {bibliography.map((item, idx) => (
+        <div key={idx}>
           <HeaderFive text={item.year.toString()} />
           <div className="flex flex-col gap-2 mb-12">
             {item.publications.map((v, idx) => (
               <p key={idx} className="mb-4" dangerouslySetInnerHTML={{ __html: v }} />
             ))}
           </div>
-        </>
+        </div>
       ))}
 
       <HeaderFour text="Book Chapters, Primers, & Editorials" />

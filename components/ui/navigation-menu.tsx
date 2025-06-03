@@ -10,8 +10,8 @@ const components: { title: string; href: string; }[] = [
     href: "/",
   },
   {
-    title: "Research Highlights",
-    href: "/research-highlights",
+    title: "Research",
+    href: "/research",
   },
   {
     title: "Bio",

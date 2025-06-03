@@ -114,7 +114,7 @@ export default function Page() {
           <Link
             key={idx}
             className="flex flex-col max-w-sm h-full transform transition-transform duration-200 hover:scale-[1.01]"
-            href={`/research-highlights/${post.url}`}
+            href={`/research/${post.url}`}
           >
             <div className="aspect-[1/1] w-full relative">
               <Image

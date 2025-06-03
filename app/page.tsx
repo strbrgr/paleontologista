@@ -3,7 +3,7 @@ import { HeaderOne, HeaderTwo, HeaderThree, HeaderFour } from "@/components/ui/t
 import { SeparatorLine } from "@/components/ui/separator-line";
 import Link from "next/link";
 import jingmai from "../public/img/JingmaiOConnor2019.jpg"
-import mabirds from "./research-highlights/99-ma-birds-in-amber/99-ma-birds.jpg"
+import mabirds from "./research/99-ma-birds-in-amber/99-ma-birds.jpg"
 import Image, { StaticImageData } from "next/image";
 
 const expertise: { title: string; description: string }[] = [{
@@ -97,7 +97,7 @@ export default function Page() {
           <div className="flex flex-col items-end text-right">
             <HeaderTwo text="Research" className="text-white" />
             <Link
-              href="research-highlights"
+              href="research"
               className="text-white justify-self-end hover:underline hover:text-white"
             >
               More Details
