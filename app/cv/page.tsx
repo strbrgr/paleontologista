@@ -2,6 +2,11 @@ import { HeaderFive, HeaderSix } from "@/components/ui/typography";
 import { fieldWork } from "./fieldWork";
 import { outreach } from "./outreach";
 
+export const metadata = {
+  title: "CV",
+  description: "Professional Experience of Jingmai O'Connor",
+}
+
 const currentPosition: { year: string, content: string[] }[] =
   [
     {

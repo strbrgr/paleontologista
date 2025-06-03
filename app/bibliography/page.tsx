@@ -1,5 +1,10 @@
 import { HeaderFive, HeaderFour } from "@/components/ui/typography";
 
+export const metadata = {
+  title: "Bibliography",
+  description: 'Read about published papers, books and conference abstracts',
+}
+
 const bibliography: { year: number, publications: string[] }[] = [{
   year: 2025, publications: [
     "Atterholt JA, <strong class=\"font-bold\"><span class=\"font-bold\">O'Connor</span></strong> JK, You H-L. 2025. Osteohistology of enantiornithine birds from the Lower Cretaceous Xiagou Formation. Geobios 90: 5-16.",

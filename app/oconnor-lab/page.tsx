@@ -3,8 +3,13 @@ import peichen from '@/app/oconnor-lab/img/dbn_peichen.jpg';
 import alexander from '@/app/oconnor-lab/img/dbn_alexander.jpg';
 import isaiah from '@/app/oconnor-lab/img/dbn_isaiah.jpg';
 import yosef from '@/app/oconnor-lab/img/dbn_yosef.jpg';
-
+import dbn_logo from '@/app/oconnor-lab/img/dead_bird_nerds_logo.jpg';
 import Image, { StaticImageData } from 'next/image';
+
+export const metadata = {
+  title: "O'Connor Lab",
+  description: 'Information about my Lab group the "Dead Bird Nerds".',
+}
 
 const labMembers: { name: string, image: StaticImageData, research: string, website: string | null, otherLink: string | null }[] = [
   {
@@ -39,10 +44,16 @@ const pastLabMembers: { name: string, image: StaticImageData, website: string | 
   },
 ]
 
-export default function Home() {
+export default function Page() {
   return (
-    <>
-      <Image className="mx-auto" src={dbn} alt="Group photo of Dead Birds Nerds in 2025" width={800} height={600} placeholder="blur" priority={true} />
-    </>
+    <section className="max-w-2xl mx-auto">
+      <Image className="mx-auto" src={dbn_logo} alt="Dead Bird Nerds Logo" width={500} height={500} placeholder="blur" priority={true} />
+      <div className="my-12">
+        <p>The O’Connor research group focuses on archosaur evolution with a specialization on the origin and evolution of flight and birds.</p>
+        <p>We are an international group and aim to provide training and opportunities to ensure success no matter the background of the individual. Paleontology is for everyone!</p>
+        <p>Paid internship opportunities for undergraduate students are available through various programs at the <a className="underline" href="https://www.fieldmuseum.org" target="_blank" rel="noopener noreferrer">Field Museum</a>. For additional opportunities email <a href="mailto:jingmai@fieldmuseum.org" className="underline">jingmai@fieldmuseum.org</a>.</p>
+      </div>
+      <Image className="mx-auto" src={dbn} alt="Group photo of Dead Birds Nerds in 2025" width={800} height={600} placeholder="blur" priority={false} />
+    </section>
   )
 }

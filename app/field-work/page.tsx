@@ -3,6 +3,11 @@ import { HeaderFive } from "@/components/ui/typography";
 import { fieldWork } from "../cv/fieldWork";
 // import { StaticImageData } from "next/image";
 
+export const metadata = {
+  title: "Field Work",
+  description: "I have taken part in a variety of field trips.",
+}
+
 // const images: { image: StaticImageData; alt: string, description: string }[] = [
 //   {
 //     image: "/",

@@ -9,8 +9,8 @@ import microraptor from "./microraptors-last-meal/microraptor.jpg"
 import deathBy from "./death-by/death-by.jpg"
 
 export const metadata = {
-  title: "Research Highlights - Jingmai O'Connor",
-  description: 'Read my blog.',
+  title: "Research Highlights",
+  description: 'Read more about my most recent research.',
 }
 
 const researchHighlights: { title: string, image: StaticImageData, alt: string, summary: string, url: string }[] = [{

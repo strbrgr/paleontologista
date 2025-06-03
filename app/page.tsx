@@ -131,13 +131,13 @@ export default function Page() {
         <HeaderTwo text="Outreach" />
         <SeparatorLine />
         <div>
-          <div>
+          <div className="mt-8">
             <HeaderFour text="In order to maximize the impact of scientific research and utilize the power of paleontology as a gateway science, I happily engage in outreach as opportunities arise." />
             <Button asChild variant="outline">
               <Link href="/contact">Get in touch</Link>
             </Button>
             <SeparatorLine />
-            <p>My outreach also includes popular science articles, guest blogs (yes blogs!), responding to emails from students of all ages (go on, write me!), collections tours, and classroom visits.</p>
+            <p className="max-w-md mt-12">My outreach also includes popular science articles, guest blogs (yes blogs!), responding to emails from students of all ages (go on, write me!), collections tours, and classroom visits.</p>
           </div>
         </div>
       </div>
@@ -145,7 +145,7 @@ export default function Page() {
       <div className="w-full pt-24 px-4 sm:px-6 md:px-12 lg:p-20">
         <HeaderTwo text="Field Work" className="text-right" />
         <SeparatorLine />
-        <div>
+        <div className="mt-12">
           <HeaderFour text="I have been lucky to participate in Field Work around the world." />
           <Button asChild variant="outline">
             <Link href="/field-work">More Content</Link>
