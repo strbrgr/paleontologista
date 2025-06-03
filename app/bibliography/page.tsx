@@ -397,7 +397,7 @@ export default function Page() {
           <HeaderFive text={item.year.toString()} />
           <div className="flex flex-col gap-2 mb-12">
             {item.publications.map((v, idx) => (
-              <p key={idx} dangerouslySetInnerHTML={{ __html: v }} />
+              <p key={idx} className="mb-4" dangerouslySetInnerHTML={{ __html: v }} />
             ))}
           </div>
         </>
@@ -406,7 +406,7 @@ export default function Page() {
       <HeaderFour text="Book Chapters, Primers, & Editorials" />
       <div className="flex flex-col gap-2 mb-12">
         {bookChapter.map((v, idx) => (
-          <p key={idx} dangerouslySetInnerHTML={{ __html: v }} />
+          <p key={idx} className="mb-4" dangerouslySetInnerHTML={{ __html: v }} />
         ))}
       </div>
 
@@ -418,7 +418,7 @@ export default function Page() {
 
       <HeaderFour text="Conference Abstracts" />
       {conferenceAbstracts.map((item) => (
-        <div className="flex flex-row" key={item.year}>
+        <div className="flex flex-row mb-4" key={item.year}>
           <p className="min-w-40 font-bold">{item.year}</p>
           <div className="flex flex-col">
             {item.content.map((v, idx) => (

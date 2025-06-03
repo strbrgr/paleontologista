@@ -591,7 +591,7 @@ function Content(props: { header: string; content: { year: string; content: stri
     <div className="mb-12">
       <HeaderFive text={props.header} />
       {props.content.map((item) => (
-        <div className="flex flex-row" key={item.year}>
+        <div className="flex flex-row mb-4" key={item.year}>
           <p className="min-w-40 font-bold">{item.year}</p>
           <div className="flex flex-col">
             {item.content.map((v, idx) => (

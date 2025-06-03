@@ -8,7 +8,7 @@ export default function Page() {
       {outreach.map((item) => (
         <div className="flex flex-row" key={item.year}>
           <p className="min-w-40 font-bold">{item.year}</p>
-          <div className="flex flex-col">
+          <div className="flex flex-col mb-4">
             {item.content.map((v, idx) => (
               <p key={idx} dangerouslySetInnerHTML={{ __html: v }} />
             ))}
