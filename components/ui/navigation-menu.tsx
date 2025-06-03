@@ -4,60 +4,42 @@ import { cva } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
 
-const components: { title: string; href: string; description: string }[] = [
+const components: { title: string; href: string; }[] = [
   {
     title: "Home",
     href: "/",
-    description:
-      "Return to the Homepage"
   },
   {
     title: "Research Highlights",
     href: "/research-highlights",
-    description:
-      ""
   },
   {
     title: "Bio",
-    href: "/bio",
-    description:
-      ""
+    href: "/biography",
   },
   {
     title: "Bibliography",
     href: "/bibliography",
-    description:
-      ""
   },
   {
     title: "CV",
     href: "/cv",
-    description:
-      ""
   },
   {
     title: "Field Work",
     href: "/field-work",
-    description:
-      ""
   },
   {
     title: "O'Connor Lab",
     href: "/oconnor-lab",
-    description:
-      ""
   },
   {
     title: "Outreach",
     href: "/outreach",
-    description:
-      ""
   },
   {
     title: "Contact",
     href: "/contact",
-    description:
-      ""
   },
 ]
 
