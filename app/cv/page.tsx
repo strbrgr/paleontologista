@@ -608,8 +608,10 @@ export default function Page() {
 
   return (
     <section className="max-w-2xl mx-auto">
-      <HeaderFive text="Jingmai Kathleen O'Connor" />
-      <HeaderFive text="邹晶梅" />
+      <div className="mb-12">
+        <HeaderFive text="Jingmai Kathleen O'Connor" />
+        <HeaderFive text="邹晶梅" />
+      </div>
       <Content header="Current Position" content={currentPosition} />
       <Content header="Faculty Positions" content={facultyPositions} />
       <Content header="Education and Training" content={educationAndTraining} />
