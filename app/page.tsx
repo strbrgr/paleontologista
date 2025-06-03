@@ -21,25 +21,25 @@ const expertise: { title: string; description: string }[] = [{
 }]
 
 const researchHighlights: { title: string, image: StaticImageData, alt: string, summary: string, url: string }[] = [{
-  title: "A mystery of tyrannosaur proportions",
+  title: "Chicago archeopteryx",
   image: mabirds,
   alt: "Alt",
   summary: "A summary",
-  url: "/href"
+  url: "/chicago-archeopteryx"
 },
 {
-  title: "Best preserved Late Cretaceous enantiornithine",
+  title: "Attenborough’s strange bird",
   image: mabirds,
   alt: "Alt",
   summary: "A summary",
-  url: "/href"
+  url: "/attenboroughs-strange-bird"
 },
 {
-  title: "Mystery of the stomach crystals",
+  title: "Enantiornithines had it tough",
   image: mabirds,
   alt: "Alt",
   summary: "A summary",
-  url: "/href"
+  url: "/baby-enantiornithines-had-it-tough"
 },
 ]
 
@@ -131,7 +131,6 @@ export default function Page() {
         <HeaderTwo text="Outreach" />
         <SeparatorLine />
         <div>
-
           <div>
             <HeaderFour text="In order to maximize the impact of scientific research and utilize the power of paleontology as a gateway science, I happily engage in outreach as opportunities arise." />
             <Button asChild variant="outline">
@@ -141,7 +140,6 @@ export default function Page() {
             <p>My outreach also includes popular science articles, guest blogs (yes blogs!), responding to emails from students of all ages (go on, write me!), collections tours, and classroom visits.</p>
           </div>
         </div>
-
       </div>
 
       <div className="w-full pt-24 px-4 sm:px-6 md:px-12 lg:p-20">
@@ -152,10 +150,7 @@ export default function Page() {
           <Button asChild variant="outline">
             <Link href="/field-work">More Content</Link>
           </Button>
-
-
         </div>
-
       </div>
     </div >
   );
