@@ -4,6 +4,8 @@ import { SeparatorLine } from "@/components/ui/separator-line";
 import Link from "next/link";
 import jingmai from "../public/img/JingmaiOConnor2019.jpg"
 import mabirds from "./research/99-ma-birds-in-amber/99-ma-birds.jpg"
+import imparavis from "./research/attenboroughs-strange-bird/imparavis_square.jpg"
+
 import Image, { StaticImageData } from "next/image";
 
 const expertise: { title: string; description: string }[] = [{
@@ -29,7 +31,7 @@ const researchHighlights: { title: string, image: StaticImageData, alt: string, 
 },
 {
   title: "Attenborough’s strange bird",
-  image: mabirds,
+  image: imparavis,
   alt: "Alt",
   summary: "A summary",
   url: "/attenboroughs-strange-bird"
@@ -109,7 +111,7 @@ export default function Page() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-18 py-24 justify-items-center md:justify-items-start">
           {researchHighlights.map((r) => {
             return (
-              <Link key={r.title} href={r.url} className="transform transition-transform duration-200 hover:scale-[1.01]">
+              <Link key={r.title} href={`/research/${r.url}`} className="transform transition-transform duration-200 hover:scale-[1.01]">
                 <div className="aspect-[1/1] w-full relative">
                   <Image
                     src={r.image}
