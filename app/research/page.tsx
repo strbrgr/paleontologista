@@ -7,6 +7,7 @@ import fossilizedLungs from "./fossilized-lungs/fossilized-lungs.jpg"
 import fossilizedOvaries from "./fossilized-ovaries/fossilized-ovaries.jpg"
 import microraptor from "./microraptors-last-meal/microraptor.jpg"
 import deathBy from "./death-by/death-by.jpg"
+import imparavis from "./attenboroughs-strange-bird/imparavis_square.jpg"
 
 export const metadata = {
   title: "Research Highlights",
@@ -22,7 +23,7 @@ const researchHighlights: { title: string, image: StaticImageData, alt: string, 
 },
 {
   title: "Attenborough’s strange bird",
-  image: mabirds,
+  image: imparavis,
   alt: "Alt",
   summary: "A summary",
   url: "/attenboroughs-strange-bird"
