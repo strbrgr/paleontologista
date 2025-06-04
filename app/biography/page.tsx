@@ -1,5 +1,7 @@
 import { SeparatorLine } from "@/components/ui/separator-line";
 import { HeaderFive, HeaderSix } from "@/components/ui/typography";
+import jingmai from "./jingmai_oconnor_with_fossil_slab.jpg"
+import Image from "next/image";
 
 export const metadata = {
   title: "Biography",
@@ -21,15 +23,24 @@ export default function Page() {
         <SeparatorLine />
       </div>
       <div>
-        <div>
-
-          <HeaderSix text="Let me tell you a little bit about my myself" />
+        <div className="flex flex-col xl:flex-row gap-12 xl:items-start items-center">
+          <div className="max-w-xl xl:max-w-lg w-full">
+            <Image
+              src={jingmai}
+              alt="Jingmai O'Connor in front of a fossil slab"
+              width={800}
+              height={600}
+              placeholder="blur"
+              priority={true}
+            />
+          </div>
           <div>
-            {bio.map(b => {
-              return (
-                <p>{b}</p>
-              )
-            })}
+            <HeaderSix text="Let me tell you a little bit about myself" />
+            <div className="max-w-prose">
+              {bio.map((b, i) => (
+                <p key={i} className="mb-2">{b}</p>
+              ))}
+            </div>
           </div>
         </div>
       </div>
