@@ -57,7 +57,7 @@ export default function Page() {
           <HeaderThree text="I’m paleontologist Jingmai O'Connor aka paleontologista aka the punk rock paleontologist." />
           <div className="flex flex-col gap-4 rounded-4xl w-fit">
             <Button asChild variant="outline">
-              <Link href="/bio">Read my full bio</Link>
+              <Link href="/biography">Read my full bio</Link>
             </Button>
             <Button asChild variant="outline">
               <Link href="/cv">Have a look at my CV</Link>
