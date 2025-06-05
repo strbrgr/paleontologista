@@ -39,69 +39,69 @@ const researchHighlights: { title: string, image: StaticImageData, alt: string, 
   title: "A mystery of tyrannosaur proportions",
   image: mabirds,
   alt: "Alt",
-  summary: "A summary",
+  summary: "Holes in the jaw of SUE the T. rex",
   url: "/a-mystery-of-tyrannosaur-proportions"
 },
 {
   title: "Best preserved Late Cretaceous enantiornithine",
   image: mabirds,
   alt: "Alt",
-  summary: "A summary",
+  summary: "A Late Cretaceous enantiornithine skull",
   url: "/best-preserved-late-cretaceous-enantiornithine"
 },
 {
   title: "Mystery of the stomach crystals",
   image: mabirds,
   alt: "Alt",
-  summary: "A summary",
+  summary: "Silicified soft tissue in the abdomen of an enantiornithine bird",
   url: "/mystery-of-stomach-crystals"
 },
 {
   title: "Enantiornithine with sexy tail",
   image: mabirds,
-  alt: "Alt",
+  alt: "Yuanchuavis, an enantiornithine bird",
   summary: "A summary",
   url: "/enantiornithine-with-sexy-tail"
 },
 {
   title: "99 Ma birds in amber",
   image: mabirds,
-  alt: "Alt",
+  alt: "An enantiornithine bird leg trapped in amber",
   summary: "A summary",
   url: "/99-ma-birds-in-amber"
 },
 {
   title: "Fossilized lungs",
   image: fossilizedLungs,
-  alt: "Alt",
+  alt: "Fossilized lungs in an Archaeorhynchus",
   summary: "A summary",
   url: "/fossilized-lungs"
 },
 {
   title: "Death by…",
   image: deathBy,
-  alt: "Alt",
+  alt: "Stones in the guts of a Yanornis",
   summary: "A summary",
   url: "/death-by"
 },
 {
   title: "A controversial bone tissue",
   image: medullaryBone,
-  alt: "Alt",
+  alt: "Enantiornithine bone tissue preserving medullary bone",
   summary: "A summary",
   url: "/a-controversial-bone-tissue"
 },
 {
   title: "Fossilized ovaries",
   image: fossilizedOvaries,
-  alt: "Alt",
+  alt: "Fossilized ovaries in an enantiornithine bird",
   summary: "A summary",
   url: "/fossilized-ovaries"
 },
 {
   title: "Microraptor’s last meal",
   image: microraptor,
-  alt: "Alt",
+  alt: "A microraptor with a lizard in its stomach",
   summary: "A summary",
   url: "/microraptors-last-meal"
 },
