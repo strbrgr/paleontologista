@@ -26,21 +26,21 @@ const researchHighlights: { title: string, image: StaticImageData, alt: string, 
   title: "Chicago archeopteryx",
   image: mabirds,
   alt: "Alt",
-  summary: "A summary",
+  summary: "The best Archaeopteryx – EVER! Check out info from the first of many papers on this beauty.",
   url: "/chicago-archeopteryx"
 },
 {
   title: "Attenborough’s strange bird",
   image: imparavis,
   alt: "Alt",
-  summary: "A summary",
+  summary: "The oldest toothless enantiornithine and the mystery of tooth loss in this clade.",
   url: "/attenboroughs-strange-bird"
 },
 {
   title: "Enantiornithines had it tough",
   image: mabirds,
   alt: "Alt",
-  summary: "A summary",
+  summary: "A small piece of amber preserving immature enantiornithine feathers tells the tale of hardships these babies faced.",
   url: "/baby-enantiornithines-had-it-tough"
 },
 ]
