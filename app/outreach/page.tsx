@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { outreach } from "../cv/outreach";
+import outreach_img from '@/app/outreach/img/outreach.jpg';
 
 export const metadata = {
   title: "Outreach",
@@ -9,6 +11,11 @@ export default function Page() {
   return (
     <section className="max-w-2xl mx-auto">
       <p className="mb-12">In order to maximize the impact of scientific research and utilize the power of paleontology as a gateway science, I happily engage in outreach as opportunities arise. This includes popular science articles, guest blogs (yes blogs!), responding to emails from students of all ages (go on, write me!), collections tours, and classroom visits.</p>
+
+      <div className="relative w-[375px] h-[500px] shrink-0 mx-auto mb-12">
+        <Image src={outreach_img} alt="Photo of Jingmai O'Connor doing outreach work in front of a group of children" width={375} height={500} placeholder="blur" priority={true} />
+      </div>
+
       {outreach.map((item) => (
         <div className="flex flex-row" key={item.year}>
           <p className="min-w-40 font-bold">{item.year}</p>
