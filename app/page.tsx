@@ -23,11 +23,11 @@ const expertise: { title: string; description: string }[] = [{
 }]
 
 const researchHighlights: { title: string, image: StaticImageData, alt: string, summary: string, url: string }[] = [{
-  title: "Chicago archeopteryx",
+  title: "Chicago archaeopteryx",
   image: mabirds,
   alt: "Alt",
   summary: "The best Archaeopteryx – EVER! Check out info from the first of many papers on this beauty.",
-  url: "/chicago-archeopteryx"
+  url: "/chicago-archaeopteryx"
 },
 {
   title: "Attenborough’s strange bird",
