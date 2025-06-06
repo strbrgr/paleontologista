@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { outreach } from "../cv/outreach";
+import { outreach } from "@/app/cv/outreach";
 import outreach_img from '@/app/outreach/img/outreach.jpg';
 
 export const metadata = {

@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import { HeaderFour } from '@/components/ui/typography'
 import Image, { StaticImageData } from 'next/image'
-import mabirds from "./99-ma-birds-in-amber/99-ma-birds.jpg"
-import medullaryBone from "./a-controversial-bone-tissue/medullary_bone.jpg"
-import fossilizedLungs from "./fossilized-lungs/fossilized-lungs.jpg"
-import fossilizedOvaries from "./fossilized-ovaries/fossilized-ovaries.jpg"
-import microraptor from "./microraptors-last-meal/microraptor.jpg"
-import deathBy from "./death-by/death-by.jpg"
-import imparavis from "./attenboroughs-strange-bird/imparavis_square.jpg"
+import mabirds from "@/app/research/99-ma-birds-in-amber/99-ma-birds.jpg"
+import medullaryBone from "@/app/research/a-controversial-bone-tissue/medullary_bone.jpg"
+import fossilizedLungs from "@/app/research/fossilized-lungs/fossilized-lungs.jpg"
+import fossilizedOvaries from "@/app/research/fossilized-ovaries/fossilized-ovaries.jpg"
+import microraptor from "@/app/research/microraptors-last-meal/microraptor.jpg"
+import deathBy from "@/app/research/death-by/death-by.jpg"
+import imparavis from "@/app/research/attenboroughs-strange-bird/imparavis_square.jpg"
 
 export const metadata = {
   title: "Research Highlights",

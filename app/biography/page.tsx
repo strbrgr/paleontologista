@@ -1,6 +1,6 @@
 import { SeparatorLine } from "@/components/ui/separator-line";
 import { HeaderFive, HeaderSix } from "@/components/ui/typography";
-import jingmai from "./jingmai_oconnor_with_fossil_slab.jpg"
+import jingmai from "@/app/biography/jingmai_oconnor_with_fossil_slab.jpg"
 import Image from "next/image";
 
 export const metadata = {
