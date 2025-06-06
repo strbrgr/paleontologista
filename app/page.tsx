@@ -2,9 +2,11 @@ import { Button } from "@/components/ui/button";
 import { HeaderOne, HeaderTwo, HeaderThree, HeaderFour } from "@/components/ui/typography";
 import { SeparatorLine } from "@/components/ui/separator-line";
 import Link from "next/link";
-import jingmai from "../public/img/JingmaiOConnor2019.jpg"
-import mabirds from "./research/99-ma-birds-in-amber/99-ma-birds.jpg"
-import imparavis from "./research/attenboroughs-strange-bird/imparavis_square.jpg"
+import jingmai from "@/app/JingmaiOConnor2019.jpg"
+import mabirds from "@/app/research/99-ma-birds-in-amber/99-ma-birds.jpg"
+import imparavis from "@/app/research/attenboroughs-strange-bird/imparavis_square.jpg"
+import outreach from '@/app/outreach/img/outreach.jpg';
+import dbn from '@/app/field-work/img/dead_bird_nerds_2025.jpg';
 
 import Image, { StaticImageData } from "next/image";
 
@@ -25,21 +27,21 @@ const expertise: { title: string; description: string }[] = [{
 const researchHighlights: { title: string, image: StaticImageData, alt: string, summary: string, url: string }[] = [{
   title: "Chicago archaeopteryx",
   image: mabirds,
-  alt: "Alt",
+  alt: "Image of the Chicago Archaeopteryx fossil",
   summary: "The best Archaeopteryx – EVER! Check out info from the first of many papers on this beauty.",
   url: "/chicago-archaeopteryx"
 },
 {
   title: "Attenborough’s strange bird",
   image: imparavis,
-  alt: "Alt",
+  alt: "Image of a enantiornithine fossil",
   summary: "The oldest toothless enantiornithine and the mystery of tooth loss in this clade.",
   url: "/attenboroughs-strange-bird"
 },
 {
   title: "Enantiornithines had it tough",
   image: mabirds,
-  alt: "Alt",
+  alt: "Image of a small piece of amber with enantiornithine feathers",
   summary: "A small piece of amber preserving immature enantiornithine feathers tells the tale of hardships these babies faced.",
   url: "/baby-enantiornithines-had-it-tough"
 },
@@ -49,7 +51,7 @@ export default function Page() {
   return (
     <div className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start my-8">
       <div className="flex flex-wrap md:flex-nowrap p-6 sm:p-10 md:p-20 gap-12 justify-center md:justify-start">
-        <div className="relative w-[375px] h-[500px] shrink-0">
+        <div >
           <Image src={jingmai} alt="Portrait of Jingmai O'Connor" width={375} height={500} placeholder="blur" priority={true} />
         </div>
         <div className="flex flex-col gap-4 flex-1 min-w-[300px]">
@@ -133,13 +135,18 @@ export default function Page() {
         <HeaderTwo text="Outreach" />
         <SeparatorLine />
         <div>
-          <div className="mt-8">
-            <HeaderFour text="In order to maximize the impact of scientific research and utilize the power of paleontology as a gateway science, I happily engage in outreach as opportunities arise." />
-            <Button asChild variant="outline">
-              <Link href="/contact">Get in touch</Link>
-            </Button>
-            <SeparatorLine />
-            <p className="max-w-md mt-12">My outreach also includes popular science articles, guest blogs (yes blogs!), responding to emails from students of all ages (go on, write me!), collections tours, and classroom visits.</p>
+          <div className="mt-8 flex flex-row flex-wrap md:flex-nowrap gap-12">
+            <div className="relative w-[375px] h-[500px] shrink-0 mx-auto mb-12">
+              <Image src={outreach} alt="Photo of Jingmai O'Connor doing outreach work in front of a group of children" width={375} height={500} placeholder="blur" priority={true} />
+            </div>
+            <div>
+              <HeaderFour text="In order to maximize the impact of scientific research and utilize the power of paleontology as a gateway science, I happily engage in outreach as opportunities arise." />
+              <Button asChild variant="outline">
+                <Link href="/contact">Get in touch</Link>
+              </Button>
+              <SeparatorLine />
+              <p className="max-w-md mt-12">My outreach also includes popular science articles, guest blogs (yes blogs!), responding to emails from students of all ages (go on, write me!), collections tours, and classroom visits.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -149,6 +156,7 @@ export default function Page() {
         <SeparatorLine />
         <div className="mt-12">
           <HeaderFour text="I have been lucky to participate in Field Work around the world." />
+          <Image className="mx-auto" src={dbn} alt="Group photo of Dead Birds Nerds in 2025" width={800} height={600} placeholder="blur" priority={false} />
           <Button asChild variant="outline">
             <Link href="/field-work">More Content</Link>
           </Button>
