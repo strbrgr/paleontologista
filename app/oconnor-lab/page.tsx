@@ -1,10 +1,10 @@
-import dbn from '@/app/oconnor-lab/img/dead_bird_nerds_2025.jpg';
 import peichen from '@/app/oconnor-lab/img/dbn_peichen.jpg';
 import alexander from '@/app/oconnor-lab/img/dbn_alexander.jpg';
 import isaiah from '@/app/oconnor-lab/img/dbn_isaiah.jpg';
 import yosef from '@/app/oconnor-lab/img/dbn_yosef.jpg';
 import dbn_logo from '@/app/oconnor-lab/img/dead_bird_nerds_logo.jpg';
 import Image, { StaticImageData } from 'next/image';
+import { HeaderFive, HeaderFour } from '@/components/ui/typography';
 
 export const metadata = {
   title: "O'Connor Lab",
@@ -23,26 +23,30 @@ const labMembers: { name: string, image: StaticImageData, research: string, webs
     name: "Alexander D. Clark (PhD student, University of Chicago)",
     image: alexander,
     research: "I am primarily interested in comparative and functional anatomy with a particular focus in both extant and extinct birds. I have worked as a wildlife biologist (6+ years of field work, and an MSc in wildlife biology) in a number of environments researching bird ecology and behavior, and hope to apply what I’ve learned in my paleontological work. I am really excited to try and figure out Mesozoic bird behaviors, diets, and ecologies using neontological comparative and functional anatomical approaches. My current studies focus on using osteological correlates of Mesozoic birds to piece together the ways they may have moved and flown. Additionally, I hope to look deeper into the preserved plumages of Mesozoic birds and assess what primary pressures resulted in such similar display structures as some birds today.",
-    website: "www.alexanderclarkresearch.com",
+    website: "https://www.alexanderclarkresearch.com",
     otherLink: "https://scholar.google.com/citations?hl=en&oi=ao&user=SEcXEdQAAAAJ"
   },
   {
     name: "Isaiah McKinney",
     image: isaiah,
-    research: "Isaiah is a Ph.D. student exploring how avians radiate and diversify following the extinction of the non-avian dinosaurs through various morphological characteristics across the Cretaceous- Paleogene boundary, relying heavily on the Green River Formation avifauna.",
+    research: "Isaiah is a Ph.D. student exploring how avians radiate and diversify following the extinction of the non-avian dinosaurs through various morphological characteristics across the Cretaceous-Paleogene boundary, relying heavily on the Green River Formation avifauna.",
     website: null,
     otherLink: null
   },
 ]
 
-const pastLabMembers: { name: string, image: StaticImageData, website: string | null, otherLink: string | null }[] = [
-  {
-    name: "Yosef Kiat (postdoctoral researcher)",
-    image: yosef,
-    website: "https://yosef-kiat.weebly.com/",
-    otherLink: null
-  },
-]
+// const pastLabMembers: { name: string, image: StaticImageData, research: string, website: string | null, otherLink: string | null }[] = [
+//   {
+//     name: "Yosef Kiat (postdoctoral researcher)",
+//     website: "https://yosef-kiat.weebly.com/",
+//     otherLink: null
+//   },
+//   {
+//     name: "Matteo Fabbri (postdoctoral researcher)",
+//     website: null,
+//     otherLink: null
+//   },
+// ]
 
 export default function Page() {
   return (
@@ -53,7 +57,43 @@ export default function Page() {
         <p>We are an international group and aim to provide training and opportunities to ensure success no matter the background of the individual. Paleontology is for everyone!</p>
         <p>Paid internship opportunities for undergraduate students are available through various programs at the <a className="underline" href="https://www.fieldmuseum.org" target="_blank" rel="noopener noreferrer">Field Museum</a>. For additional opportunities email <a href="mailto:jingmai@fieldmuseum.org" className="underline">jingmai@fieldmuseum.org</a>.</p>
       </div>
-      <Image className="mx-auto" src={dbn} alt="Group photo of Dead Birds Nerds in 2025" width={800} height={600} placeholder="blur" priority={false} />
+
+      <HeaderFour text='Current Members' />
+      {
+        labMembers.map((m, idx) => {
+          return (
+            <div key={idx} className="mb-12">
+              <HeaderFive text={m.name} />
+              <div className="flex justify-center my-4">
+                <Image
+                  src={m.image}
+                  alt={`Photo of lab member ${m.name}`}
+                  width={idx === 0 ? 500 : 375}
+                  height={500}
+                  placeholder="blur"
+                />
+              </div>
+              {m.research}
+              <div className='flex justify-center gap-8 mt-4'>
+                {m.website && (
+                  <a href={m.website} className="underline" target="_blank" rel="noopener noreferrer">
+                    Visit Website
+                  </a>
+                )}
+
+                {m.otherLink && (
+                  <a href={m.otherLink} className="underline" target="_blank" rel="noopener noreferrer">
+                    Further Info
+                  </a>
+                )}
+              </div>
+            </div>
+          );
+        })
+      }
+
+      <HeaderFour text='Past Members' />
+
     </section>
   )
 }
