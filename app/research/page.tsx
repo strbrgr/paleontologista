@@ -1,6 +1,12 @@
 import Link from 'next/link'
 import { HeaderFour } from '@/components/ui/typography'
 import Image, { StaticImageData } from 'next/image'
+import archaeopteryx from "@/app/research/chicago-archaeopteryx/chicago_archaeopteryx.jpg"
+import baby_enantiornithines from "@/app/research/baby-enantiornithines-had-it-tough/baby_enantiornithines_had_it_tough_square.jpg"
+import late_cretaceous from "@/app/research/best-preserved-late-cretaceous-enantiornithine/late_cretaceous_enantiornithine.jpg"
+import stomach_crystals from "@/app/research/mystery-of-stomach-crystals/stomach_crystals.jpg"
+import sexy_tail from "@/app/research/enantiornithine-with-sexy-tail/enantiornithine_sexy_tail.jpg"
+
 import mabirds from "@/app/research/99-ma-birds-in-amber/99-ma-birds.jpg"
 import medullaryBone from "@/app/research/a-controversial-bone-tissue/medullary_bone.jpg"
 import fossilizedLungs from "@/app/research/fossilized-lungs/fossilized-lungs.jpg"
@@ -16,10 +22,10 @@ export const metadata = {
 
 const researchHighlights: { title: string, image: StaticImageData, alt: string, summary: string, url: string }[] = [{
   title: "Chicago archeopteryx",
-  image: mabirds,
+  image: archaeopteryx,
   alt: "Alt",
   summary: "The best Archaeopteryx – EVER! Check out info from the first of many papers on this beauty.",
-  url: "/chicago-archeopteryx"
+  url: "/chicago-archaeopteryx"
 },
 {
   title: "Attenborough’s strange bird",
@@ -29,8 +35,8 @@ const researchHighlights: { title: string, image: StaticImageData, alt: string, 
   url: "/attenboroughs-strange-bird"
 },
 {
-  title: "Enantiornithines had it tough",
-  image: mabirds,
+  title: "Baby Enantiornithines had it tough",
+  image: baby_enantiornithines,
   alt: "Alt",
   summary: "A small piece of amber preserving immature enantiornithine feathers tells the tale of hardships these babies faced.",
   url: "/baby-enantiornithines-had-it-tough"
@@ -44,21 +50,21 @@ const researchHighlights: { title: string, image: StaticImageData, alt: string, 
 },
 {
   title: "Best preserved Late Cretaceous enantiornithine",
-  image: mabirds,
+  image: late_cretaceous,
   alt: "A Late Cretaceous enantiornithine skull",
   summary: "Late Cretaceous fossil birds are rare. When found, they are usually very incomplete hindering attempts to understand broad trends in avian evolution across the Cretaceous.",
   url: "/best-preserved-late-cretaceous-enantiornithine"
 },
 {
   title: "Mystery of the stomach crystals",
-  image: mabirds,
+  image: stomach_crystals,
   alt: "Silicified soft tissue in the abdomen of an enantiornithine bird",
   summary: "There is almost no evidence of enantiornithine diet in the form of ingested remains. This is strange because thousands of well-preserved specimens have been recovered and such evidence exists for contemporaneous ornithuromorphs known from far fewer specimens. As such, any evidence pertaining to enantiornithine diet and digestive function is important.",
   url: "/mystery-of-stomach-crystals"
 },
 {
   title: "Enantiornithine with sexy tail",
-  image: mabirds,
+  image: sexy_tail,
   alt: "Yuanchuavis, an enantiornithine bird",
   summary: "The tail is the most diverse part of a bird’s plumage – this is because while the tail can help in flight, its not essential, and thus free to evolve elaborate sexual ornaments in certain conditions.",
   url: "/enantiornithine-with-sexy-tail"
