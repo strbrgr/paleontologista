@@ -1,7 +1,8 @@
 import peichen from '@/app/oconnor-lab/img/dbn_peichen.jpg';
 import alexander from '@/app/oconnor-lab/img/dbn_alexander.jpg';
 import isaiah from '@/app/oconnor-lab/img/dbn_isaiah.jpg';
-import yosef from '@/app/oconnor-lab/img/dbn_yosef.jpg';
+import yosef from '@/app/oconnor-lab/img/past_lab_yosef.jpg';
+import matteo from '@/app/oconnor-lab/img/past_lab_matteo.jpg';
 import dbn_logo from '@/app/oconnor-lab/img/dead_bird_nerds_logo.jpg';
 import Image, { StaticImageData } from 'next/image';
 import { HeaderFive, HeaderFour } from '@/components/ui/typography';
@@ -35,18 +36,22 @@ const labMembers: { name: string, image: StaticImageData, research: string, webs
   },
 ]
 
-// const pastLabMembers: { name: string, image: StaticImageData, research: string, website: string | null, otherLink: string | null }[] = [
-//   {
-//     name: "Yosef Kiat (postdoctoral researcher)",
-//     website: "https://yosef-kiat.weebly.com/",
-//     otherLink: null
-//   },
-//   {
-//     name: "Matteo Fabbri (postdoctoral researcher)",
-//     website: null,
-//     otherLink: null
-//   },
-// ]
+const pastLabMembers: { name: string, image: StaticImageData, research: string, website: string | null, otherLink: string | null }[] = [
+  {
+    name: "Yosef Kiat (postdoctoral researcher)",
+    image: yosef,
+    research: "I am primarily interested in comparative and functional anatomy with a particular focus in both extant and extinct birds. I have worked as a wildlife biologist (6+ years of field work, and an MSc in wildlife biology) in a number of environments researching bird ecology and behavior, and hope to apply what I’ve learned in my paleontological work. I am really excited to try and figure out Mesozoic bird behaviors, diets, and ecologies using neontological comparative and functional anatomical approaches. My current studies focus on using osteological correlates of Mesozoic birds to piece together the ways they may have moved and flown. Additionally, I hope to look deeper into the preserved plumages of Mesozoic birds and assess what primary pressures resulted in such similar display structures as some birds today.",
+    website: "https://yosef-kiat.weebly.com/",
+    otherLink: null
+  },
+  {
+    name: "Matteo Fabbri (postdoctoral researcher)",
+    image: matteo,
+    research: "I am primarily interested in comparative and functional anatomy with a particular focus in both extant and extinct birds. I have worked as a wildlife biologist (6+ years of field work, and an MSc in wildlife biology) in a number of environments researching bird ecology and behavior, and hope to apply what I’ve learned in my paleontological work. I am really excited to try and figure out Mesozoic bird behaviors, diets, and ecologies using neontological comparative and functional anatomical approaches. My current studies focus on using osteological correlates of Mesozoic birds to piece together the ways they may have moved and flown. Additionally, I hope to look deeper into the preserved plumages of Mesozoic birds and assess what primary pressures resulted in such similar display structures as some birds today.",
+    website: null,
+    otherLink: null
+  },
+]
 
 export default function Page() {
   return (
@@ -93,6 +98,38 @@ export default function Page() {
       }
 
       <HeaderFour text='Past Members' />
+      {
+        pastLabMembers.map((m, idx) => {
+          return (
+            <div key={idx} className="mb-12">
+              <HeaderFive text={m.name} />
+              <div className="flex justify-center my-4">
+                <Image
+                  src={m.image}
+                  alt={`Photo of lab member ${m.name}`}
+                  width={idx === 0 ? 800 : 375}
+                  height={500}
+                  placeholder="blur"
+                />
+              </div>
+              {m.research}
+              <div className='flex justify-center gap-8 mt-4'>
+                {m.website && (
+                  <a href={m.website} className="underline" target="_blank" rel="noopener noreferrer">
+                    Visit Website
+                  </a>
+                )}
+
+                {m.otherLink && (
+                  <a href={m.otherLink} className="underline" target="_blank" rel="noopener noreferrer">
+                    Further Info
+                  </a>
+                )}
+              </div>
+            </div>
+          );
+        })
+      }
 
     </section>
   )
