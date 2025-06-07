@@ -7,6 +7,8 @@ import mabirds from "@/app/research/99-ma-birds-in-amber/99-ma-birds.jpg"
 import imparavis from "@/app/research/attenboroughs-strange-bird/imparavis_square.jpg"
 import outreach from '@/app/outreach/img/outreach.jpg';
 import dbn from '@/app/field-work/img/dead_bird_nerds_2025.jpg';
+import archaeopteryx from "@/app/research/chicago-archaeopteryx/chicago_archaeopteryx.jpg"
+import baby_enantiornithines from "@/app/research/baby-enantiornithines-had-it-tough/baby_enantiornithines_had_it_tough_square.jpg"
 
 import Image, { StaticImageData } from "next/image";
 
@@ -26,7 +28,7 @@ const expertise: { title: string; description: string }[] = [{
 
 const researchHighlights: { title: string, image: StaticImageData, alt: string, summary: string, url: string }[] = [{
   title: "Chicago archaeopteryx",
-  image: mabirds,
+  image: archaeopteryx,
   alt: "Image of the Chicago Archaeopteryx fossil",
   summary: "The best Archaeopteryx – EVER! Check out info from the first of many papers on this beauty.",
   url: "/chicago-archaeopteryx"
@@ -39,8 +41,8 @@ const researchHighlights: { title: string, image: StaticImageData, alt: string, 
   url: "/attenboroughs-strange-bird"
 },
 {
-  title: "Enantiornithines had it tough",
-  image: mabirds,
+  title: "Baby enantiornithines had it tough",
+  image: baby_enantiornithines,
   alt: "Image of a small piece of amber with enantiornithine feathers",
   summary: "A small piece of amber preserving immature enantiornithine feathers tells the tale of hardships these babies faced.",
   url: "/baby-enantiornithines-had-it-tough"
