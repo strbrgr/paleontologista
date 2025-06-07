@@ -48,7 +48,7 @@ const pastLabMembers: { name: string, image: StaticImageData, research: string, 
   {
     name: "Matteo Fabbri (postdoctoral researcher)",
     image: matteo,
-    research: "I am primarily interested in comparative and functional anatomy with a particular focus in both extant and extinct birds. I have worked as a wildlife biologist (6+ years of field work, and an MSc in wildlife biology) in a number of environments researching bird ecology and behavior, and hope to apply what I’ve learned in my paleontological work. I am really excited to try and figure out Mesozoic bird behaviors, diets, and ecologies using neontological comparative and functional anatomical approaches. My current studies focus on using osteological correlates of Mesozoic birds to piece together the ways they may have moved and flown. Additionally, I hope to look deeper into the preserved plumages of Mesozoic birds and assess what primary pressures resulted in such similar display structures as some birds today.",
+    research: "Matteo is an Evolutionary Biologist using an Evo-Devo approach to untangle the evolution of phenotypes among amniotes. While the study of the fossil record is fundamental to track the tempo and mode of morphological divergence in deep time leading to modern diversity, Matteo uses neontological data and developmental biology to infer mechanistic patterns driving phenotypical innovation.",
     website: null,
     otherLink: null
   },
