@@ -6,6 +6,7 @@ import matteo from '@/app/oconnor-lab/img/past_lab_matteo.jpg';
 import dbn_logo from '@/app/oconnor-lab/img/dead_bird_nerds_logo.jpg';
 import Image, { StaticImageData } from 'next/image';
 import { HeaderFive, HeaderFour } from '@/components/ui/typography';
+import Layout from '@/components/ui/layout';
 
 export const metadata = {
   title: "O'Connor Lab",
@@ -55,82 +56,83 @@ const pastLabMembers: { name: string, image: StaticImageData, research: string, 
 
 export default function Page() {
   return (
-    <section className="max-w-2xl mx-auto">
-      <Image className="mx-auto" src={dbn_logo} alt="Dead Bird Nerds Logo" width={500} height={500} placeholder="blur" priority={true} />
-      <div className="my-12">
-        <p>The O’Connor research group focuses on archosaur evolution with a specialization on the origin and evolution of flight and birds.</p>
-        <p>We are an international group and aim to provide training and opportunities to ensure success no matter the background of the individual. Paleontology is for everyone!</p>
-        <p>Paid internship opportunities for undergraduate students are available through various programs at the <a className="underline" href="https://www.fieldmuseum.org" target="_blank" rel="noopener noreferrer">Field Museum</a>. For additional opportunities email <a href="mailto:jingmai@fieldmuseum.org" className="underline">jingmai@fieldmuseum.org</a>.</p>
-      </div>
+    <Layout>
+      <section className="max-w-2xl mx-auto">
+        <Image className="mx-auto" src={dbn_logo} alt="Dead Bird Nerds Logo" width={500} height={500} placeholder="blur" priority={true} />
+        <div className="my-12">
+          <p>The O’Connor research group focuses on archosaur evolution with a specialization on the origin and evolution of flight and birds.</p>
+          <p>We are an international group and aim to provide training and opportunities to ensure success no matter the background of the individual. Paleontology is for everyone!</p>
+          <p>Paid internship opportunities for undergraduate students are available through various programs at the <a className="underline" href="https://www.fieldmuseum.org" target="_blank" rel="noopener noreferrer">Field Museum</a>. For additional opportunities email <a href="mailto:jingmai@fieldmuseum.org" className="underline">jingmai@fieldmuseum.org</a>.</p>
+        </div>
 
-      <HeaderFour text='Current Members' />
-      {
-        labMembers.map((m, idx) => {
-          return (
-            <div key={idx} className="mb-12">
-              <HeaderFive text={m.name} />
-              <div className="flex justify-center my-4">
-                <Image
-                  src={m.image}
-                  alt={`Photo of lab member ${m.name}`}
-                  width={idx === 0 ? 500 : 375}
-                  height={500}
-                  placeholder="blur"
-                />
+        <HeaderFour text='Current Members' />
+        {
+          labMembers.map((m, idx) => {
+            return (
+              <div key={idx} className="mb-12">
+                <HeaderFive text={m.name} />
+                <div className="flex justify-center my-4">
+                  <Image
+                    src={m.image}
+                    alt={`Photo of lab member ${m.name}`}
+                    width={idx === 0 ? 500 : 375}
+                    height={500}
+                    placeholder="blur"
+                  />
+                </div>
+                {m.research}
+                <div className='flex justify-center gap-8 mt-4'>
+                  {m.website && (
+                    <a href={m.website} className="underline" target="_blank" rel="noopener noreferrer">
+                      Visit Website
+                    </a>
+                  )}
+
+                  {m.otherLink && (
+                    <a href={m.otherLink} className="underline" target="_blank" rel="noopener noreferrer">
+                      Further Info
+                    </a>
+                  )}
+                </div>
               </div>
-              {m.research}
-              <div className='flex justify-center gap-8 mt-4'>
-                {m.website && (
-                  <a href={m.website} className="underline" target="_blank" rel="noopener noreferrer">
-                    Visit Website
-                  </a>
-                )}
+            );
+          })
+        }
 
-                {m.otherLink && (
-                  <a href={m.otherLink} className="underline" target="_blank" rel="noopener noreferrer">
-                    Further Info
-                  </a>
-                )}
+        <HeaderFour text='Past Members' />
+        {
+          pastLabMembers.map((m, idx) => {
+            return (
+              <div key={idx} className="mb-12">
+                <HeaderFive text={m.name} />
+                <div className="flex justify-center my-4">
+                  <Image
+                    src={m.image}
+                    alt={`Photo of lab member ${m.name}`}
+                    width={idx === 0 ? 800 : 375}
+                    height={500}
+                    placeholder="blur"
+                  />
+                </div>
+                {m.research}
+                <div className='flex justify-center gap-8 mt-4'>
+                  {m.website && (
+                    <a href={m.website} className="underline" target="_blank" rel="noopener noreferrer">
+                      Visit Website
+                    </a>
+                  )}
+
+                  {m.otherLink && (
+                    <a href={m.otherLink} className="underline" target="_blank" rel="noopener noreferrer">
+                      Further Info
+                    </a>
+                  )}
+                </div>
               </div>
-            </div>
-          );
-        })
-      }
-
-      <HeaderFour text='Past Members' />
-      {
-        pastLabMembers.map((m, idx) => {
-          return (
-            <div key={idx} className="mb-12">
-              <HeaderFive text={m.name} />
-              <div className="flex justify-center my-4">
-                <Image
-                  src={m.image}
-                  alt={`Photo of lab member ${m.name}`}
-                  width={idx === 0 ? 800 : 375}
-                  height={500}
-                  placeholder="blur"
-                />
-              </div>
-              {m.research}
-              <div className='flex justify-center gap-8 mt-4'>
-                {m.website && (
-                  <a href={m.website} className="underline" target="_blank" rel="noopener noreferrer">
-                    Visit Website
-                  </a>
-                )}
-
-                {m.otherLink && (
-                  <a href={m.otherLink} className="underline" target="_blank" rel="noopener noreferrer">
-                    Further Info
-                  </a>
-                )}
-              </div>
-            </div>
-          );
-        })
-      }
-
-    </section>
+            );
+          })
+        }
+      </section>
+    </Layout>
   )
 }

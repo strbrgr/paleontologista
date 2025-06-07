@@ -1,6 +1,7 @@
 import { HeaderFive, HeaderSix } from "@/components/ui/typography";
 import { fieldWork } from "./fieldWork";
 import { outreach } from "./outreach";
+import Layout from "@/components/ui/layout";
 
 export const metadata = {
   title: "CV",
@@ -612,67 +613,70 @@ function Content(props: { header: string; content: { year: string; content: stri
 export default function Page() {
 
   return (
-    <section className="max-w-2xl mx-auto">
-      <div className="mb-12">
-        <HeaderFive text="Jingmai Kathleen O'Connor" />
-        <HeaderFive text="邹晶梅" />
-      </div>
-      <Content header="Current Position" content={currentPosition} />
-      <Content header="Faculty Positions" content={facultyPositions} />
-      <Content header="Education and Training" content={educationAndTraining} />
-      <Content header="Professional Appointments & Responsibilities" content={professionalAppointments} />
-      <Content header="Awards, Honors, Grants and Fellowships" content={awardsAndFellowships} />
-      <Content header="Teaching Experience" content={teachingExperience} />
-      <Content header="Students [Officially] Supervised" content={studentsSupervised} />
-      <Content header="Students [Unofficially] Supervised" content={studentsUnofficiallySupervised} />
-      <Content header="Post-doctoral Researchers Supervised" content={postdoctoralResearchersSupervised} />
-      <Content header="Undergraduate Students Supervised" content={undergraduateStudentsSupervised} />
-      <Content header="Recent Graduates Supervised" content={recentGraduatesSupervised} />
-      <Content header="Undergraduate Interns" content={undergraduateInterns} />
-      <Content header="Field Work in Paleontology" content={fieldWork} />
-      <Content header="Memberships" content={memberships} />
-      <Content header="Invited Presentations" content={invitedPresentations} />
+    <Layout>
 
-      <HeaderFive text="Media Coverage & Appearances" />
-      <div className="mb-6">
-        <HeaderSix text="Printed interviews" />
-        <p>
-          Current Biology (2016), Nature (2017), Smithsonian Magazine (2018), Geo Kompakt (2018), Rewire (2019), Massive Science (2020), USC Trojan Family (2020), Chicago Sun Times (2020, 2023), Medium (2021), Lion’s Roar Magazine (2021), Chicago Magazine (2023)
-        </p>
-      </div>
-      <div className="mb-6">
-        <HeaderSix text="Podcasts" />
-        <p>
-          Friends Like Us (2015), We Know Dino (2018), VitalCorps Salon (2019), Paleonerds (2020), BBC One Earth (2021), If/Then (2021), Brains On (2021), Pulsar (2021), Unexplainable (2021), NPR Everyone & Their Mom (2022), Solve It (2022), Talk Nerdy (2022), Cranbook Museum (2022), Jura-sick (2023), Ignition Sequence (2024), NPR Shortwave (2024), Moment of Um (2025), Brains On (2025)
-        </p>
-      </div>
-      <div className="mb-6">
-        <HeaderSix text="Documentaries" />
-        <p>
-          Science Skills! Paleontology (Science Insider, 2022), Breakthrough: Women in STEM (Science Friday, 2019), SELF scientist profile (CAS, 2018), When Whales Walked (PBS, 2019), Why Dinosaurs (2023), The Bones (2024), End Cretaceous extinction (release and title TBD), Le rêve de Léonard, les secrets du vol dans la nature (2024), IMAX T. rex (2024), Prehistoric Beasts Season 2 (2024), Dino-birds (PBS, 2025), Mission Unstoppable (2025)
-        </p>
-      </div>
+      <section className="max-w-2xl mx-auto">
+        <div className="mb-12">
+          <HeaderFive text="Jingmai Kathleen O'Connor" />
+          <HeaderFive text="邹晶梅" />
+        </div>
+        <Content header="Current Position" content={currentPosition} />
+        <Content header="Faculty Positions" content={facultyPositions} />
+        <Content header="Education and Training" content={educationAndTraining} />
+        <Content header="Professional Appointments & Responsibilities" content={professionalAppointments} />
+        <Content header="Awards, Honors, Grants and Fellowships" content={awardsAndFellowships} />
+        <Content header="Teaching Experience" content={teachingExperience} />
+        <Content header="Students [Officially] Supervised" content={studentsSupervised} />
+        <Content header="Students [Unofficially] Supervised" content={studentsUnofficiallySupervised} />
+        <Content header="Post-doctoral Researchers Supervised" content={postdoctoralResearchersSupervised} />
+        <Content header="Undergraduate Students Supervised" content={undergraduateStudentsSupervised} />
+        <Content header="Recent Graduates Supervised" content={recentGraduatesSupervised} />
+        <Content header="Undergraduate Interns" content={undergraduateInterns} />
+        <Content header="Field Work in Paleontology" content={fieldWork} />
+        <Content header="Memberships" content={memberships} />
+        <Content header="Invited Presentations" content={invitedPresentations} />
 
-      <Content header="Outreach" content={outreach} />
-      <Content header="Exhibitions" content={exhibitions} />
+        <HeaderFive text="Media Coverage & Appearances" />
+        <div className="mb-6">
+          <HeaderSix text="Printed interviews" />
+          <p>
+            Current Biology (2016), Nature (2017), Smithsonian Magazine (2018), Geo Kompakt (2018), Rewire (2019), Massive Science (2020), USC Trojan Family (2020), Chicago Sun Times (2020, 2023), Medium (2021), Lion’s Roar Magazine (2021), Chicago Magazine (2023)
+          </p>
+        </div>
+        <div className="mb-6">
+          <HeaderSix text="Podcasts" />
+          <p>
+            Friends Like Us (2015), We Know Dino (2018), VitalCorps Salon (2019), Paleonerds (2020), BBC One Earth (2021), If/Then (2021), Brains On (2021), Pulsar (2021), Unexplainable (2021), NPR Everyone & Their Mom (2022), Solve It (2022), Talk Nerdy (2022), Cranbook Museum (2022), Jura-sick (2023), Ignition Sequence (2024), NPR Shortwave (2024), Moment of Um (2025), Brains On (2025)
+          </p>
+        </div>
+        <div className="mb-6">
+          <HeaderSix text="Documentaries" />
+          <p>
+            Science Skills! Paleontology (Science Insider, 2022), Breakthrough: Women in STEM (Science Friday, 2019), SELF scientist profile (CAS, 2018), When Whales Walked (PBS, 2019), Why Dinosaurs (2023), The Bones (2024), End Cretaceous extinction (release and title TBD), Le rêve de Léonard, les secrets du vol dans la nature (2024), IMAX T. rex (2024), Prehistoric Beasts Season 2 (2024), Dino-birds (PBS, 2025), Mission Unstoppable (2025)
+          </p>
+        </div>
 
-      <HeaderFive text="Additional Services" />
-      <div className="mb-6">
-        <HeaderSix text="Peer Reviews" />
-        <p>
-          Anales de Paleontologie, Atti della Società Italiana di Scienze Naturali e del Museo Civico di Storia Naturale di Milano, Avian Research, Biology Letters, BMC Biology (2), Communications Biology (2), Cretaceous Research (11), Current Biology (7), eLife (4), Evolution, Fossil Studies, Frontiers in Earth Science, Geoconservation Research, Geodiversitas, Historical Biology (5), iScience (2), Journal of Anatomy, Journal of Evolutionary Biology (3), Journal of Morphology (2), Journal of Ornithology, Journal of Paleontology (3), Journal of Systematic Palaeontology (6), Journal of Vertebrate Paleontology (13), Lethaia, National Science Review (3), Nature (6), Nature Communications, Nature Ecology and Evolution (2), Naturwissenschaften, New Mexico Natural History Museum Bulletin (3), Paleobiology, Palaeontology (3), Palaeontological Polonica, Palaeoworld, PeerJ (4), Philosophical Transactions of the Royal Society B, PLoS ONE (5), Proceedings of the National Academy of Science (1), Proceedings of the Royal Society B (3), Science (4), Science Advances (4), Scientific Reports (3), Spanish Journal of Palaeontology, Systematic Palaeontology (2), The Anatomical Record, The Innovation (2), Vertebrata Palasiatica (6), Zoological Journal of the Linnean Society (2)
-        </p>
-      </div>
+        <Content header="Outreach" content={outreach} />
+        <Content header="Exhibitions" content={exhibitions} />
 
-      <div className="mb-6">
-        <HeaderSix text="Grant Reviews" />
-        <p>
-          Hong Kong Research Grants Council (6); Medical Research Council, UKRI (2); Royal Society University Research Fellowship (1); Swiss National Science Foundation.
-        </p>
-      </div>
+        <HeaderFive text="Additional Services" />
+        <div className="mb-6">
+          <HeaderSix text="Peer Reviews" />
+          <p>
+            Anales de Paleontologie, Atti della Società Italiana di Scienze Naturali e del Museo Civico di Storia Naturale di Milano, Avian Research, Biology Letters, BMC Biology (2), Communications Biology (2), Cretaceous Research (11), Current Biology (7), eLife (4), Evolution, Fossil Studies, Frontiers in Earth Science, Geoconservation Research, Geodiversitas, Historical Biology (5), iScience (2), Journal of Anatomy, Journal of Evolutionary Biology (3), Journal of Morphology (2), Journal of Ornithology, Journal of Paleontology (3), Journal of Systematic Palaeontology (6), Journal of Vertebrate Paleontology (13), Lethaia, National Science Review (3), Nature (6), Nature Communications, Nature Ecology and Evolution (2), Naturwissenschaften, New Mexico Natural History Museum Bulletin (3), Paleobiology, Palaeontology (3), Palaeontological Polonica, Palaeoworld, PeerJ (4), Philosophical Transactions of the Royal Society B, PLoS ONE (5), Proceedings of the National Academy of Science (1), Proceedings of the Royal Society B (3), Science (4), Science Advances (4), Scientific Reports (3), Spanish Journal of Palaeontology, Systematic Palaeontology (2), The Anatomical Record, The Innovation (2), Vertebrata Palasiatica (6), Zoological Journal of the Linnean Society (2)
+          </p>
+        </div>
 
-      <Content header="Symposia Organized" content={symposiaOrganized} />
-      {/* TODO: Special Volumes organized */}
-    </section >
+        <div className="mb-6">
+          <HeaderSix text="Grant Reviews" />
+          <p>
+            Hong Kong Research Grants Council (6); Medical Research Council, UKRI (2); Royal Society University Research Fellowship (1); Swiss National Science Foundation.
+          </p>
+        </div>
+
+        <Content header="Symposia Organized" content={symposiaOrganized} />
+        {/* TODO: Special Volumes organized */}
+      </section >
+    </Layout>
   )
 }

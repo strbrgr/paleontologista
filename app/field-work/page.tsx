@@ -7,6 +7,7 @@ import qinghai from '@/app/field-work/img/fieldwork_qinghai_2005.jpg';
 import sa from '@/app/field-work/img/fieldwork_sa_2017.jpg';
 import Image from "next/image";
 import { StaticImageData } from "next/image";
+import Layout from "@/components/ui/layout";
 
 export const metadata = {
   title: "Field Work",
@@ -42,35 +43,38 @@ const images: { image: StaticImageData; alt: string, description: string }[] = [
 
 export default function Page() {
   return (
-    <section>
-      <h4 className="mb-2 text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug tracking-tight dark:text-white" >
-        I have been lucky to participate in Field Work around the world.
-      </h4>
-      <SeparatorLine />
-      {images.map((image) => {
-        return (
-          image.description
-        )
-      })}
+    <Layout>
 
-
-
-      <div className="max-w-2xl mx-auto">
-        {fieldWork.map((fw, idx) => {
+      <section>
+        <h4 className="mb-2 text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug tracking-tight dark:text-white" >
+          I have been lucky to participate in Field Work around the world.
+        </h4>
+        <SeparatorLine />
+        {images.map((image) => {
           return (
-            <div key={idx} className="mb-12">
-              <HeaderFive text={fw.year.toString()} />
-              {
-                fw.content.map((c, idx) => {
-                  return (
-                    <p key={idx} dangerouslySetInnerHTML={{ __html: c }} />
-                  )
-                })
-              }
-            </div>
+            image.description
           )
         })}
-      </div>
-    </section>
+
+
+
+        <div className="max-w-2xl mx-auto">
+          {fieldWork.map((fw, idx) => {
+            return (
+              <div key={idx} className="mb-12">
+                <HeaderFive text={fw.year.toString()} />
+                {
+                  fw.content.map((c, idx) => {
+                    return (
+                      <p key={idx} dangerouslySetInnerHTML={{ __html: c }} />
+                    )
+                  })
+                }
+              </div>
+            )
+          })}
+        </div>
+      </section>
+    </Layout>
   )
 }

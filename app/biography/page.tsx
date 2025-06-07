@@ -2,6 +2,7 @@ import { SeparatorLine } from "@/components/ui/separator-line";
 import { HeaderFive, HeaderSix } from "@/components/ui/typography";
 import jingmai from "@/app/biography/jingmai_oconnor_with_fossil_slab.jpg"
 import Image from "next/image";
+import Layout from "@/components/ui/layout";
 
 export const metadata = {
   title: "Biography",
@@ -16,34 +17,36 @@ const bio: string[] = [
 ]
 export default function Page() {
   return (
-    <section>
-      <HeaderFive text="Associate Curator of Fossil Reptiles at The Field Museum of Natural History in Chicago" />
+    <Layout>
+      <section>
+        <HeaderFive text="Associate Curator of Fossil Reptiles at The Field Museum of Natural History in Chicago" />
 
-      <div className="mb-8">
-        <SeparatorLine />
-      </div>
-      <div>
-        <div className="flex flex-col xl:flex-row gap-12 xl:items-start items-center">
-          <div className="max-w-xl xl:max-w-lg w-full">
-            <Image
-              src={jingmai}
-              alt="Jingmai O'Connor in front of a fossil slab"
-              width={800}
-              height={600}
-              placeholder="blur"
-              priority={true}
-            />
-          </div>
-          <div>
-            <HeaderSix text="Let me tell you a little bit about myself" />
-            <div className="max-w-prose">
-              {bio.map((b, i) => (
-                <p key={i} className="mb-2">{b}</p>
-              ))}
+        <div className="mb-8">
+          <SeparatorLine />
+        </div>
+        <div>
+          <div className="flex flex-col xl:flex-row gap-12 xl:items-start items-center">
+            <div className="max-w-xl xl:max-w-lg w-full">
+              <Image
+                src={jingmai}
+                alt="Jingmai O'Connor in front of a fossil slab"
+                width={800}
+                height={600}
+                placeholder="blur"
+                priority={true}
+              />
+            </div>
+            <div>
+              <HeaderSix text="Let me tell you a little bit about myself" />
+              <div className="max-w-prose">
+                {bio.map((b, i) => (
+                  <p key={i} className="mb-2">{b}</p>
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Layout>
   )
 }

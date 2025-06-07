@@ -1,3 +1,4 @@
+import Layout from "@/components/ui/layout";
 import { HeaderFive, HeaderFour } from "@/components/ui/typography";
 
 export const metadata = {
@@ -394,45 +395,47 @@ const conferenceAbstracts: { year: number, content: string[] }[] = [
 
 export default function Page() {
   return (
-    <section className="max-w-2xl mx-auto">
-      <p className="pb-4">Down below you will find the full bibliography of my recent studies</p>
-      <HeaderFour text="Peer-reviewed Scientific Papers" />
-      {bibliography.map((item, idx) => (
-        <div key={idx}>
-          <HeaderFive text={item.year.toString()} />
-          <div className="flex flex-col gap-2 mb-12">
-            {item.publications.map((v, idx) => (
-              <p key={idx} className="mb-4" dangerouslySetInnerHTML={{ __html: v }} />
-            ))}
+    <Layout>
+      <section className="max-w-2xl mx-auto">
+        <p className="pb-4">Down below you will find the full bibliography of my recent studies</p>
+        <HeaderFour text="Peer-reviewed Scientific Papers" />
+        {bibliography.map((item, idx) => (
+          <div key={idx}>
+            <HeaderFive text={item.year.toString()} />
+            <div className="flex flex-col gap-2 mb-12">
+              {item.publications.map((v, idx) => (
+                <p key={idx} className="mb-4" dangerouslySetInnerHTML={{ __html: v }} />
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
-
-      <HeaderFour text="Book Chapters, Primers, & Editorials" />
-      <div className="flex flex-col gap-2 mb-12">
-        {bookChapter.map((v, idx) => (
-          <p key={idx} className="mb-4" dangerouslySetInnerHTML={{ __html: v }} />
         ))}
-      </div>
 
-      <HeaderFour text="Books" />
-      <p><span className="italic">Zoom out: Prehistoric World,</span> DK (in prep.)</p>
-      <p><span className="italic">When Dinosaurs Conquered the Skies,</span> Quarto Publishing (2022)
-      </p>
-      <p className="ml-8 mb-12">Winner of the Society of Midland Authors Children’s Non-fiction Award (2023)</p>
-
-      <HeaderFour text="Conference Abstracts" />
-      {conferenceAbstracts.map((item) => (
-        <div className="flex flex-row mb-4" key={item.year}>
-          <p className="min-w-40 font-bold">{item.year}</p>
-          <div className="flex flex-col">
-            {item.content.map((v, idx) => (
-              <p key={idx} dangerouslySetInnerHTML={{ __html: v }} />
-            ))}
-          </div>
+        <HeaderFour text="Book Chapters, Primers, & Editorials" />
+        <div className="flex flex-col gap-2 mb-12">
+          {bookChapter.map((v, idx) => (
+            <p key={idx} className="mb-4" dangerouslySetInnerHTML={{ __html: v }} />
+          ))}
         </div>
-      ))}
 
-    </section>
+        <HeaderFour text="Books" />
+        <p><span className="italic">Zoom out: Prehistoric World,</span> DK (in prep.)</p>
+        <p><span className="italic">When Dinosaurs Conquered the Skies,</span> Quarto Publishing (2022)
+        </p>
+        <p className="ml-8 mb-12">Winner of the Society of Midland Authors Children’s Non-fiction Award (2023)</p>
+
+        <HeaderFour text="Conference Abstracts" />
+        {conferenceAbstracts.map((item) => (
+          <div className="flex flex-row mb-4" key={item.year}>
+            <p className="min-w-40 font-bold">{item.year}</p>
+            <div className="flex flex-col">
+              {item.content.map((v, idx) => (
+                <p key={idx} dangerouslySetInnerHTML={{ __html: v }} />
+              ))}
+            </div>
+          </div>
+        ))}
+
+      </section>
+    </Layout>
   )
 }
