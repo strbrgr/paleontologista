@@ -1,7 +1,8 @@
 import { HeaderFive, HeaderSix } from "@/components/ui/typography";
-import { fieldWork } from "./fieldWork";
+import { fieldWork } from "@/app/field-work/fieldWork"
 import { outreach } from "./outreach";
 import Layout from "@/components/ui/layout";
+import { StaticImageData } from "next/image";
 
 export const metadata = {
   title: "CV",
@@ -592,7 +593,7 @@ const symposiaOrganized: { year: string, content: string[] }[] = [
   }
 ];
 
-function Content(props: { header: string; content: { year: string; content: string[] }[] }) {
+function Content(props: { header: string; content: { year: string; content: string[]; img?: StaticImageData | null }[] }) {
   return (
     <div className="mb-12">
       <HeaderFive text={props.header} />
@@ -632,7 +633,20 @@ export default function Page() {
         <Content header="Undergraduate Students Supervised" content={undergraduateStudentsSupervised} />
         <Content header="Recent Graduates Supervised" content={recentGraduatesSupervised} />
         <Content header="Undergraduate Interns" content={undergraduateInterns} />
-        <Content header="Field Work in Paleontology" content={fieldWork} />
+
+        <div className="mb-12">
+          <HeaderFive text="Field Work In Paleontology" />
+          {fieldWork.map((item) => (
+            <div className="flex flex-row mb-4" key={item.year}>
+              <p className="min-w-40 font-bold">{item.year}</p>
+              <div className="flex flex-col">
+                {item.content.map((v, idx) => (
+                  <p key={idx} dangerouslySetInnerHTML={{ __html: v.location }} />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
         <Content header="Memberships" content={memberships} />
         <Content header="Invited Presentations" content={invitedPresentations} />
 
@@ -649,7 +663,7 @@ export default function Page() {
             Friends Like Us (2015), We Know Dino (2018), VitalCorps Salon (2019), Paleonerds (2020), BBC One Earth (2021), If/Then (2021), Brains On (2021), Pulsar (2021), Unexplainable (2021), NPR Everyone & Their Mom (2022), Solve It (2022), Talk Nerdy (2022), Cranbook Museum (2022), Jura-sick (2023), Ignition Sequence (2024), NPR Shortwave (2024), Moment of Um (2025), Brains On (2025)
           </p>
         </div>
-        <div className="mb-6">
+        <div className="mb-12">
           <HeaderSix text="Documentaries" />
           <p>
             Science Skills! Paleontology (Science Insider, 2022), Breakthrough: Women in STEM (Science Friday, 2019), SELF scientist profile (CAS, 2018), When Whales Walked (PBS, 2019), Why Dinosaurs (2023), The Bones (2024), End Cretaceous extinction (release and title TBD), Le rêve de Léonard, les secrets du vol dans la nature (2024), IMAX T. rex (2024), Prehistoric Beasts Season 2 (2024), Dino-birds (PBS, 2025), Mission Unstoppable (2025)
@@ -667,7 +681,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div className="mb-6">
+        <div className="mb-12">
           <HeaderSix text="Grant Reviews" />
           <p>
             Hong Kong Research Grants Council (6); Medical Research Council, UKRI (2); Royal Society University Research Fellowship (1); Swiss National Science Foundation.
