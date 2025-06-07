@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { NavigationHeader } from "@/components/ui/navigation-menu";
 import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,11 +24,11 @@ export const metadata: Metadata = {
     default: "Jingmai O'Connor",
     template: "%s | Jingmai O'Connor"
   },
-  description: "Paleontologist"
+  description: "Paleontologist",
 };
 
 function Footer() {
-  const links: { name: string, url: string }[] = [
+  const links = [
     { name: 'Instagram', url: 'https://instagram.com/paleontologista' },
     { name: 'Facebook', url: 'https://www.facebook.com/jingmai.oconnor/' },
     { name: 'ResearchGate', url: 'https://www.researchgate.net/profile/Jingmai-Oconnor' },
@@ -51,7 +51,7 @@ function Footer() {
         ))}
       </div>
     </footer>
-  )
+  );
 }
 
 export default function RootLayout({
@@ -60,9 +60,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-y-scroll">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+      >
         <main className="flex-1">
           <NavigationHeader />
           {children}
@@ -74,3 +75,4 @@ export default function RootLayout({
     </html>
   );
 }
+
