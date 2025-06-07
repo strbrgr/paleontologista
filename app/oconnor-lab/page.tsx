@@ -108,7 +108,7 @@ export default function Page() {
                 <div className="flex justify-center my-4">
                   <Image
                     src={m.image}
-                    alt={`Photo of lab member ${m.name}`}
+                    alt={`Photo of past lab member ${m.name}`}
                     width={idx === 0 ? 800 : 375}
                     height={500}
                     placeholder="blur"
