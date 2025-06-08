@@ -6,6 +6,8 @@ import mongolia from '@/app/field-work/img/fieldwork_mongolia_2011.jpg';
 import xinjiang from '@/app/field-work/img/fieldwork_xinjiang_2010.jpg';
 import utah from '@/app/field-work/img/fieldwork_utah_2007.jpg';
 import montana_2006 from '@/app/field-work/img/fieldwork_montana_2006.jpg';
+import montana_2023 from '@/app/field-work/img/fieldwork_montana_2023.jpg';
+import montana_2024 from '@/app/field-work/img/fieldwork_montana_2024.jpg';
 import qinghai from '@/app/field-work/img/fieldwork_qinghai_2005.jpg';
 import montana_2003 from '@/app/field-work/img/fieldwork_montana_2003.jpg';
 import { StaticImageData } from 'next/image';
@@ -16,13 +18,13 @@ export const
     {
       year: "2024",
       content: [
-        { img: null, imageAspectRatio: null, location: "<span class=\"font-bold\">Montana, USA</span> – microsite excavation and sediment processing, prospecting Hell Creek Formation (expedition leader)", },
+        { img: montana_2024, imageAspectRatio: ImageType.Horizontal, location: "<span class=\"font-bold\">Montana, USA</span> – microsite excavation and sediment processing, prospecting Hell Creek Formation (expedition leader)", },
       ]
     },
     {
       year: "2023",
       content: [
-        { img: null, imageAspectRatio: null, location: "<span class=\"font-bold\">Montana, USA</span> – microsite excavation and sediment processing, Hell Creek Formation (expedition leader)", },
+        { img: montana_2023, imageAspectRatio: ImageType.Horizontal, location: "<span class=\"font-bold\">Montana, USA</span> – microsite excavation and sediment processing, Hell Creek Formation (expedition leader)", },
         { img: null, imageAspectRatio: null, location: "<span class=\"font-bold\">Wyoming, USA</span> – quarrying limestones of the Fossil Lake member, Green River Fm, Stones & Bones class (University of Chicago)", },
       ]
     },
