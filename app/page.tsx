@@ -3,7 +3,6 @@ import { HeaderOne, HeaderTwo, HeaderThree, HeaderFour } from "@/components/ui/t
 import { SeparatorLine } from "@/components/ui/separator-line";
 import Link from "next/link";
 import jingmai from "@/app/JingmaiOConnor2019.jpg"
-import mabirds from "@/app/research/99-ma-birds-in-amber/99-ma-birds.jpg"
 import imparavis from "@/app/research/attenboroughs-strange-bird/imparavis_square.jpg"
 import outreach from '@/app/outreach/img/outreach.jpg';
 import dbn from '@/app/field-work/img/dead_bird_nerds_2025.jpg';
@@ -143,7 +142,7 @@ export default function Page() {
             </div>
             <div>
               <HeaderFour text="In order to maximize the impact of scientific research and utilize the power of paleontology as a gateway science, I happily engage in outreach as opportunities arise." />
-              <Button asChild variant="outline">
+              <Button asChild variant="outline" className="mt-4">
                 <Link href="/contact">Get in touch</Link>
               </Button>
               <SeparatorLine />
