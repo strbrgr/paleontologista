@@ -132,23 +132,30 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="w-full pt-24 p-10 md:p-20">
-        <HeaderTwo text="Outreach" />
-        <SeparatorLine />
+      <div className="flex flex-wrap md:flex-nowrap p-10 md:p-20 gap-12 justify-center md:justify-start">
         <div>
-          <div className="mt-8 flex flex-row flex-wrap md:flex-nowrap gap-12">
-            <div className="relative w-[375px] h-[500px] shrink-0 mx-auto mb-12">
-              <Image src={outreach} alt="Photo of Jingmai O'Connor doing outreach work in front of a group of children" width={375} height={500} placeholder="blur" />
-            </div>
-            <div>
-              <HeaderFour text="In order to maximize the impact of scientific research and utilize the power of paleontology as a gateway science, I happily engage in outreach as opportunities arise." />
-              <Button asChild variant="outline" className="mt-4">
-                <Link href="/contact">Get in touch</Link>
-              </Button>
-              <SeparatorLine />
-              <p className="max-w-md mt-12">My outreach also includes popular science articles, guest blogs (yes blogs!), responding to emails from students of all ages (go on, write me!), collections tours, and classroom visits.</p>
-            </div>
+          <Image
+            src={outreach}
+            alt="Photo of Jingmai O'Connor doing outreach work in front of a group of children"
+            width={375}
+            height={500}
+            placeholder="blur"
+          />
+        </div>
+        <div className="flex flex-col gap-4 flex-1 min-w-[300px]">
+          <HeaderFour text="In order to maximize the impact of scientific research and utilize the power of paleontology as a gateway science, I happily engage in outreach as opportunities arise." />
+
+          <div className="w-fit">
+            <Button asChild variant="outline" className="mt-4">
+              <Link href="/contact">Get in touch</Link>
+            </Button>
           </div>
+
+          <SeparatorLine />
+
+          <p className="max-w-md mt-12">
+            My outreach also includes popular science articles, guest blogs (yes blogs!), responding to emails from students of all ages (go on, write me!), collections tours, and classroom visits.
+          </p>
         </div>
       </div>
 
