@@ -51,7 +51,7 @@ const researchHighlights: { title: string, image: StaticImageData, alt: string, 
 export default function Page() {
   return (
     <div className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start my-8">
-      <div className="flex flex-wrap md:flex-nowrap p-6 sm:p-10 md:p-20 gap-12 justify-center md:justify-start">
+      <div className="flex flex-wrap md:flex-nowrap p-10 md:p-20 gap-12 justify-center md:justify-start">
         <div >
           <Image src={jingmai} alt="Portrait of Jingmai O'Connor" width={375} height={500} placeholder="blur" priority={true} />
         </div>
@@ -76,7 +76,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="w-full pt-24 px-4 sm:px-6 md:px-12 lg:p-20">
+      <div className="w-full pt-24 p-10 md:p-20">
         <HeaderTwo text="Areas of Expertise" />
 
         <SeparatorLine />
@@ -93,7 +93,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="pt-48 w-full bg-background-blue px-4 sm:px-6 md:px-12 lg:p-20">
+      <div className="pt-48 w-full bg-background-blue p-10 md:p-20">
         <div className="flex flex-col md:flex-row justify-between gap-4">
           <HeaderFour
             text="Personal notes and thoughts about work I’m passionate about"
@@ -132,13 +132,13 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="w-full pt-24 px-4 sm:px-6 md:px-12 lg:p-20">
+      <div className="w-full pt-24 p-10 md:p-20">
         <HeaderTwo text="Outreach" />
         <SeparatorLine />
         <div>
           <div className="mt-8 flex flex-row flex-wrap md:flex-nowrap gap-12">
             <div className="relative w-[375px] h-[500px] shrink-0 mx-auto mb-12">
-              <Image src={outreach} alt="Photo of Jingmai O'Connor doing outreach work in front of a group of children" width={375} height={500} placeholder="blur" priority={true} />
+              <Image src={outreach} alt="Photo of Jingmai O'Connor doing outreach work in front of a group of children" width={375} height={500} placeholder="blur" />
             </div>
             <div>
               <HeaderFour text="In order to maximize the impact of scientific research and utilize the power of paleontology as a gateway science, I happily engage in outreach as opportunities arise." />
@@ -152,15 +152,24 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="w-full pt-24 px-4 sm:px-6 md:px-12 lg:p-20">
+      <div className="w-full pt-24 p-10 md:p-20">
         <HeaderTwo text="Field Work" className="text-right" />
         <SeparatorLine />
         <div className="mt-12">
           <HeaderFour text="I have been lucky to participate in Field Work around the world." />
-          <Image className="mx-auto" src={dbn} alt="Group photo of Dead Birds Nerds in 2025" width={800} height={600} placeholder="blur" priority={false} />
-          <Button asChild variant="outline">
-            <Link href="/field-work">More Content</Link>
-          </Button>
+          <Image
+            className="mx-auto my-12"
+            src={dbn}
+            alt="Group photo of Dead Birds Nerds in 2025"
+            width={800}
+            height={600}
+            placeholder="blur"
+          />
+          <div className="flex justify-center">
+            <Button asChild variant="outline">
+              <Link href="/field-work">More Content</Link>
+            </Button>
+          </div>
         </div>
       </div>
     </div >
