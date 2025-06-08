@@ -1,3 +1,4 @@
+import utah_2021 from '@/app/field-work/img/fieldwork_utah_2021.jpg';
 import romania from '@/app/field-work/img/fieldwork_romania_2019.jpg';
 import sa from '@/app/field-work/img/fieldwork_sa_2017.jpg';
 import alberta from '@/app/field-work/img/fieldwork_alberta_2016.jpg';
@@ -44,7 +45,7 @@ export const
     {
       year: "2021",
       content: [
-        { img: null, imageAspectRatio: null, location: "<span class=\"font-bold\">Utah</span>, University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation", },
+        { img: utah_2021, imageAspectRatio: ImageType.Vertical, location: "<span class=\"font-bold\">Utah</span>, University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation", },
       ]
     },
     {
