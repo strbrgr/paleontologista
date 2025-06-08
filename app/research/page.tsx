@@ -6,7 +6,6 @@ import baby_enantiornithines from "@/app/research/baby-enantiornithines-had-it-t
 import late_cretaceous from "@/app/research/best-preserved-late-cretaceous-enantiornithine/late_cretaceous_enantiornithine.jpg"
 import stomach_crystals from "@/app/research/mystery-of-stomach-crystals/stomach_crystals.jpg"
 import sexy_tail from "@/app/research/enantiornithine-with-sexy-tail/enantiornithine_sexy_tail.jpg"
-
 import mabirds from "@/app/research/99-ma-birds-in-amber/99-ma-birds.jpg"
 import medullaryBone from "@/app/research/a-controversial-bone-tissue/medullary_bone.jpg"
 import fossilizedLungs from "@/app/research/fossilized-lungs/fossilized-lungs.jpg"
@@ -23,21 +22,21 @@ export const metadata = {
 const researchHighlights: { title: string, image: StaticImageData, alt: string, summary: string, url: string }[] = [{
   title: "Chicago archeopteryx",
   image: archaeopteryx,
-  alt: "Alt",
+  alt: "Image of the Chicago archaeopteryx fossil",
   summary: "The best Archaeopteryx – EVER! Check out info from the first of many papers on this beauty.",
   url: "/chicago-archaeopteryx"
 },
 {
   title: "Attenborough’s strange bird",
   image: imparavis,
-  alt: "Alt",
+  alt: "Image of a enantiornithine fossil",
   summary: "The oldest toothless enantiornithine and the mystery of tooth loss in this clade.",
   url: "/attenboroughs-strange-bird"
 },
 {
   title: "Baby Enantiornithines had it tough",
   image: baby_enantiornithines,
-  alt: "Alt",
+  alt: "Image of amber preserving enantiornithine feathers",
   summary: "A small piece of amber preserving immature enantiornithine feathers tells the tale of hardships these babies faced.",
   url: "/baby-enantiornithines-had-it-tough"
 },
