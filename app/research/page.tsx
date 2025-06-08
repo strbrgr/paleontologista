@@ -3,6 +3,7 @@ import { HeaderFour } from '@/components/ui/typography'
 import Image, { StaticImageData } from 'next/image'
 import archaeopteryx from "@/app/research/chicago-archaeopteryx/chicago_archaeopteryx.jpg"
 import baby_enantiornithines from "@/app/research/baby-enantiornithines-had-it-tough/baby_enantiornithines_had_it_tough_square.jpg"
+import trex from "@/app/research/a-mystery-of-tyrannosaur-proportions/trex.jpg"
 import late_cretaceous from "@/app/research/best-preserved-late-cretaceous-enantiornithine/late_cretaceous_enantiornithine.jpg"
 import stomach_crystals from "@/app/research/mystery-of-stomach-crystals/stomach_crystals.jpg"
 import sexy_tail from "@/app/research/enantiornithine-with-sexy-tail/enantiornithine_sexy_tail.jpg"
@@ -42,7 +43,7 @@ const researchHighlights: { title: string, image: StaticImageData, alt: string, 
 },
 {
   title: "A mystery of tyrannosaur proportions",
-  image: mabirds,
+  image: trex,
   alt: "Holes in the jaw of SUE the T. rex",
   summary: "Pathology is one of the most difficult things to unravel in an extinct organism.",
   url: "/a-mystery-of-tyrannosaur-proportions"

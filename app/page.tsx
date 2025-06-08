@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { HeaderOne, HeaderTwo, HeaderThree, HeaderFour } from "@/components/ui/typography";
 import { SeparatorLine } from "@/components/ui/separator-line";
 import Link from "next/link";
@@ -59,15 +59,12 @@ export default function Page() {
           <HeaderOne text="Hi!" />
           <HeaderThree text="I’m paleontologist Jingmai O'Connor aka paleontologista aka the punk rock paleontologist." />
           <div className="flex flex-col gap-4 rounded-4xl w-fit">
-            <Button asChild variant="outline">
-              <Link href="/biography">Read my full bio</Link>
-            </Button>
-            <Button asChild variant="outline">
-              <Link href="/cv">Have a look at my CV</Link>
-            </Button>
-            <Button asChild variant="outline">
-              <Link href="/bibliography">See my bibliography</Link>
-            </Button>
+            <Link href="/biography" className={buttonVariants({ variant: "outline" })}>
+              Read my full bio</Link>
+            <Link href="/cv" className={buttonVariants({ variant: "outline" })}>
+              Have a look at my CV</Link>
+            <Link href="/bibliography" className={buttonVariants({ variant: "outline" })}>
+              See my bibliography</Link>
           </div>
 
           <SeparatorLine />
@@ -146,9 +143,8 @@ export default function Page() {
           <HeaderFour text="In order to maximize the impact of scientific research and utilize the power of paleontology as a gateway science, I happily engage in outreach as opportunities arise." />
 
           <div className="w-fit">
-            <Button asChild variant="outline" className="mt-4">
-              <Link href="/contact">Get in touch</Link>
-            </Button>
+
+            <Link href="/contact" className={buttonVariants({ variant: "outline" })}>Get in touch</Link>
           </div>
 
           <SeparatorLine />
@@ -173,9 +169,9 @@ export default function Page() {
             placeholder="blur"
           />
           <div className="flex justify-center">
-            <Button asChild variant="outline">
-              <Link href="/field-work">More Content</Link>
-            </Button>
+            <Link href="/field-work" className={buttonVariants({ variant: "outline" })}>
+              More Content
+            </Link>
           </div>
         </div>
       </div>
