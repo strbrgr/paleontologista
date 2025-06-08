@@ -21,7 +21,6 @@ const getImageDimensions = (type: ImageType) => {
   }
 };
 
-
 export default function Page() {
   return (
     <Layout>
@@ -50,7 +49,7 @@ export default function Page() {
                               width={width}
                               height={height}
                               placeholder="blur"
-                              priority={true}
+                              priority={idx === 0}
                             />
                           </div>
                         }
@@ -59,11 +58,12 @@ export default function Page() {
                     )
                   })
                 }
-                <div className="max-w-12 mx-auto">
-                  <SeparatorLine />
-                </div>
+                {idx < fieldWork.length - 1 &&
+                  <div className="max-w-12 mx-auto">
+                    <SeparatorLine />
+                  </div>
+                }
               </div>
-
             )
           })}
         </div>
