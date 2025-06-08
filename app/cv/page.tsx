@@ -584,12 +584,15 @@ const exhibitions: { year: string, content: string[] }[] = [
 
 const symposiaOrganized: { year: string, content: string[] }[] = [
   {
-    year: "2022",
+    year: "2021",
     content: ["The appearance and loss of flight in paravians, 6th International Palaeontological Congress"]
   },
+];
+
+const specialVolumesOrganized: { year: string, content: string[] }[] = [
   {
-    year: "2014",
-    content: ["Origin and early evolution of birds, 4th International Palaeontological"]
+    year: "2021",
+    content: ["Early avian evolution, <span class=\"italic\">Frontiers in Earth Science</span>"]
   }
 ];
 
@@ -688,7 +691,14 @@ export default function Page() {
         </div>
 
         <Content header="Symposia Organized" content={symposiaOrganized} />
-        {/* TODO: Special Volumes organized */}
+        <Content header="Special Volumes Organized" content={specialVolumesOrganized} />
+
+        <div className="mb-12">
+          <HeaderFive text="Promoting Equity Diversity and Inclusion" />
+          <p>
+            Palaeontologists Against Systemic Racism Society (founding member, 2022)
+          </p>
+        </div>
       </div >
     </Layout>
   )
