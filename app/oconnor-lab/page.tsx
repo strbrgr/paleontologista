@@ -22,14 +22,14 @@ const labMembers: { name: string, image: StaticImageData, research: string, webs
     otherLink: "https://www.researchgate.net/profile/Pei-Chen-Kuo-2"
   },
   {
-    name: "Alexander D. Clark (PhD student, University of Chicago)",
+    name: "Alexander D. Clark (PhD candidate, University of Chicago)",
     image: alexander,
     research: "I am primarily interested in comparative and functional anatomy with a particular focus in both extant and extinct birds. I have worked as a wildlife biologist (6+ years of field work, and an MSc in wildlife biology) in a number of environments researching bird ecology and behavior, and hope to apply what I’ve learned in my paleontological work. I am really excited to try and figure out Mesozoic bird behaviors, diets, and ecologies using neontological comparative and functional anatomical approaches. My current studies focus on using osteological correlates of Mesozoic birds to piece together the ways they may have moved and flown. Additionally, I hope to look deeper into the preserved plumages of Mesozoic birds and assess what primary pressures resulted in such similar display structures as some birds today.",
     website: "https://www.alexanderclarkresearch.com",
     otherLink: "https://scholar.google.com/citations?hl=en&oi=ao&user=SEcXEdQAAAAJ"
   },
   {
-    name: "Isaiah McKinney",
+    name: "Isaiah McKinney (PhD student, University of Chicago)",
     image: isaiah,
     research: "Isaiah is a Ph.D. student exploring how avians radiate and diversify following the extinction of the non-avian dinosaurs through various morphological characteristics across the Cretaceous-Paleogene boundary, relying heavily on the Green River Formation avifauna.",
     website: null,
