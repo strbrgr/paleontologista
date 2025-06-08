@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import medullaryBone from "@/app/research/a-controversial-bone-tissue/medullary_bone.jpg"
+import trex from "@/app/research/a-mystery-of-tyrannosaur-proportions/trex.jpg"
 import { HeaderFive, HeaderFour } from '@/components/ui/typography'
 
 export const metadata = {
@@ -21,7 +21,7 @@ export default function Page() {
       </p>
       <div className="flex justify-center my-12">
         <Image
-          src={medullaryBone}
+          src={trex}
           alt="Holes in the jaw of SUE the T. rex"
           width={500}
           height={500}
