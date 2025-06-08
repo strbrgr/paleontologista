@@ -3,6 +3,11 @@ import Link from 'next/link'
 import mabirds from '@/app/research/99-ma-birds-in-amber/99-ma-birds.jpg'
 import { HeaderFive, HeaderFour, HeaderSix } from '@/components/ui/typography'
 
+export const metadata = {
+  title: "99 Ma birds in ambers",
+  description: 'Research Highlight',
+}
+
 const links = [
   { label: 'National Geographic', href: 'https://www.nationalgeographic.com/news/2018/02/dinosaurs-birds-trapped-amber-fossils-paleontology-science' },
   { label: 'National Geographic #2', href: 'https://www.nationalgeographic.com/news/2017/06/baby-bird-dinosaur-burmese-amber-fossil/' },
@@ -67,4 +72,3 @@ export default function Page() {
     </div>
   )
 }
-

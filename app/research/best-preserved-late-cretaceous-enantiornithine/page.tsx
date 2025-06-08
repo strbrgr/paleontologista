@@ -3,6 +3,10 @@ import Link from 'next/link'
 import late_cretaceous from "@/app/research/best-preserved-late-cretaceous-enantiornithine/late_cretaceous_enantiornithine.jpg"
 import { HeaderFive, HeaderFour } from '@/components/ui/typography'
 
+export const metadata = {
+  title: "Best preserved late cretaceous",
+  description: 'Research Highlight',
+}
 const links = [
   { label: 'cnrs', href: 'https://www.paris-centre.cnrs.fr/fr/cnrsinfo/yuornis-junchangi-le-squelette-de-lenantiornithe-le-plus-complet-trouve-ce-jour' },
   { label: 'weixin', href: 'https://mp.weixin.qq.com/s/t6pYelq1qY0KpcHtf2YPUA' },

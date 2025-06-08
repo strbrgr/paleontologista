@@ -3,6 +3,11 @@ import Link from 'next/link'
 import microraptor from "@/app/research/microraptors-last-meal/microraptor.jpg"
 import { HeaderFive, HeaderFour, HeaderSix } from '@/components/ui/typography'
 
+export const metadata = {
+  title: "Microraptors last meal",
+  description: 'Research Highlight',
+}
+
 const links = [
   { label: 'Economist', href: 'https://www.economist.com/science-and-technology/2011/11/12/the-belly-of-the-beast' },
   { label: 'NewScientist', href: 'https://www.newscientist.com/article/dn21182-first-evidence-that-dinosaurs-ate-birds/' },

@@ -3,6 +3,11 @@ import Link from 'next/link'
 import archaeopteryx from "@/app/research/chicago-archaeopteryx/chicago_archaeopteryx.jpg"
 import { HeaderFive, HeaderFour } from '@/components/ui/typography'
 
+export const metadata = {
+  title: "Chicago Archaeopteryx",
+  description: 'Research Highlight',
+}
+
 const links = [
   { label: 'Nature', href: 'https://www.nature.com/articles/s41586-025-08912-4' },
 ]

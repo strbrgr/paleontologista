@@ -3,6 +3,11 @@ import Link from 'next/link'
 import fossilizedOvaries from "@/app/research/fossilized-ovaries/fossilized-ovaries.jpg"
 import { HeaderFive, HeaderFour, HeaderSix } from '@/components/ui/typography'
 
+export const metadata = {
+  title: "Fossilized ovaries",
+  description: 'Research Highlight',
+}
+
 const links = [
   { label: 'Nature', href: 'https://www.nature.com/articles/nature11985' },
   { label: 'Nature', href: 'https://www.nature.com/articles/nature.2013.12616' },

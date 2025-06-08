@@ -3,6 +3,10 @@ import Link from 'next/link'
 import imparavis from '@/app/research/attenboroughs-strange-bird/imparavis_vertical.jpg'
 import { HeaderFour, HeaderSix } from '@/components/ui/typography'
 
+export const metadata = {
+  title: "Attenboroughs strange bird",
+  description: 'Research Highlight',
+}
 const links = [
   { label: 'ScienceDirect', href: 'https://www.sciencedirect.com/science/article/abs/pii/S0195667124000405' },
 ]

@@ -3,6 +3,11 @@ import Link from 'next/link'
 import stomach_crystals from "@/app/research/mystery-of-stomach-crystals/stomach_crystals.jpg"
 import { HeaderFour, HeaderSix } from '@/components/ui/typography'
 
+export const metadata = {
+  title: "Mystery of stomach crystals",
+  description: 'Research Highlight',
+}
+
 const links = [
   { label: 'SciTechDaily', href: 'https://scitechdaily.com/crystals-discovered-in-the-stomach-of-fossil-bird-complicates-the-mystery-of-its-diet/' },
   { label: 'Science Daily', href: 'https://www.sciencedaily.com/releases/2021/02/210219083848.htm' },

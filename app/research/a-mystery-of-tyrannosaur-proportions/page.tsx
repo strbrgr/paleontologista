@@ -3,6 +3,11 @@ import Link from 'next/link'
 import medullaryBone from "@/app/research/a-controversial-bone-tissue/medullary_bone.jpg"
 import { HeaderFive, HeaderFour } from '@/components/ui/typography'
 
+export const metadata = {
+  title: "A mystery of tyrannosaur proportions",
+  description: 'Research Highlight',
+}
+
 const links = [
   { label: 'ScienceDirect', href: 'https://www.sciencedirect.com/science/article/abs/pii/S0195667122002178' },
 ]

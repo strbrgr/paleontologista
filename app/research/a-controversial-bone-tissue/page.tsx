@@ -3,6 +3,11 @@ import Link from 'next/link'
 import medullaryBone from "@/app/research/a-controversial-bone-tissue/medullary_bone.jpg"
 import { HeaderFive, HeaderFour, HeaderSix } from '@/components/ui/typography'
 
+export const metadata = {
+  title: "A controversial bone tissue",
+  description: 'Research Highlight',
+}
+
 const links = [
   { label: 'Nature', href: 'https://www.nature.com/articles/s41467-018-07621-z' },
 ]

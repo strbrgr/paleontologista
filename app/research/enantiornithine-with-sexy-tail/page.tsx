@@ -3,6 +3,11 @@ import Link from 'next/link'
 import sexy_tail from "@/app/research/enantiornithine-with-sexy-tail/enantiornithine_sexy_tail.jpg"
 import { HeaderFour, HeaderSix } from '@/components/ui/typography'
 
+export const metadata = {
+  title: "Enantiornithine with sexy tail",
+  description: 'Research Highlight',
+}
+
 const links = [
   { label: 'Popular Science', href: 'https://www.popsci.com/science/fossil-bird-giant-feathers/' },
   { label: 'Sci News', href: 'https://www.sci.news/paleontology/yuanchuavis-kompsosoura-10079.html' },

@@ -3,6 +3,11 @@ import Link from 'next/link'
 import baby_enantiornithine from "@/app/research/baby-enantiornithines-had-it-tough/baby_enantiornithines_had_it_tough_vertical.jpg"
 import { HeaderFive, HeaderFour } from '@/components/ui/typography'
 
+export const metadata = {
+  title: "Baby enantiornithines had it tough",
+  description: 'Research Highlight',
+}
+
 const links = [
   { label: 'ScienceDirect', href: 'https://www.sciencedirect.com/science/article/abs/pii/S0195667123001003#:~:text=A%20new%20specimen%20of%20Cenomanian,portions%20encased%20in%20keratinous%20sheaths' },
 ]

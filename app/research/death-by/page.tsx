@@ -3,6 +3,11 @@ import Link from 'next/link'
 import deathBy from "@/app/research/death-by/death-by.jpg"
 import { HeaderFive, HeaderFour } from '@/components/ui/typography'
 
+export const metadata = {
+  title: "Death by...",
+  description: 'Research Highlight',
+}
+
 const links = [
   { label: 'National Geographic', href: 'https://www.nationalgeographic.com/science/article/first-fossil-bird-with-unlaid-egg-found-enantiornithine' },
   { label: 'PLOS', href: 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0095036' },

@@ -3,6 +3,11 @@ import Link from 'next/link'
 import fossilizedLungs from "@/app/research/fossilized-lungs/fossilized-lungs.jpg"
 import { HeaderFive, HeaderFour, HeaderSix } from '@/components/ui/typography'
 
+export const metadata = {
+  title: "Fossilized lungs",
+  description: 'Research Highlight',
+}
+
 const links = [
   { label: 'Economist', href: 'https://www.economist.com/science-and-technology/2018/10/25/a-breathtaking-discovery' },
   { label: 'National Geographic', href: 'https://www.nationalgeographic.com/science/article/news-fossil-lungs-bird-dinosaurs-cretaceous-soft-tissue-paleontology' },
