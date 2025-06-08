@@ -615,8 +615,7 @@ export default function Page() {
 
   return (
     <Layout>
-
-      <section className="max-w-2xl mx-auto">
+      <div className="max-w-2xl mx-auto">
         <div className="mb-12">
           <HeaderFive text="Jingmai Kathleen O'Connor" />
           <HeaderFive text="邹晶梅" />
@@ -690,7 +689,7 @@ export default function Page() {
 
         <Content header="Symposia Organized" content={symposiaOrganized} />
         {/* TODO: Special Volumes organized */}
-      </section >
+      </div >
     </Layout>
   )
 }
