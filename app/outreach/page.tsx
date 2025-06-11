@@ -14,7 +14,7 @@ export default function Page() {
       <section className="max-w-2xl mx-auto">
         <p className="mb-12">In order to maximize the impact of scientific research and utilize the power of paleontology as a gateway science, I happily engage in outreach as opportunities arise. This includes popular science articles, guest blogs (yes blogs!), responding to emails from students of all ages (go on, write me!), collections tours, and classroom visits.</p>
 
-        <div className="relative w-[375px] h-[500px] shrink-0 mx-auto mb-12">
+        <div className="flex justify-center mb-12">
           <Image src={outreach_img} alt="Photo of Jingmai O'Connor doing outreach work in front of a group of children" width={375} height={500} placeholder="blur" priority={true} />
         </div>
 
