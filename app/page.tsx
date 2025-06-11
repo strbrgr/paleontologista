@@ -50,8 +50,8 @@ const researchHighlights: { title: string, image: StaticImageData, alt: string, 
 
 export default function Page() {
   return (
-    <div className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start my-8">
-      <div className="flex flex-wrap md:flex-nowrap p-10 md:p-20 gap-12 justify-center md:justify-start">
+    <div className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start my-12 ">
+      <div className="flex flex-wrap md:flex-nowrap py-12 gap-12 justify-center md:justify-start mx-auto max-w-7xl px-4">
         <div >
           <Image src={jingmai} alt="Portrait of Jingmai O'Connor" width={375} height={500} placeholder="blur" priority={true} />
         </div>
@@ -73,7 +73,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="w-full pt-24 p-10 md:p-20">
+      <div className="w-full pt-24 py-12 mx-auto max-w-7xl px-4">
         <HeaderTwo text="Areas of Expertise" />
 
         <SeparatorLine />
@@ -90,8 +90,8 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="pt-48 w-full bg-background-blue p-10 md:p-20">
-        <div className="flex flex-col md:flex-row justify-between gap-4">
+      <div className="pt-24 w-full bg-background-blue px-4">
+        <div className="flex flex-col md:flex-row justify-between gap-4 mx-auto max-w-7xl">
           <HeaderFour
             text="Personal notes and thoughts about work I’m passionate about"
             className="text-white max-w-full md:max-w-sm"
@@ -108,7 +108,7 @@ export default function Page() {
         </div>
 
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-18 py-24 justify-items-center md:justify-items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-18 py-24 justify-items-center md:justify-items-start mx-auto max-w-7xl">
           {researchHighlights.map((r) => {
             return (
               <Link key={r.title} href={`/research/${r.url}`} className="transform transition-transform duration-200 hover:scale-[1.01]">
@@ -129,33 +129,41 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="flex flex-wrap md:flex-nowrap p-10 md:p-20 gap-12 justify-center md:justify-start">
+      <div className="flex flex-col mx-auto max-w-7xl mt-24 px-4">
         <div>
-          <Image
-            src={outreach}
-            alt="Photo of Jingmai O'Connor doing outreach work in front of a group of children"
-            width={375}
-            height={500}
-            placeholder="blur"
-          />
-        </div>
-        <div className="flex flex-col gap-4 flex-1 min-w-[300px]">
-          <HeaderFour text="In order to maximize the impact of scientific research and utilize the power of paleontology as a gateway science, I happily engage in outreach as opportunities arise." />
-
-          <div className="w-fit">
-
-            <Link href="/contact" className={buttonVariants({ variant: "outline" })}>Get in touch</Link>
-          </div>
-
+          <HeaderTwo text="Outreach" className="text-left" />
           <SeparatorLine />
 
-          <p className="max-w-md mt-12">
-            My outreach also includes popular science articles, guest blogs (yes blogs!), responding to emails from students of all ages (go on, write me!), collections tours, and classroom visits.
-          </p>
+        </div>
+        <div className="flex flex-wrap md:flex-nowrap gap-12 justify-center md:justify-start mt-12">
+
+          <div>
+            <Image
+              src={outreach}
+              alt="Photo of Jingmai O'Connor doing outreach work in front of a group of children"
+              width={375}
+              height={500}
+              placeholder="blur"
+            />
+          </div>
+          <div className="flex flex-col gap-4 flex-1 min-w-[300px]">
+            <HeaderFour text="In order to maximize the impact of scientific research and utilize the power of paleontology as a gateway science, I happily engage in outreach as opportunities arise." />
+
+            <div className="w-fit">
+
+              <Link href="/contact" className={buttonVariants({ variant: "outline" })}>Get in touch</Link>
+            </div>
+
+            <SeparatorLine />
+
+            <p className="max-w-md mt-12">
+              My outreach also includes popular science articles, guest blogs (yes blogs!), responding to emails from students of all ages (go on, write me!), collections tours, and classroom visits.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="w-full pt-24 p-10 md:p-20">
+      <div className="w-full pt-48 mx-auto max-w-7xl px-4">
         <HeaderTwo text="Field Work" className="text-right" />
         <SeparatorLine />
         <div className="mt-12">

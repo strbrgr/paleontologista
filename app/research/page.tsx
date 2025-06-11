@@ -115,7 +115,7 @@ const researchHighlights: { title: string, image: StaticImageData, alt: string, 
 
 export default function Page() {
   return (
-    <section className="grid px-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
+    <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
       {researchHighlights
         .map((post, idx) => (
           <Link
