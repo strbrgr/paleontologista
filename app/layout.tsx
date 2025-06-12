@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     default: "Jingmai O'Connor",
     template: "%s | Jingmai O'Connor"
   },
-  description: "Paleontologist",
+  description: "I am Dr. Jingmai O’Connor, Associate Curator of Fossil Reptiles at the Field Museum of Natural History in Chicago.",
 };
 
 function Footer() {
