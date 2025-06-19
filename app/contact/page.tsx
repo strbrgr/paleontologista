@@ -5,13 +5,16 @@ import { HeaderOne } from "@/components/ui/typography";
 export const metadata = {
   title: "Contact",
   description: "How to contact Jingmai O'Connor",
-}
+};
 
 export default function Page() {
   return (
     <Layout>
       <section>
-        <HeaderOne text="Say hello. I will do my best to get back to you shortly." className="max-w-2xl" />
+        <HeaderOne
+          text="Say hello. I will do my best to get back to you shortly."
+          className="max-w-2xl"
+        />
         <div className="my-12">
           <SeparatorLine />
         </div>
@@ -21,5 +24,5 @@ export default function Page() {
         </a>
       </section>
     </Layout>
-  )
+  );
 }
