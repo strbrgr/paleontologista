@@ -1,3 +1,4 @@
+import gansu_2025 from "@/app/field-work/img/fieldwork_gansu_2025.jpg";
 import utah_2021 from "@/app/field-work/img/fieldwork_utah_2021.jpg";
 import romania from "@/app/field-work/img/fieldwork_romania_2019.jpg";
 import sa from "@/app/field-work/img/fieldwork_sa_2017.jpg";
@@ -22,6 +23,17 @@ export const fieldWork: {
     location: string;
   }[];
 }[] = [
+  {
+    year: "2025",
+    content: [
+      {
+        img: gansu_2025,
+        imageAspectRatio: ImageType.Horizontal,
+        location:
+          '<span class="font-bold">Gansu Province, China</span>, Institute of Vertebrate Paleontology and Paleoanthropology expedition quarrying for Early Cretaceous birds in the Xiagou Formation',
+      },
+    ],
+  },
   {
     year: "2024",
     content: [
