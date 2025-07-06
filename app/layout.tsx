@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { NavigationHeader } from "@/components/ui/navigation-menu";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Metadata } from "next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,23 +16,38 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://paleontologista.com'),
+  metadataBase: new URL("https://paleontologista.com"),
   alternates: {
-    canonical: '/'
+    canonical: "/",
   },
   title: {
     default: "Jingmai O'Connor",
-    template: "%s | Jingmai O'Connor"
+    template: "%s | Jingmai O'Connor",
   },
-  description: "I am Dr. Jingmai O’Connor, Associate Curator of Fossil Reptiles at the Field Museum of Natural History in Chicago.",
+  description:
+    "I am Dr. Jingmai O’Connor, Associate Curator of Fossil Reptiles at the Field Museum of Natural History in Chicago.",
+  twitter: {
+    card: "summary_large_image",
+    title: "Dr. Jingmai O'Connor",
+    description:
+      "Associate Curator of Fossil Reptiles at the Field Museum of Natural History in Chicago.",
+    creator: "@paleontologista",
+    images: ["https://www.paleontologista.com/opengraph-image.jpg"],
+  },
 };
 
 function Footer() {
   const links = [
-    { name: 'Instagram', url: 'https://instagram.com/paleontologista' },
-    { name: 'Facebook', url: 'https://www.facebook.com/jingmai.oconnor/' },
-    { name: 'ResearchGate', url: 'https://www.researchgate.net/profile/Jingmai-Oconnor' },
-    { name: 'Google Scholar', url: 'https://scholar.google.com/citations?user=BzgZsCoAAAAJ&hl=en' },
+    { name: "Instagram", url: "https://instagram.com/paleontologista" },
+    { name: "Facebook", url: "https://www.facebook.com/jingmai.oconnor" },
+    {
+      name: "ResearchGate",
+      url: "https://www.researchgate.net/profile/Jingmai-Oconnor",
+    },
+    {
+      name: "Google Scholar",
+      url: "https://scholar.google.com/citations?user=BzgZsCoAAAAJ&hl=en",
+    },
   ];
 
   return (
@@ -75,4 +90,3 @@ export default function RootLayout({
     </html>
   );
 }
-
