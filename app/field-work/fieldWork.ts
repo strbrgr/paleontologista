@@ -1,4 +1,5 @@
 import gansu_2025 from "@/app/field-work/img/fieldwork_gansu_2025.jpg";
+import lashoyas_2025 from "@/app/field-work/img/fieldword_lashoyas_2025.jpg";
 import utah_2021 from "@/app/field-work/img/fieldwork_utah_2021.jpg";
 import romania from "@/app/field-work/img/fieldwork_romania_2019.jpg";
 import sa from "@/app/field-work/img/fieldwork_sa_2017.jpg";
@@ -27,10 +28,16 @@ export const fieldWork: {
     year: "2025",
     content: [
       {
+        img: lashoyas_2025,
+        imageAspectRatio: ImageType.Vertical,
+        location:
+          '<span class="font-bold">Las Hoyas, Spain.</span> Universidad Autónoma de Madrid expedition, excavating an Early Cretaceous wetland',
+      },
+      {
         img: gansu_2025,
         imageAspectRatio: ImageType.Horizontal,
         location:
-          '<span class="font-bold">Gansu Province, China</span>, Institute of Vertebrate Paleontology and Paleoanthropology expedition quarrying for Early Cretaceous birds in the Xiagou Formation',
+          '<span class="font-bold">Gansu Province, China.</span> Institute of Vertebrate Paleontology and Paleoanthropology expedition quarrying for Early Cretaceous birds in the Xiagou Formation',
       },
     ],
   },
@@ -41,7 +48,7 @@ export const fieldWork: {
         img: montana_2024,
         imageAspectRatio: ImageType.Horizontal,
         location:
-          '<span class="font-bold">Montana, USA</span> – microsite excavation and sediment processing, prospecting Hell Creek Formation (expedition leader)',
+          '<span class="font-bold">Montana, USA.</span> Microsite excavation and sediment processing, prospecting Hell Creek Formation (expedition leader)',
       },
     ],
   },
@@ -52,13 +59,13 @@ export const fieldWork: {
         img: montana_2023,
         imageAspectRatio: ImageType.Horizontal,
         location:
-          '<span class="font-bold">Montana, USA</span> – microsite excavation and sediment processing, Hell Creek Formation (expedition leader)',
+          '<span class="font-bold">Montana, USA.</span> Microsite excavation and sediment processing, Hell Creek Formation (expedition leader)',
       },
       {
         img: null,
         imageAspectRatio: null,
         location:
-          '<span class="font-bold">Wyoming, USA</span> – quarrying limestones of the Fossil Lake member, Green River Fm, Stones & Bones class (University of Chicago)',
+          '<span class="font-bold">Wyoming, USA.</span> Quarrying limestones of the Fossil Lake member, Green River Fm, Stones & Bones class (University of Chicago)',
       },
     ],
   },
@@ -69,7 +76,7 @@ export const fieldWork: {
         img: null,
         imageAspectRatio: null,
         location:
-          '<span class="font-bold">Montana, USA</span> – The O’Connor lab have been working a new productive microsite in the Hell Creek, looking for birds and traces of other small and rare organisms',
+          '<span class="font-bold">Montana, USA.</span> The O’Connor lab have been working a new productive microsite in the Hell Creek, looking for birds and traces of other small and rare organisms',
       },
     ],
   },
@@ -80,13 +87,13 @@ export const fieldWork: {
         img: null,
         imageAspectRatio: null,
         location:
-          '<span class="font-bold">Montana, USA</span> – microsite sediment processing, Hell Creek Formation (expedition leader)',
+          '<span class="font-bold">Montana, USA.</span> Microsite sediment processing, Hell Creek Formation (expedition leader)',
       },
       {
         img: null,
         imageAspectRatio: null,
         location:
-          '<span class="font-bold">Dinosaur Provincial Park, Alberta, Canada</span> – joint expedition with the University of Alberta, centennial celebration of Elmer Riggs 1922 fieldwork',
+          '<span class="font-bold">Dinosaur Provincial Park, Alberta, Canada.</span> Joint expedition with the University of Alberta, centennial celebration of Elmer Riggs 1922 fieldwork',
       },
     ],
   },
@@ -97,7 +104,7 @@ export const fieldWork: {
         img: utah_2021,
         imageAspectRatio: ImageType.Vertical,
         location:
-          '<span class="font-bold">Utah</span>, University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation',
+          '<span class="font-bold">Utah, USA.</span> University of Minnesota – Field Museum joint expedition prospecting and quarrying in the Cretaceous Cedar Mountain Formation',
       },
     ],
   },
@@ -108,7 +115,7 @@ export const fieldWork: {
         img: romania,
         imageAspectRatio: ImageType.Horizontal,
         location:
-          '<span class="font-bold">Romania</span>, American Museum of Natural History expedition prospecting and quarrying in Cretaceous deposits in the Hateg Basin and near Sebes',
+          '<span class="font-bold">Romania.</span> American Museum of Natural History expedition prospecting and quarrying in Cretaceous deposits in the Hateg Basin and near Sebes',
       },
     ],
   },
@@ -119,7 +126,7 @@ export const fieldWork: {
         img: null,
         imageAspectRatio: null,
         location:
-          '<span class="font-bold">Romania</span>, American Museum of Natural History expedition prospecting and quarrying in Cretaceous deposits in the Hateg Basin and near Sebes',
+          '<span class="font-bold">Romania.</span> American Museum of Natural History expedition prospecting and quarrying in Cretaceous deposits in the Hateg Basin and near Sebes',
       },
     ],
   },
@@ -130,13 +137,13 @@ export const fieldWork: {
         img: sa,
         imageAspectRatio: ImageType.Horizontal,
         location:
-          '<span class="font-bold">Free State, South Africa</span>, University of Witswatersrand expedition prospecting and quarrying in Jurassic deposits collecting dinosaurs and mammals',
+          '<span class="font-bold">Free State, South Africa.</span> University of Witswatersrand expedition prospecting and quarrying in Jurassic deposits collecting dinosaurs and mammals',
       },
       {
         img: alberta,
         imageAspectRatio: ImageType.Vertical,
         location:
-          '<span class="font-bold">Alberta, Canada</span>, Phil J. Currie Dinosaur Museum and University of Alberta expedition prospecting in Cretaceous deposits in the Grand Prairie region',
+          '<span class="font-bold">Alberta, Canada.</span> Phil J. Currie Dinosaur Museum and University of Alberta expedition prospecting in Cretaceous deposits in the Grand Prairie region',
       },
     ],
   },
@@ -147,7 +154,7 @@ export const fieldWork: {
         img: changma,
         imageAspectRatio: ImageType.Horizontal,
         location:
-          '<span class="font-bold">Gansu Province, China</span>, Institute of Vertebrate Paleontology and Paleoanthropology expedition quarrying for Early Cretaceous birds in the Xiagou Formation',
+          '<span class="font-bold">Gansu Province, China.</span> Institute of Vertebrate Paleontology and Paleoanthropology expedition quarrying for Early Cretaceous birds in the Xiagou Formation',
       },
     ],
   },
@@ -158,7 +165,7 @@ export const fieldWork: {
         img: mongolia,
         imageAspectRatio: ImageType.Horizontal,
         location:
-          '<span class="font-bold">Mongolia</span>, American Museum of Natural History expedition prospecting for Cretaceous dinosaurs and lizards and Paleogene mammals',
+          '<span class="font-bold">Mongolia.</span> American Museum of Natural History expedition prospecting for Cretaceous dinosaurs and lizards and Paleogene mammals',
       },
     ],
   },
@@ -169,7 +176,7 @@ export const fieldWork: {
         img: xinjiang,
         imageAspectRatio: ImageType.Horizontal,
         location:
-          '<span class="font-bold">Xinjiang, China</span>, Institute of Vertebrate Paleontology and Paleoanthropology expedition prospecting for dinosaurs in the Jurassic Shishugou Formation in the Junggar Basin',
+          '<span class="font-bold">Xinjiang, China.</span> Institute of Vertebrate Paleontology and Paleoanthropology expedition prospecting for dinosaurs in the Jurassic Shishugou Formation in the Junggar Basin',
       },
     ],
   },
@@ -180,7 +187,7 @@ export const fieldWork: {
         img: utah,
         imageAspectRatio: ImageType.Horizontal,
         location:
-          '<span class="font-bold">Utah, USA</span>, The University of Southern California-Los Angeles County Museum of Natural History Southern Utah Dinosaur Expedition prospecting in the Kaiparowits Formation in Grand Staircase-Escalante (expedition leader)',
+          '<span class="font-bold">Utah, USA.</span> The University of Southern California-Los Angeles County Museum of Natural History Southern Utah Dinosaur Expedition prospecting in the Kaiparowits Formation in Grand Staircase-Escalante (expedition leader)',
       },
     ],
   },
@@ -191,7 +198,7 @@ export const fieldWork: {
         img: montana_2006,
         imageAspectRatio: ImageType.Horizontal,
         location:
-          '<span class="font-bold">Montana, USA</span>, Los Angeles County Museum of Natural History expedition prospecting and quarrying in the Late Cretaceous Hell Creek Formation',
+          '<span class="font-bold">Montana, USA.</span> Los Angeles County Museum of Natural History expedition prospecting and quarrying in the Late Cretaceous Hell Creek Formation',
       },
     ],
   },
@@ -202,7 +209,7 @@ export const fieldWork: {
         img: qinghai,
         imageAspectRatio: ImageType.Horizontal,
         location:
-          '<span class="font-bold">Qinghai, Gansus, Xingjiang, China</span>, Prospecting for mammals in Neogene deposits identified by oil geologists in the 1950’s',
+          '<span class="font-bold">Qinghai, Gansus, Xingjiang, China.</span> Prospecting for mammals in Neogene deposits identified by oil geologists in the 1950’s',
       },
     ],
   },
@@ -213,13 +220,13 @@ export const fieldWork: {
         img: montana_2003,
         imageAspectRatio: ImageType.Vertical,
         location:
-          '<span class="font-bold">Montana, USA</span>, Los Angeles County Museum of Natural History expedition prospecting and quarrying in the Late Cretaceous Hell Creek Formation',
+          '<span class="font-bold">Montana, USA.</span> Los Angeles County Museum of Natural History expedition prospecting and quarrying in the Late Cretaceous Hell Creek Formation',
       },
       {
         img: null,
         imageAspectRatio: null,
         location:
-          '<span class="font-bold">Inner Mongolia, China</span>, Institute of Vertebrate Paleontology and Paleoanthropology expedition to prospect and screen-wash for mammals in Neogene deposits',
+          '<span class="font-bold">Inner Mongolia, China.</span> Institute of Vertebrate Paleontology and Paleoanthropology expedition to prospect and screen-wash for mammals in Neogene deposits',
       },
     ],
   },
