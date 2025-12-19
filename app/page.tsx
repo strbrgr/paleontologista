@@ -30,7 +30,7 @@ const expertise: { title: string; description: string }[] = [
   {
     title: "Fossil soft tissues",
     description:
-      "Through the study and analysis of observable Fossils preserve more than bones. Fossilized soft tissues reveal important aspects of extinct biology that can’t be gleaned from just the skeleton. Exploring methods to best study these tissues sheds light on unexpected aspects of extinct paravian biology.",
+      "Fossils preserve more than bones. Fossilized soft tissues reveal important aspects of extinct biology that can’t be gleaned from just the skeleton. Exploring methods to best study these tissues sheds light on unexpected aspects of extinct paravian biology.",
   },
   {
     title: "Science needs to reach out",
@@ -46,31 +46,31 @@ const researchHighlights: {
   summary: string;
   url: string;
 }[] = [
-  {
-    title: "Chicago archaeopteryx",
-    image: archaeopteryx,
-    alt: "Image of the Chicago Archaeopteryx fossil",
-    summary:
-      "The best Archaeopteryx – EVER! Check out info from the first of many papers on this beauty.",
-    url: "/chicago-archaeopteryx",
-  },
-  {
-    title: "Attenborough’s strange bird",
-    image: imparavis,
-    alt: "Image of a enantiornithine fossil",
-    summary:
-      "The oldest toothless enantiornithine and the mystery of tooth loss in this clade.",
-    url: "/attenboroughs-strange-bird",
-  },
-  {
-    title: "Baby enantiornithines had it tough",
-    image: baby_enantiornithines,
-    alt: "Image of a small piece of amber with enantiornithine feathers",
-    summary:
-      "A small piece of amber preserving immature enantiornithine feathers tells the tale of hardships these babies faced.",
-    url: "/baby-enantiornithines-had-it-tough",
-  },
-];
+    {
+      title: "Chicago archaeopteryx",
+      image: archaeopteryx,
+      alt: "Image of the Chicago Archaeopteryx fossil",
+      summary:
+        "The best Archaeopteryx – EVER! Check out info from the first of many papers on this beauty.",
+      url: "/chicago-archaeopteryx",
+    },
+    {
+      title: "Attenborough’s strange bird",
+      image: imparavis,
+      alt: "Image of a enantiornithine fossil",
+      summary:
+        "The oldest toothless enantiornithine and the mystery of tooth loss in this clade.",
+      url: "/attenboroughs-strange-bird",
+    },
+    {
+      title: "Baby enantiornithines had it tough",
+      image: baby_enantiornithines,
+      alt: "Image of a small piece of amber with enantiornithine feathers",
+      summary:
+        "A small piece of amber preserving immature enantiornithine feathers tells the tale of hardships these babies faced.",
+      url: "/baby-enantiornithines-had-it-tough",
+    },
+  ];
 
 export default function Page() {
   return (
