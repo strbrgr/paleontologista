@@ -124,7 +124,7 @@ export default function Page() {
                 <Image
                   src={m.image}
                   alt={`Photo of lab member ${m.name}`}
-                  width={idx === 0 ? 500 : 375}
+                  width={375}
                   height={500}
                   placeholder="blur"
                 />
@@ -166,7 +166,7 @@ export default function Page() {
                 <Image
                   src={m.image}
                   alt={`Photo of past lab member ${m.name}`}
-                  width={idx === 0 ? 800 : 375}
+                  width={500}
                   height={500}
                   placeholder="blur"
                 />
