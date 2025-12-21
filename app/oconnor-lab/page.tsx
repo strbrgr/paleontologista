@@ -7,8 +7,9 @@ import dbn_logo from "@/app/oconnor-lab/img/dead_bird_nerds_logo.jpg";
 import Image, { StaticImageData } from "next/image";
 import { HeaderFive, HeaderFour } from "@/components/ui/typography";
 import Layout from "@/components/ui/layout";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "O'Connor Lab",
   description: 'Information about my Lab group the "Dead Bird Nerds".',
 };
@@ -20,14 +21,6 @@ const labMembers: {
   website: string | null;
   otherLink: string | null;
 }[] = [
-    {
-      name: "Pei-Chen Kuo (postdoctoral researcher, Field Museum)",
-      image: peichen,
-      research:
-        "My research interests mainly concern vertebrate macroevolution. I am interested in the topic of mass extinctions and investigating the extent to which distinctive anatomical and ecological characteristics may have impacted survivorship probabilities. For my PhD, I investigated the evolution of morphology in the avian feeding apparatus, employing geometric analyses to incorporate living and fossil birds into a single evolutionary framework. In my current works, I have focused on the study of morphology of Mesozoic avian groups in China and Cenozoic extinct bird clades from Green River Formation. Beyond my research interests, I love to play badminton and vide games with my friends.",
-      website: null,
-      otherLink: "https://www.researchgate.net/profile/Pei-Chen-Kuo-2",
-    },
     {
       name: "Alexander D. Clark (PhD candidate, University of Chicago)",
       image: alexander,
@@ -54,6 +47,14 @@ const pastLabMembers: {
   website: string | null;
   otherLink: string | null;
 }[] = [
+    {
+      name: "Pei-Chen Kuo (postdoctoral researcher, Field Museum)",
+      image: peichen,
+      research:
+        "My research interests mainly concern vertebrate macroevolution. I am interested in the topic of mass extinctions and investigating the extent to which distinctive anatomical and ecological characteristics may have impacted survivorship probabilities. For my PhD, I investigated the evolution of morphology in the avian feeding apparatus, employing geometric analyses to incorporate living and fossil birds into a single evolutionary framework. In my current works, I have focused on the study of morphology of Mesozoic avian groups in China and Cenozoic extinct bird clades from Green River Formation. Beyond my research interests, I love to play badminton and vide games with my friends.",
+      website: null,
+      otherLink: "https://www.researchgate.net/profile/Pei-Chen-Kuo-2",
+    },
     {
       name: "Yosef Kiat (postdoctoral researcher)",
       image: yosef,
