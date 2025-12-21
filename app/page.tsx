@@ -8,11 +8,11 @@ import {
 import { SeparatorLine } from "@/components/ui/separator-line";
 import Link from "next/link";
 import jingmai from "@/app/JingmaiOConnor2019.jpg";
-import imparavis from "@/app/research/attenboroughs-strange-bird/imparavis_square.jpg";
+import food_for_flight from "@/app/research/food-for-flight/archeopteryx-square.webp";
 import outreach from "@/app/outreach/img/outreach.jpg";
 import dbn from "@/app/field-work/img/dead_bird_nerds_2025.jpg";
-import archaeopteryx from "@/app/research/chicago-archaeopteryx/chicago_archaeopteryx.jpg";
-import baby_enantiornithines from "@/app/research/baby-enantiornithines-had-it-tough/baby_enantiornithines_had_it_tough_square.jpg";
+import chromeo from "@/app/research/nerdy-girl/chromeo.webp";
+import anchiornis from "@/app/research/anchiornis-could-not-fly/anchiornis.webp";
 
 import Image, { StaticImageData } from "next/image";
 
@@ -47,28 +47,28 @@ const researchHighlights: {
   url: string;
 }[] = [
     {
-      title: "Chicago archaeopteryx",
-      image: archaeopteryx,
-      alt: "Image of the Chicago Archaeopteryx fossil",
+      title: "Food for flight",
+      image: food_for_flight,
+      alt: "Image of the Chicago archaeopteryx fossil",
       summary:
-        "The best Archaeopteryx – EVER! Check out info from the first of many papers on this beauty.",
-      url: "/chicago-archaeopteryx",
+        "New features from the Chicago specimen show how Archaeopteryx fed fast for flying.",
+      url: "food-for-flight",
     },
     {
-      title: "Attenborough’s strange bird",
-      image: imparavis,
-      alt: "Image of a enantiornithine fossil",
+      title: "Nerdy girl by Chromeo(rnis)",
+      image: chromeo,
+      alt: "Image of Jingmai O'Connor and Chromeo",
       summary:
-        "The oldest toothless enantiornithine and the mystery of tooth loss in this clade.",
-      url: "/attenboroughs-strange-bird",
+        "A new species of enantiornithine closely related to Longipteryx and named in honor of the Chromeo Funklordz.",
+      url: "nerdy-girl",
     },
     {
-      title: "Baby enantiornithines had it tough",
-      image: baby_enantiornithines,
-      alt: "Image of a small piece of amber with enantiornithine feathers",
+      title: "Anchiornis couldn't fly",
+      image: anchiornis,
+      alt: "Image of anchiornis fossil",
       summary:
-        "A small piece of amber preserving immature enantiornithine feathers tells the tale of hardships these babies faced.",
-      url: "/baby-enantiornithines-had-it-tough",
+        "I won’t say I told you so… but here’s a bunch of evidence that proves Anchiornis isn’t a bird.",
+      url: "anchiornis-could-not-fly",
     },
   ];
 
