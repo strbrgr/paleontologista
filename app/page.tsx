@@ -8,11 +8,11 @@ import {
 import { SeparatorLine } from "@/components/ui/separator-line";
 import Link from "next/link";
 import jingmai from "@/app/JingmaiOConnor2019.jpg";
-import food_for_flight from "@/app/research/food-for-flight/archeopteryx-square.webp";
+import food_for_flight from "@/app/research-highlights/food-for-flight/archeopteryx-square.webp";
 import outreach from "@/app/outreach/img/outreach.jpg";
 import dbn from "@/app/field-work/img/dead_bird_nerds_2025.jpg";
-import chromeo from "@/app/research/nerdy-girl/chromeo.webp";
-import anchiornis from "@/app/research/anchiornis-could-not-fly/anchiornis.webp";
+import chromeo from "@/app/research-highlights/nerdy-girl/chromeo.webp";
+import anchiornis from "@/app/research-highlights/anchiornis-could-not-fly/anchiornis.webp";
 
 import Image, { StaticImageData } from "next/image";
 
@@ -143,7 +143,7 @@ export default function Page() {
           <div className="flex flex-col items-end text-right">
             <HeaderTwo text="Research" className="text-white" />
             <Link
-              href="research"
+              href="/research-highlights"
               className="text-white justify-self-end hover:underline hover:text-white"
             >
               More Details
@@ -156,7 +156,7 @@ export default function Page() {
             return (
               <Link
                 key={r.title}
-                href={`/research/${r.url}`}
+                href={`/research-highlights/${r.url}`}
                 className="transform transition-transform duration-200 hover:scale-[1.01]"
               >
                 <div className="aspect-[1/1] w-full relative">

@@ -2,7 +2,7 @@ import { ActiveLink } from './active-link';
 
 const navItems = [
   { title: "Home", href: "/" },
-  { title: "Research", href: "/research" },
+  { title: "Research Highlights", href: "/research-highlights" },
   { title: "Bio", href: "/biography" },
   { title: "Bibliography", href: "/bibliography" },
   { title: "CV", href: "/cv" },
