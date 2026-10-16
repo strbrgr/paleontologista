@@ -7,12 +7,13 @@ import dbn_logo from "@/app/oconnor-lab/img/dead_bird_nerds_logo.jpg";
 import Image, { StaticImageData } from "next/image";
 import { Heading } from "@/components/ui/typography";
 import Layout from "@/components/ui/layout";
-import { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "O'Connor Lab",
   description: 'Information about my Lab group the "Dead Bird Nerds".',
-};
+  path: "/oconnor-lab",
+});
 
 const labMembers: {
   name: string;

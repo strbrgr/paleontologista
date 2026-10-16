@@ -3,11 +3,13 @@ import { Heading } from "@/components/ui/typography";
 import jingmai from "@/app/biography/jingmai_oconnor_with_fossil_slab.jpg";
 import Image from "next/image";
 import Layout from "@/components/ui/layout";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Biography",
-  description: "Information about myself.",
-};
+  description: "Information about Jingmai O'Connor.",
+  path: "/biography",
+});
 
 const bio: string[] = [
   "As is probably obvious from my name, I’m Chinese-Irish American. I grew up outside LA in Pasadena, CA. I have two brothers and a sister (who are all awesome). I got my interest in Geology from my mom, who did her PhD when I was 10, also at USC.",

@@ -4,11 +4,13 @@ import { fieldWork } from "@/app/field-work/fieldWork";
 import Image from "next/image";
 import Layout from "@/components/ui/layout";
 import { getImageDimensions, ImageType } from "@/components/ui/image";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Field Work",
   description: "I have taken part in a variety of field trips.",
-};
+  path: "/field-work",
+});
 
 export default function Page() {
   return (

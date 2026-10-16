@@ -176,9 +176,33 @@ export function getResearchHighlight(slug: string) {
 
 export function createResearchMetadata(slug: string): Metadata {
   const { title, summary } = getResearchHighlight(slug);
+  const url = `/research-highlights/${slug}`;
 
   return {
     title,
     description: summary,
+    alternates: {
+      canonical: url,
+    },
+    authors: [{ name: "Jingmai O'Connor" }],
+    openGraph: {
+      type: "article",
+      url,
+      title,
+      description: summary,
+      siteName: "Jingmai O'Connor",
+      images: [
+        {
+          url: "/opengraph-image.jpg",
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: summary,
+      images: ["/opengraph-image.jpg"],
+    },
   };
 }

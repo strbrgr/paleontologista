@@ -3,11 +3,13 @@ import { fieldWork } from "@/app/field-work/fieldWork";
 import { outreach } from "./outreach";
 import Layout from "@/components/ui/layout";
 import { StaticImageData } from "next/image";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "CV",
   description: "Professional Experience of Jingmai O'Connor",
-};
+  path: "/cv",
+});
 
 const currentPosition: { year: string; content: string[] }[] = [
   {

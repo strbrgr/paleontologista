@@ -1,11 +1,13 @@
 import Layout from "@/components/ui/layout";
 import { SeparatorLine } from "@/components/ui/separator-line";
 import { Heading } from "@/components/ui/typography";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Contact",
   description: "How to contact Jingmai O'Connor",
-};
+  path: "/contact",
+});
 
 export default function Page() {
   return (

@@ -1,10 +1,12 @@
 import Layout from "@/components/ui/layout";
 import { Heading } from "@/components/ui/typography";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Bibliography",
   description: "Read about published papers, books and conference abstracts",
-};
+  path: "/bibliography",
+});
 
 const bibliography: { year: number; publications: string[] }[] = [
   {

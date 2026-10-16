@@ -6,6 +6,15 @@ import { researchHighlights } from "@/lib/research-highlights";
 export const metadata = {
   title: "Research Highlights",
   description: "Read more about my most recent research.",
+  alternates: {
+    canonical: "/research-highlights",
+  },
+  openGraph: {
+    type: "website" as const,
+    url: "/research-highlights",
+    title: "Research Highlights",
+    description: "Read more about Jingmai O'Connor's research.",
+  },
 };
 
 export default function Page() {

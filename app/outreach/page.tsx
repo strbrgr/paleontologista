@@ -2,11 +2,13 @@ import Image from "next/image";
 import { outreach } from "@/app/cv/outreach";
 import outreach_img from "@/app/outreach/img/outreach.jpg";
 import Layout from "@/components/ui/layout";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Outreach",
   description: "Every once in a while I take part in outreach work.",
-};
+  path: "/outreach",
+});
 
 export default function Page() {
   return (

@@ -8,6 +8,22 @@ import dbn from "@/app/field-work/img/dead_bird_nerds_2025.jpg";
 import Image from "next/image";
 import { researchHighlights } from "@/lib/research-highlights";
 
+export const metadata = {
+  title: "Jingmai O'Connor",
+  description:
+    "Dr. Jingmai O'Connor is a paleontologist studying theropod dinosaurs, the dinosaur-bird transition, and the evolution of bird physiology.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website" as const,
+    url: "/",
+    title: "Jingmai O'Connor",
+    description:
+      "Dr. Jingmai O'Connor is a paleontologist studying theropod dinosaurs, the dinosaur-bird transition, and the evolution of bird physiology.",
+  },
+};
+
 const expertise: { title: string; description: string }[] = [
   {
     title: "Mesozoic bird phylogeny",
