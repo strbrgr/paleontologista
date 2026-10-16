@@ -1,5 +1,11 @@
-## Aspect Ratio
+# Paleontologista
 
-Vertical: 375x500
-Horizontal: 800x600
-Square: 500x500
+Personal website for paleontologist Jingmai O'Connor.
+
+## Images
+
+The project uses `next/image`. Preferred image dimensions are:
+
+- Square: `500 × 500`
+- Vertical: `375 × 500`
+- Horizontal: `800 × 600`
