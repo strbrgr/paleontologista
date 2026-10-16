@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import deathBy from "@/app/research-highlights/death-by/death-by.jpg"
-import { HeaderFive, HeaderFour } from '@/components/ui/typography'
+import { Heading } from "@/components/ui/typography";
 
 export const metadata = {
   title: "Death by...",
@@ -17,7 +17,7 @@ const links = [
 export default function Page() {
   return (
     <div className="max-w-2xl mx-auto px-10 md:px-0">
-      <HeaderFour text='Death by...' />
+      <Heading as="h4" size="subsection" text='Death by...' />
       <p className="mb-4">
         When an animal is preserved with evidence that it was rapidly buried by a collapsed sand dune, pyroclastic flow, or turbidite you can pretty safely assume that’s how the animal died.
       </p>
@@ -34,7 +34,7 @@ export default function Page() {
       </p>
       <p className='mb-8'>In a specimen of <span className='italic'>Yanornis</span> from the Jehol Biota, I demonstrated that stones preserved in the body were not in the stomach forming a gastric mill as previously described but rather trapped in the intestines, representing a case of intestinal impaction, a malady that kills approximately 1% of modern birds with a nearshore ecology similar to that hypothesized for <span className='italic'>Yanornis</span>. Another bird fossil named <span className='italic'>Avimaia</span> from the Xiagou Formation preserves an abnormal egg inside the body – <span className='italic'>Avimaia</span> probably died from a condition called egg-binding, in which the egg cannot exit the body. This condition is particularly common in small song-birds which are ecologically similar to enantiornithines, the clade to which <span className='italic'>Avimaia</span> belongs.</p>
 
-      <HeaderFive text='Read more' />
+      <Heading as="h5" size="label" text='Read more' />
       <ul className="list-disc list-inside space-y-1">
         {links.map((link, idx) => (
           <li key={idx}>

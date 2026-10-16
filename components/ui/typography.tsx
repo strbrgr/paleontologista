@@ -1,50 +1,45 @@
 import { cn } from "@/lib/utils";
-import { ComponentPropsWithoutRef } from "react";
+import { ComponentPropsWithoutRef, ReactNode } from "react";
 
-type HeaderLevel = 1 | 2 | 3 | 4 | 5 | 6;
-type HeaderTag = `h${HeaderLevel}`;
+type HeadingTag = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+export type HeadingSize =
+  | "display"
+  | "section"
+  | "intro"
+  | "subsection"
+  | "label"
+  | "small";
 
-type HeaderProps = {
-  text: string;
+const headingStyles: Record<HeadingSize, string> = {
+  display: "mb-4 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight",
+  section: "mb-3 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight",
+  intro: "mb-3 text-3xl md:text-4xl lg:text-5xl font-semibold leading-snug tracking-tight",
+  subsection: "mb-2 text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug tracking-tight",
+  label: "mb-2 text-xl md:text-2xl lg:text-3xl font-semibold leading-snug tracking-tight",
+  small: "mb-1 text-lg md:text-xl lg:text-2xl font-medium leading-snug tracking-tight",
+};
+
+type HeadingProps = {
+  as?: HeadingTag;
+  size?: HeadingSize;
+  text?: string;
+  children?: ReactNode;
   className?: string;
-} & ComponentPropsWithoutRef<HeaderTag>;
+} & Omit<ComponentPropsWithoutRef<"h2">, "children" | "className">;
 
-function Header({
-  level,
+export function Heading({
+  as = "h2",
+  size = "section",
   text,
+  children,
   className,
   ...rest
-}: HeaderProps & { level: HeaderLevel }) {
-  const Tag = `h${level}` as HeaderTag;
-
-  const baseStyles: Record<HeaderLevel, string> = {
-    1: "mb-4 text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight",
-    2: "mb-3 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight",
-    3: "mb-3 text-3xl md:text-4xl lg:text-5xl font-semibold leading-snug tracking-tight",
-    4: "mb-2 text-2xl md:text-3xl lg:text-4xl font-semibold leading-snug tracking-tight",
-    5: "mb-2 text-xl md:text-2xl lg:text-3xl font-semibold leading-snug tracking-tight",
-    6: "mb-1 text-lg md:text-xl lg:text-2xl font-medium leading-snug tracking-tight",
-  };
+}: HeadingProps) {
+  const Tag = as;
 
   return (
-    <Tag className={cn(baseStyles[level], className)} {...rest}>
-      {text}
+    <Tag className={cn(headingStyles[size], className)} {...rest}>
+      {children ?? text}
     </Tag>
   );
 }
-
-const HeaderOne = (props: HeaderProps) => <Header {...props} level={1} />;
-const HeaderTwo = (props: HeaderProps) => <Header {...props} level={2} />;
-const HeaderThree = (props: HeaderProps) => <Header {...props} level={3} />;
-const HeaderFour = (props: HeaderProps) => <Header {...props} level={4} />;
-const HeaderFive = (props: HeaderProps) => <Header {...props} level={5} />;
-const HeaderSix = (props: HeaderProps) => <Header {...props} level={6} />;
-
-export {
-  HeaderOne,
-  HeaderTwo,
-  HeaderThree,
-  HeaderFour,
-  HeaderFive,
-  HeaderSix,
-};

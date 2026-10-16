@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import stomach_crystals from "@/app/research-highlights/mystery-of-stomach-crystals/stomach_crystals.jpg"
-import { HeaderFour, HeaderSix } from '@/components/ui/typography'
+import { Heading } from "@/components/ui/typography";
 
 export const metadata = {
   title: "Mystery of stomach crystals",
@@ -18,7 +18,7 @@ const links = [
 export default function Page() {
   return (
     <div className="max-w-2xl mx-auto px-10 md:px-0">
-      <HeaderFour text='Mystery of the stomach crystals' />
+      <Heading as="h4" size="subsection" text='Mystery of the stomach crystals' />
       <p className="mb-4">
         There is almost no evidence of enantiornithine diet in the form of ingested remains. This is strange because thousands of well-preserved specimens have been recovered and such evidence exists for contemporaneous ornithuromorphs known from far fewer specimens. As such, any evidence pertaining to enantiornithine diet and digestive function is important.
       </p>
@@ -34,7 +34,7 @@ export default function Page() {
         A referred specimen of <span className='italic'>Bohaiornis</span> was described as preserving ingested stones interpreted as rangle (stones ingested by predatory birds to clean their digestive tract)(Li et al., 2014). However, these traces were alternately interpreted as not gastroliths at all (O’Connor 2019). In order to solve this mystery, IVPP Master’s student LIU Shumin extracted a sample of the purported gastroliths and analyzed them using a number of methods. The results showed that these mysterious traces are not gastroliths, although what they are exactly remains a mystery.
       </p>
 
-      <HeaderSix text='Read more' />
+      <Heading as="h6" size="small" text='Read more' />
       <ul className="list-disc list-inside space-y-1">
         {links.map((link, idx) => (
           <li key={idx}>

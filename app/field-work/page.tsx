@@ -1,5 +1,5 @@
 import { SeparatorLine } from "@/components/ui/separator-line";
-import { HeaderFive } from "@/components/ui/typography";
+import { Heading } from "@/components/ui/typography";
 import { fieldWork } from "@/app/field-work/fieldWork";
 import Image from "next/image";
 import Layout from "@/components/ui/layout";
@@ -34,7 +34,7 @@ export default function Page() {
           {fieldWork.map((fw, idx) => {
             return (
               <div key={idx} className="mb-12">
-                <HeaderFive text={fw.year.toString()} />
+                <Heading as="h5" size="label" text={fw.year.toString()} />
                 {fw.content.map((c, idx) => {
                   const { width, height } = getImageDimensions(
                     c.imageAspectRatio || ImageType.Square,

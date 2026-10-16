@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HeaderFour } from "@/components/ui/typography";
+import { Heading } from "@/components/ui/typography";
 import Image, { StaticImageData } from "next/image";
 import archaeopteryx from "@/app/research-highlights/chicago-archaeopteryx/chicago_archaeopteryx.jpg";
 import baby_enantiornithines from "@/app/research-highlights/baby-enantiornithines-had-it-tough/baby_enantiornithines_had_it_tough_square.jpg";
@@ -15,8 +15,8 @@ import microraptor from "@/app/research-highlights/microraptors-last-meal/micror
 import deathBy from "@/app/research-highlights/death-by/death-by.jpg";
 import imparavis from "@/app/research-highlights/attenboroughs-strange-bird/imparavis_square.jpg";
 import anchiornis from "@/app/research-highlights/anchiornis-could-not-fly/anchiornis.webp";
-import chromeo from "@/app/research-highlights/nerdy-girl/chromeo.webp"
-import food_for_flight from "@/app/research-highlights/food-for-flight/archeopteryx-square.webp"
+import chromeo from "@/app/research-highlights/nerdy-girl/chromeo.webp";
+import food_for_flight from "@/app/research-highlights/food-for-flight/archeopteryx-square.webp";
 
 export const metadata = {
   title: "Research Highlights",
@@ -31,11 +31,17 @@ const researchHighlights: {
   url: string;
 }[] = [
     {
+      title: "Feather found in fossil feces",
+      image: food_for_flight,
+      alt: "Image of the Chicago archaeopteryx fossil",
+      summary: "New features from the Chicago specimen show how Archaeopteryx fed fast for flying.",
+      url: "/feather-found-in-fossil-feces",
+    },
+    {
       title: "Food for flight",
       image: food_for_flight,
       alt: "Image of the Chicago archaeopteryx fossil",
-      summary:
-        "New features from the Chicago specimen show how Archaeopteryx fed fast for flying.",
+      summary: "New features from the Chicago specimen show how Archaeopteryx fed fast for flying.",
       url: "/food-for-flight",
     },
     {
@@ -66,8 +72,7 @@ const researchHighlights: {
       title: "Attenborough’s strange bird",
       image: imparavis,
       alt: "Image of a enantiornithine fossil",
-      summary:
-        "The oldest toothless enantiornithine and the mystery of tooth loss in this clade.",
+      summary: "The oldest toothless enantiornithine and the mystery of tooth loss in this clade.",
       url: "/attenboroughs-strange-bird",
     },
     {
@@ -82,8 +87,7 @@ const researchHighlights: {
       title: "A mystery of tyrannosaur proportions",
       image: trex,
       alt: "Holes in the jaw of SUE the T. rex",
-      summary:
-        "Pathology is one of the most difficult things to unravel in an extinct organism.",
+      summary: "Pathology is one of the most difficult things to unravel in an extinct organism.",
       url: "/a-mystery-of-tyrannosaur-proportions",
     },
     {
@@ -167,7 +171,7 @@ export default function Page() {
         <Link
           key={idx}
           className="flex flex-col max-w-sm h-full transform transition-transform duration-200 hover:scale-[1.01] mb-12"
-          href={`/research-highlights/${post.url}`}
+          href={`/research-highlights${post.url}`}
         >
           <div className="aspect-[1/1] w-full relative">
             <Image
@@ -180,7 +184,7 @@ export default function Page() {
             />
           </div>
           <div className="flex flex-col flex-grow mt-4">
-            <HeaderFour text={post.title} />
+            <Heading as="h4" size="subsection" text={post.title} />
             <p className="flex-grow">{post.summary}</p>
           </div>
         </Link>

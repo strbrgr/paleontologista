@@ -5,7 +5,7 @@ import yosef from "@/app/oconnor-lab/img/past_lab_yosef.jpg";
 import matteo from "@/app/oconnor-lab/img/past_lab_matteo.jpg";
 import dbn_logo from "@/app/oconnor-lab/img/dead_bird_nerds_logo.jpg";
 import Image, { StaticImageData } from "next/image";
-import { HeaderFive, HeaderFour } from "@/components/ui/typography";
+import { Heading } from "@/components/ui/typography";
 import Layout from "@/components/ui/layout";
 import { Metadata } from "next";
 
@@ -115,11 +115,11 @@ export default function Page() {
           </p>
         </div>
 
-        <HeaderFour text="Current Members" />
+        <Heading as="h4" size="subsection" text="Current Members" />
         {labMembers.map((m, idx) => {
           return (
             <div key={idx} className="mb-12">
-              <HeaderFive text={m.name} />
+              <Heading as="h5" size="label" text={m.name} />
               <div className="flex justify-center my-4">
                 <Image
                   src={m.image}
@@ -157,11 +157,11 @@ export default function Page() {
           );
         })}
 
-        <HeaderFour text="Past Members" />
+        <Heading as="h4" size="subsection" text="Past Members" />
         {pastLabMembers.map((m, idx) => {
           return (
             <div key={idx} className="mb-12">
-              <HeaderFive text={m.name} />
+              <Heading as="h5" size="label" text={m.name} />
               <div className="flex justify-center my-4">
                 <Image
                   src={m.image}

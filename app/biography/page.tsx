@@ -1,5 +1,5 @@
 import { SeparatorLine } from "@/components/ui/separator-line";
-import { HeaderFive, HeaderSix } from "@/components/ui/typography";
+import { Heading } from "@/components/ui/typography";
 import jingmai from "@/app/biography/jingmai_oconnor_with_fossil_slab.jpg";
 import Image from "next/image";
 import Layout from "@/components/ui/layout";
@@ -19,7 +19,7 @@ export default function Page() {
   return (
     <Layout>
       <section>
-        <HeaderFive text="Associate Curator of Fossil Reptiles at The Field Museum of Natural History in Chicago" />
+        <Heading as="h5" size="label" text="Associate Curator of Fossil Reptiles at The Field Museum of Natural History in Chicago" />
 
         <div className="mb-8">
           <SeparatorLine />
@@ -37,7 +37,7 @@ export default function Page() {
               />
             </div>
             <div>
-              <HeaderSix text="Let me tell you a little bit about myself" />
+              <Heading as="h6" size="small" text="Let me tell you a little bit about myself" />
               <div className="max-w-prose">
                 {bio.map((b, i) => (
                   <p key={i} className="mb-2">

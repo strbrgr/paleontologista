@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import mabirds from '@/app/research-highlights/99-ma-birds-in-amber/99-ma-birds.jpg'
-import { HeaderFive, HeaderFour, HeaderSix } from '@/components/ui/typography'
+import { Heading } from "@/components/ui/typography";
 
 export const metadata = {
   title: "99 Ma birds in ambers",
@@ -24,7 +24,7 @@ const links = [
 export default function Page() {
   return (
     <div className="max-w-2xl mx-auto px-10 md:px-0">
-      <HeaderFour text='99 Ma birds in amber' />
+      <Heading as="h4" size="subsection" text='99 Ma birds in amber' />
       <p className="mb-4">
         Recently our understanding of Cretaceous birds is being expanded by exceptional discoveries of small
         enantiornithine birds trapped in Cenomanian aged amber from Myanmar. These discoveries include two nearly
@@ -45,7 +45,7 @@ export default function Page() {
         />
       </div>
 
-      <HeaderFive text='Abstract' />
+      <Heading as="h5" size="label" text='Abstract' />
       <p className="mb-4">
         Our knowledge of Cretaceous plumage is limited by the fossil record itself: compression fossils surrounding
         skeletons lack the finest morphological details and seldom preserve visible traces of colour, while discoveries
@@ -59,7 +59,7 @@ export default function Page() {
         juveniles, including the first concrete examples of follicles, feather tracts and apteria in Cretaceous avialans.
       </p>
 
-      <HeaderSix text='Read more' />
+      <Heading as="h6" size="small" text='Read more' />
       <ul className="list-disc list-inside space-y-1">
         {links.map((link, idx) => (
           <li key={idx}>

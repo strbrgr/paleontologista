@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import late_cretaceous from "@/app/research-highlights/best-preserved-late-cretaceous-enantiornithine/late_cretaceous_enantiornithine.jpg"
-import { HeaderFive, HeaderFour } from '@/components/ui/typography'
+import { Heading } from "@/components/ui/typography";
 
 export const metadata = {
   title: "Best preserved late cretaceous",
@@ -15,7 +15,7 @@ const links = [
 export default function Page() {
   return (
     <div className="max-w-2xl mx-auto px-10 md:px-0">
-      <HeaderFour text='Best preserved Late Cretaceous enantiornithine' />
+      <Heading as="h4" size="subsection" text='Best preserved Late Cretaceous enantiornithine' />
       <p className="mb-4">
         Late Cretaceous fossil birds are rare. When found, they are usually very incomplete hindering attempts to understand broad trends in avian evolution across the Cretaceous.
       </p>
@@ -28,13 +28,13 @@ export default function Page() {
         />
       </div>
 
-      <HeaderFive text='The best-preserved Late Cretaceous enantiornithine known to date.' />
+      <Heading as="h5" size="label" text='The best-preserved Late Cretaceous enantiornithine known to date.' />
       <p className="mb-4">
         The holotype of <span className='italic'>Yuornis</span> represents the best-preserved Late Cretaceous enantiornithine known to date. The specimen consists of a complete 3D skull together with a partial postcranial skeleton. While the postcranial skeleton reveals features typical of enantiornithines and very different than in modern birds, the skull reveals that by the Late Cretaceous enantiornithines had evolved a number of features in parallel to modern birds such as the reduction of the lacrimal, loss of the postorbital, and an edentulous rostrum.
       </p>
 
 
-      <HeaderFive text='Read more' />
+      <Heading as="h5" size="label" text='Read more' />
       <ul className="list-disc list-inside space-y-1">
         {links.map((link, idx) => (
           <li key={idx}>

@@ -1,5 +1,5 @@
 import Layout from "@/components/ui/layout";
-import { HeaderFive, HeaderFour } from "@/components/ui/typography";
+import { Heading } from "@/components/ui/typography";
 
 export const metadata = {
   title: "Bibliography",
@@ -440,10 +440,10 @@ export default function Page() {
         <p className="pb-4">
           Down below you will find the full bibliography of my recent studies
         </p>
-        <HeaderFour text="Peer-reviewed Scientific Papers" />
+        <Heading as="h4" size="subsection" text="Peer-reviewed Scientific Papers" />
         {bibliography.map((item, idx) => (
           <div key={idx}>
-            <HeaderFive text={item.year.toString()} />
+            <Heading as="h5" size="label" text={item.year.toString()} />
             <div className="flex flex-col gap-2 mb-12">
               {item.publications.map((v, idx) => (
                 <p
@@ -456,7 +456,7 @@ export default function Page() {
           </div>
         ))}
 
-        <HeaderFour text="Book Chapters, Primers, & Editorials" />
+        <Heading as="h4" size="subsection" text="Book Chapters, Primers, & Editorials" />
         <div className="flex flex-col gap-2 mb-12">
           {bookChapter.map((v, idx) => (
             <p
@@ -467,7 +467,7 @@ export default function Page() {
           ))}
         </div>
 
-        <HeaderFour text="Books" />
+        <Heading as="h4" size="subsection" text="Books" />
         <p>
           <span className="italic">Zoom out: Prehistoric World,</span> DK (in
           prep.)
@@ -481,7 +481,7 @@ export default function Page() {
           (2023)
         </p>
 
-        <HeaderFour text="Conference Abstracts" />
+        <Heading as="h4" size="subsection" text="Conference Abstracts" />
         {conferenceAbstracts.map((item) => (
           <div className="flex flex-row mb-4" key={item.year}>
             <p className="min-w-40 font-bold">{item.year}</p>

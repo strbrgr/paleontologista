@@ -1,6 +1,6 @@
 import Layout from "@/components/ui/layout";
 import { SeparatorLine } from "@/components/ui/separator-line";
-import { HeaderOne } from "@/components/ui/typography";
+import { Heading } from "@/components/ui/typography";
 
 export const metadata = {
   title: "Contact",
@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <Layout>
       <section>
-        <HeaderOne
+        <Heading as="h1" size="display"
           text="Say hello. I will do my best to get back to you shortly."
           className="max-w-2xl"
         />

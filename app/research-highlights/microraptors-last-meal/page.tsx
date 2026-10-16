@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import microraptor from "@/app/research-highlights/microraptors-last-meal/microraptor.jpg"
-import { HeaderFive, HeaderFour, HeaderSix } from '@/components/ui/typography'
+import { Heading } from "@/components/ui/typography";
 
 export const metadata = {
   title: "Microraptors last meal",
@@ -20,7 +20,7 @@ const links = [
 export default function Page() {
   return (
     <div className="max-w-2xl mx-auto px-10 md:px-0">
-      <HeaderFour text='Microraptor’s last meal' />
+      <Heading as="h4" size="subsection" text='Microraptor’s last meal' />
       <p className="mb-4">
         I have described two specimens of <span className='italic'>Microraptor</span> preserving ingested remains. One preserves the articulated remains of an enantiornithine bird; the other preserves the articulated remains of previously unknown species of lizard (named <span className='italic'>Indrasaurus wangi</span>).
       </p>
@@ -37,12 +37,12 @@ export default function Page() {
         />
       </div>
 
-      <HeaderFive text='Abstract' />
+      <Heading as="h5" size="label" text='Abstract' />
       <p className="mb-4">
         Preserved indicators of diet are extremely rare in the fossil record; even more so is unequivocal direct evidence for predator–prey relationships. Here, we report on a unique specimen of the small nonavian theropod <span className='italic'>Microraptor gui</span> from the Early Cretaceous Jehol biota, China, which has the remains of an adult enantiornithine bird preserved in its abdomen, most likely not scavenged, but captured and consumed by the dinosaur. We provide direct evidence for the dietary preferences of <span className='italic'>Microraptor</span> and a nonavian dinosaur feeding on a bird. Further, because Jehol enantiornithines were distinctly arboreal, in contrast to their cursorial ornithurine counterparts, this fossil suggests that <span className='italic'>Microraptor</span> hunted in trees thereby supporting inferences that this taxon was also an arborealist, and provides further support for the arboreality of basal dromaeosaurids.
       </p>
 
-      <HeaderSix text='Read more' />
+      <Heading as="h6" size="small" text='Read more' />
       <ul className="list-disc list-inside space-y-1">
         {links.map((link, idx) => (
           <li key={idx}>

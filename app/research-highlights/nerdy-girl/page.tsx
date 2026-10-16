@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import chromeo from "@/app/research-highlights/nerdy-girl/chromeo.webp"
-import { HeaderFive, HeaderFour } from '@/components/ui/typography'
+import { Heading } from "@/components/ui/typography";
 
 export const metadata = {
   title: "Nerdy girl by Chromeo(rnis)",
@@ -15,7 +15,7 @@ const links = [
 export default function Page() {
   return (
     <div className="max-w-2xl mx-auto px-10 md:px-0">
-      <HeaderFour text='Nerdy girl by Chromeo(rnis)' />
+      <Heading as="h4" size="subsection" text='Nerdy girl by Chromeo(rnis)' />
       <p className="mb-4">
         A new species of enantiornithine closely related to Longipteryx and named in honor of the Chromeo Funklordz.
       </p>
@@ -27,7 +27,7 @@ export default function Page() {
           height={500}
         />
       </div>
-      <HeaderFive text='Read more' />
+      <Heading as="h5" size="label" text='Read more' />
       <ul className="list-disc list-inside space-y-1">
         {links.map((link, idx) => (
           <li key={idx}>

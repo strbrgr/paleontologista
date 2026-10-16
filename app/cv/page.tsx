@@ -1,4 +1,4 @@
-import { HeaderFive, HeaderSix } from "@/components/ui/typography";
+import { Heading } from "@/components/ui/typography";
 import { fieldWork } from "@/app/field-work/fieldWork";
 import { outreach } from "./outreach";
 import Layout from "@/components/ui/layout";
@@ -598,7 +598,7 @@ function Content(props: {
 }) {
   return (
     <div className="mb-12">
-      <HeaderFive text={props.header} />
+      <Heading as="h5" size="label" text={props.header} />
       {props.content.map((item) => (
         <div className="flex flex-row mb-4" key={item.year}>
           <p className="min-w-40 font-bold">{item.year}</p>
@@ -618,8 +618,8 @@ export default function Page() {
     <Layout>
       <div className="max-w-2xl mx-auto">
         <div className="mb-12">
-          <HeaderFive text="Jingmai Kathleen O'Connor" />
-          <HeaderFive text="邹晶梅" />
+          <Heading as="h5" size="label" text="Jingmai Kathleen O'Connor" />
+          <Heading as="h5" size="label" text="邹晶梅" />
         </div>
         <Content header="Current Position" content={currentPosition} />
         <Content header="Faculty Positions" content={facultyPositions} />
@@ -662,7 +662,7 @@ export default function Page() {
         />
 
         <div className="mb-12">
-          <HeaderFive text="Field Work In Paleontology" />
+          <Heading as="h5" size="label" text="Field Work In Paleontology" />
           {fieldWork.map((item) => (
             <div className="flex flex-row mb-4" key={item.year}>
               <p className="min-w-40 font-bold">{item.year}</p>
@@ -683,9 +683,9 @@ export default function Page() {
           content={invitedPresentations}
         />
 
-        <HeaderFive text="Media Coverage & Appearances" />
+        <Heading as="h5" size="label" text="Media Coverage & Appearances" />
         <div className="mb-6">
-          <HeaderSix text="Printed interviews" />
+          <Heading as="h6" size="small" text="Printed interviews" />
           <p>
             Current Biology (2016), Nature (2017), Smithsonian Magazine (2018),
             Geo Kompakt (2018), Rewire (2019), Massive Science (2020), USC
@@ -694,7 +694,7 @@ export default function Page() {
           </p>
         </div>
         <div className="mb-6">
-          <HeaderSix text="Podcasts" />
+          <Heading as="h6" size="small" text="Podcasts" />
           <p>
             Friends Like Us (2015), We Know Dino (2018), VitalCorps Salon
             (2019), Paleonerds (2020), BBC One Earth (2021), If/Then (2021),
@@ -705,7 +705,7 @@ export default function Page() {
           </p>
         </div>
         <div className="mb-12">
-          <HeaderSix text="Documentaries" />
+          <Heading as="h6" size="small" text="Documentaries" />
           <p>
             Science Skills! Paleontology (Science Insider, 2022), Breakthrough:
             Women in STEM (Science Friday, 2019), SELF scientist profile (CAS,
@@ -720,9 +720,9 @@ export default function Page() {
         <Content header="Outreach" content={outreach} />
         <Content header="Exhibitions" content={exhibitions} />
 
-        <HeaderFive text="Additional Services" />
+        <Heading as="h5" size="label" text="Additional Services" />
         <div className="mb-6">
-          <HeaderSix text="Peer Reviews" />
+          <Heading as="h6" size="small" text="Peer Reviews" />
           <p>
             Anales de Paleontologie, Atti della Società Italiana di Scienze
             Naturali e del Museo Civico di Storia Naturale di Milano, Avian
@@ -748,7 +748,7 @@ export default function Page() {
         </div>
 
         <div className="mb-12">
-          <HeaderSix text="Grant Reviews" />
+          <Heading as="h6" size="small" text="Grant Reviews" />
           <p>
             Hong Kong Research Grants Council (6); Medical Research Council,
             UKRI (2); Royal Society University Research Fellowship (1); Swiss
@@ -763,7 +763,7 @@ export default function Page() {
         />
 
         <div className="mb-12">
-          <HeaderFive text="Promoting Equity Diversity and Inclusion" />
+          <Heading as="h5" size="label" text="Promoting Equity Diversity and Inclusion" />
           <p>
             Palaeontologists Against Systemic Racism Society (founding member,
             2022)
