@@ -1,4 +1,5 @@
 import type { StaticImageData } from "next/image";
+import type { Metadata } from "next";
 import archaeopteryx from "@/app/research-highlights/chicago-archaeopteryx/chicago_archaeopteryx.jpg";
 import babyEnantiornithines from "@/app/research-highlights/baby-enantiornithines-had-it-tough/baby_enantiornithines_had_it_tough_square.jpg";
 import trex from "@/app/research-highlights/a-mystery-of-tyrannosaur-proportions/trex.jpg";
@@ -162,3 +163,22 @@ export const researchHighlights = [
       "I have described two specimens of Microraptor preserving ingested remains. One preserves the articulated remains of an enantiornithine bird; the other preserves the articulated remains of previously unknown species of lizard (named Indrasaurus wangi).",
   },
 ] satisfies ResearchHighlight[];
+
+export function getResearchHighlight(slug: string) {
+  const highlight = researchHighlights.find((item) => item.slug === slug);
+
+  if (!highlight) {
+    throw new Error(`Unknown research highlight: ${slug}`);
+  }
+
+  return highlight;
+}
+
+export function createResearchMetadata(slug: string): Metadata {
+  const { title, summary } = getResearchHighlight(slug);
+
+  return {
+    title,
+    description: summary,
+  };
+}

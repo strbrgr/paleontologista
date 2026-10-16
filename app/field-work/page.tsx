@@ -3,22 +3,11 @@ import { Heading } from "@/components/ui/typography";
 import { fieldWork } from "@/app/field-work/fieldWork";
 import Image from "next/image";
 import Layout from "@/components/ui/layout";
-import { ImageType } from "@/components/ui/image";
+import { getImageDimensions, ImageType } from "@/components/ui/image";
 
 export const metadata = {
   title: "Field Work",
   description: "I have taken part in a variety of field trips.",
-};
-
-const getImageDimensions = (type: ImageType) => {
-  switch (type) {
-    case ImageType.Square:
-      return { width: 500, height: 500 };
-    case ImageType.Vertical:
-      return { width: 375, height: 500 };
-    case ImageType.Horizontal:
-      return { width: 800, height: 600 };
-  }
 };
 
 export default function Page() {

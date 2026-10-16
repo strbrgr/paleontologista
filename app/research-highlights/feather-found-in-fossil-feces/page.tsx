@@ -1,12 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
 import archeopteryx_horizontal from "@/app/research-highlights/food-for-flight/archeopteryx-horizontal.webp";
-import { Heading } from "@/components/ui/typography";
+import { ResearchArticle, ResearchImage } from "@/components/research-article";
+import { createResearchMetadata } from "@/lib/research-highlights";
 
-export const metadata = {
-  title: "Feather found in fossil feces",
-  description: "Research Highlight",
-};
+export const metadata = createResearchMetadata("feather-found-in-fossil-feces");
 
 const links = [
   {
@@ -17,20 +13,12 @@ const links = [
 
 export default function Page() {
   return (
-    <div className="max-w-2xl mx-auto px-10 md:px-0">
-      <Heading as="h4" size="subsection" text="Feather found in fossil feces" />
+    <ResearchArticle slug="feather-found-in-fossil-feces" links={links}>
       <p className="mb-4">
         New features from the Chicago specimen show how Archaeopteryx fed fast for flying.
       </p>
 
-      <div className="flex justify-center my-12">
-        <Image
-          src={archeopteryx_horizontal}
-          alt="Closeup of the Chicago Archaeopteryx"
-          width={800}
-          height={600}
-        />
-      </div>
+      <ResearchImage src={archeopteryx_horizontal} alt="Closeup of the Chicago Archaeopteryx" width={800} height={600} />
 
       <p className="mb-4">
         The Hell Creek Formation is one of the most studied dinosaur-bearing rock units in the
@@ -53,16 +41,6 @@ export default function Page() {
         hesperornithiforms, going extinct.
       </p>
 
-      <Heading as="h6" size="small" text="Read more" />
-      <ul className="list-disc list-inside space-y-1">
-        {links.map((link, idx) => (
-          <li key={idx}>
-            <Link href={link.href} target="_blank" rel="noopener noreferrer" className="underline">
-              {link.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+      </ResearchArticle>
   );
 }

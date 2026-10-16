@@ -1,12 +1,9 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import late_cretaceous from "@/app/research-highlights/best-preserved-late-cretaceous-enantiornithine/late_cretaceous_enantiornithine.jpg"
 import { Heading } from "@/components/ui/typography";
+import { ResearchArticle, ResearchImage } from "@/components/research-article";
+import { createResearchMetadata } from "@/lib/research-highlights";
 
-export const metadata = {
-  title: "Best preserved late cretaceous",
-  description: 'Research Highlight',
-}
+export const metadata = createResearchMetadata("best-preserved-late-cretaceous-enantiornithine");
 const links = [
   { label: 'cnrs', href: 'https://www.paris-centre.cnrs.fr/fr/cnrsinfo/yuornis-junchangi-le-squelette-de-lenantiornithe-le-plus-complet-trouve-ce-jour' },
   { label: 'weixin', href: 'https://mp.weixin.qq.com/s/t6pYelq1qY0KpcHtf2YPUA' },
@@ -14,19 +11,11 @@ const links = [
 
 export default function Page() {
   return (
-    <div className="max-w-2xl mx-auto px-10 md:px-0">
-      <Heading as="h4" size="subsection" text='Best preserved Late Cretaceous enantiornithine' />
+    <ResearchArticle slug="best-preserved-late-cretaceous-enantiornithine" links={links}>
       <p className="mb-4">
         Late Cretaceous fossil birds are rare. When found, they are usually very incomplete hindering attempts to understand broad trends in avian evolution across the Cretaceous.
       </p>
-      <div className="flex justify-center my-12">
-        <Image
-          src={late_cretaceous}
-          alt="A Late Cretaceous enantiornithine skull"
-          width={500}
-          height={500}
-        />
-      </div>
+      <ResearchImage src={late_cretaceous} alt="A Late Cretaceous enantiornithine skull" width={500} height={500} />
 
       <Heading as="h5" size="label" text='The best-preserved Late Cretaceous enantiornithine known to date.' />
       <p className="mb-4">
@@ -34,16 +23,6 @@ export default function Page() {
       </p>
 
 
-      <Heading as="h5" size="label" text='Read more' />
-      <ul className="list-disc list-inside space-y-1">
-        {links.map((link, idx) => (
-          <li key={idx}>
-            <Link href={link.href} target="_blank" rel="noopener noreferrer" className='underline'>
-              {link.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+      </ResearchArticle>
   )
 }

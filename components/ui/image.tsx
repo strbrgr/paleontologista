@@ -6,6 +6,17 @@ export enum ImageType {
   Horizontal
 }
 
+export function getImageDimensions(type: ImageType) {
+  switch (type) {
+    case ImageType.Square:
+      return { width: 500, height: 500 };
+    case ImageType.Vertical:
+      return { width: 375, height: 500 };
+    case ImageType.Horizontal:
+      return { width: 800, height: 600 };
+  }
+}
+
 type Props = {
   src: string,
   alt: string,

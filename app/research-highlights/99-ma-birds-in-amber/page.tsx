@@ -1,12 +1,9 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import mabirds from '@/app/research-highlights/99-ma-birds-in-amber/99-ma-birds.jpg'
 import { Heading } from "@/components/ui/typography";
+import { ResearchArticle, ResearchImage } from "@/components/research-article";
+import { createResearchMetadata } from "@/lib/research-highlights";
 
-export const metadata = {
-  title: "99 Ma birds in ambers",
-  description: 'Research Highlight',
-}
+export const metadata = createResearchMetadata("99-ma-birds-in-amber");
 
 const links = [
   { label: 'National Geographic', href: 'https://www.nationalgeographic.com/news/2018/02/dinosaurs-birds-trapped-amber-fossils-paleontology-science' },
@@ -23,8 +20,7 @@ const links = [
 
 export default function Page() {
   return (
-    <div className="max-w-2xl mx-auto px-10 md:px-0">
-      <Heading as="h4" size="subsection" text='99 Ma birds in amber' />
+    <ResearchArticle slug="99-ma-birds-in-amber" links={links}>
       <p className="mb-4">
         Recently our understanding of Cretaceous birds is being expanded by exceptional discoveries of small
         enantiornithine birds trapped in Cenomanian aged amber from Myanmar. These discoveries include two nearly
@@ -34,16 +30,7 @@ export default function Page() {
         So far six skeletal specimens have been uncovered, all of which have been described by me.
       </p>
 
-      <div className="flex justify-center my-12">
-        <Image
-          src={mabirds}
-          alt="An enantiornithine bird leg trapped in amber"
-          width={500}
-          height={500}
-          placeholder='blur'
-          priority={true}
-        />
-      </div>
+      <ResearchImage src={mabirds} alt="An enantiornithine bird leg trapped in amber" width={500} height={500} priority />
 
       <Heading as="h5" size="label" text='Abstract' />
       <p className="mb-4">
@@ -59,16 +46,6 @@ export default function Page() {
         juveniles, including the first concrete examples of follicles, feather tracts and apteria in Cretaceous avialans.
       </p>
 
-      <Heading as="h6" size="small" text='Read more' />
-      <ul className="list-disc list-inside space-y-1">
-        {links.map((link, idx) => (
-          <li key={idx}>
-            <Link href={link.href} target="_blank" rel="noopener noreferrer" className='underline'>
-              {link.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+      </ResearchArticle>
   )
 }

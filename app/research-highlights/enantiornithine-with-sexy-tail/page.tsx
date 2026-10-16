@@ -1,12 +1,8 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import sexy_tail from "@/app/research-highlights/enantiornithine-with-sexy-tail/enantiornithine_sexy_tail.jpg"
-import { Heading } from "@/components/ui/typography";
+import { ResearchArticle, ResearchImage } from "@/components/research-article";
+import { createResearchMetadata } from "@/lib/research-highlights";
 
-export const metadata = {
-  title: "Enantiornithine with sexy tail",
-  description: 'Research Highlight',
-}
+export const metadata = createResearchMetadata("enantiornithine-with-sexy-tail");
 
 const links = [
   { label: 'Popular Science', href: 'https://www.popsci.com/science/fossil-bird-giant-feathers/' },
@@ -18,35 +14,17 @@ const links = [
 
 export default function Page() {
   return (
-    <div className="max-w-2xl mx-auto px-10 md:px-0">
-      <Heading as="h4" size="subsection" text='Enantiornithine with sexy tail' />
+    <ResearchArticle slug="enantiornithine-with-sexy-tail" links={links}>
       <p className="mb-4">
         The tail is the most diverse part of a bird’s plumage – this is because while the tail can help in flight, its not essential, and thus free to evolve elaborate sexual ornaments in certain conditions.
       </p>
 
-      <div className="flex justify-center my-12">
-        <Image
-          src={sexy_tail}
-          alt="Yuanchuavis, an enantiornithine bird"
-          width={500}
-          height={500}
-        />
-      </div>
+      <ResearchImage src={sexy_tail} alt="Yuanchuavis, an enantiornithine bird" width={500} height={500} />
 
       <p className="mb-8">
         <span className='italic'>Yuanchuavis</span>, a new species of pengornithid enantiornithine, preserves an elaborate tail morphology called a pin-tail, the first evidence of this tail morphology (which has evolved many times in living birds) in this diverse clade of Cretaceous birds. The pin-tail in <span className='italic'>Yuanchuavis</span> consists of a short rectricial fan together with two fully pennaceous rachis-dominated tail feathers (an extinct feather morphotype). These large, elongate feathers are inferred to have been costly (both in terms of initial energetic investment to grow them and the energetic cost associated with flight due to the increase in mass and drag) and thus represent an honest signal of fitness that evolved under sexual selection.
       </p>
 
-      <Heading as="h6" size="small" text='Read more' />
-      <ul className="list-disc list-inside space-y-1">
-        {links.map((link, idx) => (
-          <li key={idx}>
-            <Link href={link.href} target="_blank" rel="noopener noreferrer" className='underline'>
-              {link.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+      </ResearchArticle>
   )
 }
