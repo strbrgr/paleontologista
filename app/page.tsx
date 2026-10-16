@@ -3,11 +3,10 @@ import { Heading } from "@/components/ui/typography";
 import { SeparatorLine } from "@/components/ui/separator-line";
 import Link from "next/link";
 import jingmai from "@/app/JingmaiOConnor2019.jpg";
-import food_for_flight from "@/app/research-highlights/food-for-flight/archeopteryx-square.webp";
 import outreach from "@/app/outreach/img/outreach.jpg";
 import dbn from "@/app/field-work/img/dead_bird_nerds_2025.jpg";
-import chromeo from "@/app/research-highlights/nerdy-girl/chromeo.webp";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
+import { researchHighlights } from "@/lib/research-highlights";
 
 const expertise: { title: string; description: string }[] = [
   {
@@ -31,37 +30,6 @@ const expertise: { title: string; description: string }[] = [
       "In an age of Science denialism and environmental crisis, research must be paired with community outreach. I am passionate about promoting diversity in STEM and igniting scientific interest in peoples of all ages through the exciting stories uncovered from spectacular fossil birds and their closest relatives.",
   },
 ];
-
-const researchHighlights: {
-  title: string;
-  image: StaticImageData;
-  alt: string;
-  summary: string;
-  url: string;
-}[] = [
-    {
-      title: "Feather found in fossil feces",
-      image: food_for_flight,
-      alt: "Image of the Chicago archaeopteryx fossil",
-      summary: "New features from the Chicago specimen show how Archaeopteryx fed fast for flying.",
-      url: "feather-found-in-fossil-feces",
-    },
-    {
-      title: "Food for flight",
-      image: food_for_flight,
-      alt: "Image of the Chicago archaeopteryx fossil",
-      summary: "New features from the Chicago specimen show how Archaeopteryx fed fast for flying.",
-      url: "food-for-flight",
-    },
-    {
-      title: "Nerdy girl by Chromeo(rnis)",
-      image: chromeo,
-      alt: "Image of Jingmai O'Connor and Chromeo",
-      summary:
-        "A new species of enantiornithine closely related to Longipteryx and named in honor of the Chromeo Funklordz.",
-      url: "nerdy-girl",
-    },
-  ];
 
 export default function Page() {
   return (
@@ -138,11 +106,11 @@ export default function Page() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-18 py-24 justify-items-center md:justify-items-start mx-auto max-w-7xl">
-          {researchHighlights.map((r) => {
+          {researchHighlights.filter((r) => r.featured).map((r) => {
             return (
               <Link
                 key={r.title}
-                href={`/research-highlights/${r.url}`}
+                href={`/research-highlights/${r.slug}`}
                 className="transform transition-transform duration-200 hover:scale-[1.01]"
               >
                 <div className="aspect-[1/1] w-full relative">
