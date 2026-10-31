@@ -51,6 +51,10 @@ function Footer() {
     { name: "Instagram", url: "https://instagram.com/paleontologista" },
     { name: "Facebook", url: "https://www.facebook.com/jingmai.oconnor" },
     {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/jingmai-o-connor-4ab8a92a4/",
+    },
+    {
       name: "ResearchGate",
       url: "https://www.researchgate.net/profile/Jingmai-Oconnor",
     },
