@@ -15,10 +15,10 @@ type ResearchImageProps = {
   alt: string;
   /** Optional display width; the source aspect ratio is always preserved. */
   maxWidth?: number;
-  priority?: boolean;
+  preload?: boolean;
 };
 
-export function ResearchImage({ src, alt, maxWidth, priority }: ResearchImageProps) {
+export function ResearchImage({ src, alt, maxWidth, preload }: ResearchImageProps) {
   const width = Math.min(maxWidth ?? src.width, src.width);
   const height = Math.round((width * src.height) / src.width);
 
@@ -32,7 +32,7 @@ export function ResearchImage({ src, alt, maxWidth, priority }: ResearchImagePro
         className="h-auto max-w-full"
         sizes="(max-width: 672px) calc(100vw - 5rem), 672px"
         placeholder="blur"
-        priority={priority}
+        preload={preload}
       />
     </div>
   );
