@@ -1,4 +1,4 @@
-import { ActiveLink } from './active-link';
+import { ActiveLink } from "./active-link";
 
 const navItems = [
   { title: "Home", href: "/" },
@@ -9,16 +9,13 @@ const navItems = [
   { title: "Field Work", href: "/field-work" },
   { title: "O'Connor Lab", href: "/oconnor-lab" },
   { title: "Outreach", href: "/outreach" },
+  { title: "Children's Books", href: "/childrens-books" },
   { title: "Contact", href: "/contact" },
 ];
 
 export function NavigationHeader() {
   return (
-    <nav
-      className="w-full py-2"
-      role="navigation"
-      aria-label="Primary Navigation"
-    >
+    <nav className="w-full py-2" role="navigation" aria-label="Primary Navigation">
       <div className="flex flex-wrap justify-center gap-2 px-4">
         {navItems.map((item) => (
           <ActiveLink
@@ -26,9 +23,8 @@ export function NavigationHeader() {
             href={item.href}
             className="px-2 py-1"
             aria-current={
-              typeof window !== 'undefined' &&
-                window.location.pathname === item.href
-                ? 'page'
+              typeof window !== "undefined" && window.location.pathname === item.href
+                ? "page"
                 : undefined
             }
           >
@@ -39,4 +35,3 @@ export function NavigationHeader() {
     </nav>
   );
 }
-
