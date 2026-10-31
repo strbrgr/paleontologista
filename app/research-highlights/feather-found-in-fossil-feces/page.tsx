@@ -1,4 +1,4 @@
-import archeopteryx_horizontal from "@/app/research-highlights/food-for-flight/archeopteryx-horizontal.webp";
+import fossil_feces_horizontal from "@/app/research-highlights/feather-found-in-fossil-feces/feather_found_in_fossil_feces_horizontal.webp";
 import { ResearchArticle, ResearchImage } from "@/components/research-article";
 import { createResearchMetadata } from "@/lib/research-highlights";
 
@@ -6,8 +6,8 @@ export const metadata = createResearchMetadata("feather-found-in-fossil-feces");
 
 const links = [
   {
-    label: "The Innovation",
-    href: "https://www.cell.com/the-innovation/fulltext/S2666-6758(25)00289-9",
+    label: "Elsevier",
+    href: "https://authors.elsevier.com/a/1nlgn_LsQSQ-EH",
   },
 ];
 
@@ -18,7 +18,11 @@ export default function Page() {
         New features from the Chicago specimen show how Archaeopteryx fed fast for flying.
       </p>
 
-      <ResearchImage src={archeopteryx_horizontal} alt="Closeup of the Chicago Archaeopteryx" width={800} height={600} />
+      <ResearchImage
+        src={fossil_feces_horizontal}
+        alt="Closeup of the Chicago Archaeopteryx"
+        maxWidth={800}
+      />
 
       <p className="mb-4">
         The Hell Creek Formation is one of the most studied dinosaur-bearing rock units in the
@@ -40,7 +44,6 @@ export default function Page() {
         have been one of the major factors that resulted in some birds surviving and others, like
         hesperornithiforms, going extinct.
       </p>
-
-      </ResearchArticle>
+    </ResearchArticle>
   );
 }
