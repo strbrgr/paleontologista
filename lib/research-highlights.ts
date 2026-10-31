@@ -16,6 +16,7 @@ import imparavis from "@/app/research-highlights/attenboroughs-strange-bird/impa
 import anchiornis from "@/app/research-highlights/anchiornis-could-not-fly/anchiornis.webp";
 import chromeo from "@/app/research-highlights/nerdy-girl/chromeo.webp";
 import foodForFlight from "@/app/research-highlights/food-for-flight/archeopteryx-square.webp";
+import fossilFeces from "@/app/research-highlights/feather-found-in-fossil-feces/feather_found_in_fossil_feces.jpg";
 
 export type ResearchHighlight = {
   slug: string;
@@ -30,9 +31,9 @@ export const researchHighlights = [
   {
     slug: "feather-found-in-fossil-feces",
     title: "Feather found in fossil feces",
-    image: foodForFlight,
-    alt: "Image of the Chicago Archaeopteryx fossil",
-    summary: "New features from the Chicago specimen show how Archaeopteryx fed fast for flying.",
+    image: fossilFeces,
+    alt: "Image of a feather found in fossil feces",
+    summary: "A feather found in fossil feces.",
     featured: true,
   },
   {
