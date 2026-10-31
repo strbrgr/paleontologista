@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Heading } from "@/components/ui/typography";
 import Image from "next/image";
 import { researchHighlights } from "@/lib/research-highlights";
 
@@ -22,7 +21,7 @@ export default function Page() {
     <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
       {researchHighlights.map((post, idx) => (
         <Link
-          key={idx}
+          key={post.slug}
           className="flex flex-col max-w-sm h-full transform transition-transform duration-200 hover:scale-[1.01] mb-12"
           href={`/research-highlights/${post.slug}`}
         >
@@ -37,8 +36,16 @@ export default function Page() {
             />
           </div>
           <div className="flex flex-col flex-grow mt-4">
-            <Heading as="h4" size="subsection" text={post.title} />
-            <p className="flex-grow">{post.summary}</p>
+            <h2
+              className="min-h-[4.5rem] line-clamp-2 text-2xl md:text-3xl
+                font-semibold leading-tight tracking-tight"
+              title={post.title}
+            >
+              {post.title}
+            </h2>
+            <p className="mt-3 line-clamp-3 min-h-[5.25rem] leading-relaxed">
+              {post.summary}
+            </p>
           </div>
         </Link>
       ))}
