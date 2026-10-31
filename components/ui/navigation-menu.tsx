@@ -2,7 +2,6 @@ import { ActiveLink } from "./active-link";
 import Link from "next/link";
 
 const navItems = [
-  { title: "Home", href: "/" },
   { title: "Research Highlights", href: "/research-highlights" },
   { title: "Bio", href: "/biography" },
   { title: "Bibliography", href: "/bibliography" },
