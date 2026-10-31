@@ -10,6 +10,23 @@ export const metadata = createPageMetadata({
 
 const bibliography: { year: number; publications: string[] }[] = [
   {
+    year: 2026,
+    publications: [
+      'Clark AD, <strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK, Wang X-L, Wang Y, Pruett-Jones S, Zhang X-Y, Wang X, Zheng X-T, Zhou Z-H. 2026. Hyperelongate ornamental tail feathers in a new Early Cretaceous enantiornithine bird. <span class="italic">PLoS ONE</span> 21(5): e0347641.',
+      'Clark AD, Wang Y, Wang X-L, Zhang X-Y, Wang X, Zheng X-T, Zhou Z-H, <strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK. 2026. Journal of Paleontology.',
+      'Dreyer L, Cooper C, <strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK. 2026. Osteohistology of two phorusrhacids reveals uninterrupted growth strategy. <span class="italic">The Anatomical Record</span> 309(11): 3106–3122.',
+      'Kuo P-C, Wang Y, Clark AD, Sullivan C, Wang X-L, Zheng X-T, <strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK. 2026. Evolutionary and ecological correlates of avian uncinate process morphology: insight from a bizarre shape found in Early Cretaceous Enantiornithes. <span class="italic">All Earth</span>, 38(2711157): 1–19.',
+      '<strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK, Clark AD, Kuo P-C, Wang M, Shinya A, Van Beek C, Chang H-L. 2026. Avian features of Archaeopteryx feeding apparatus reflect elevated demands of flight. <span class="italic">The Innovation</span> 7(2): 101086, 1–8.',
+      '<strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK, DeMar DGJ, Carroll NR, Chin K, Armour Smith E, Holland M, Clark AD, Cooper C, Kuo P-C, Tobin TS, Celestian A, Bottjer DJ, Chiappe LM, Wilson Mantilla GP. 2026. Bird feathers from a Late Cretaceous coprolite. <span class="italic">Current Biology</span>.',
+      '<strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK, Clark AD. 2026. The ecology of Archaeopteryx. <span class="italic">Discovery Ecology</span> 2(12): 1–17.',
+      '<strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK, Marugán-Lobón J. 2026. Evaluating variation in Solnhofen avialans. <span class="italic">Biology Letters</span> 22(3): 20250601, 1–10.',
+      'Wang Y, <strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK, Wang X-L, Zheng X-T, Zhou Z-H. Accepted. Frugivory in Sapeornis indicates diverse herbivorous trophic habits. <span class="italic">Comptes Rendus Palevol</span> 25(23): 427–440.',
+      'Wang Y, Hu H, Serio M, Zou Y, Zhao X-D, You H-L, Zhou Z-H, <strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK. 2026. A probable non-avian theropod pellet from the Xiagou Formation. <span class="italic">Vertebrata Palasiatica</span>.',
+      'Wu Q, Stidham TA, <strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK, Bailleul AM, Zhou Z-H, Li Z-H. 2026. Critical innovations in the assembly of the modern flight apparatus in Early Cretaceous birds. <span class="italic">iScience</span> 29(4): 115506, 1–11.',
+      'Zhou L-Q, Lamanna M, Poust AW, Li D-Q, You H-L, <strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK. 2026. First non-avian theropod (Dromaeosauridae, Microraptorinae) from the bird-bearing Lower Cretaceous Xiagou Formation of the Changma Basin, Gansu Province, northwestern China. <span class="italic">Annals of Carnegie Museum</span> 92(2): 89–110.',
+    ],
+  },
+  {
     year: 2025,
     publications: [
       'Atterholt JA, <strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK, You H-L. 2025. Osteohistology of enantiornithine birds from the Lower Cretaceous Xiagou Formation. Geobios 90: 5-16.',
@@ -19,6 +36,10 @@ const bibliography: { year: number; publications: string[] }[] = [
       '<strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK. 2025. Insights into the early evolution of modern avian physiology from fossilized soft tissues from the Mesozoic. Philosophical Transactions of the Royal Society London B Biological Sciences 380: 20230426.',
       '<strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK, Atterholt JA, Bailleul AM, Wang M, Kuo P-C, Zhou Z-H. 2025. Description and osteohistology of two early immature enantiornithines (Aves: Ornithothoraces) from the Early Cretaceous Jehol Biota. Geobios 90: 103-122.',
       '<strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK, Atterholt JA, Clark AD, Zhou L-Q, Peng C, Zhang X-Q, You H-L. 2025. A new enantiornithine (Aves: Ornithothoraces) from the Lower Cretaceous Xiagou Formation with unusually short pubes. Geobios 90: 123-131.',
+      'Kiat Y, Wang X-L, Zheng X-T, Wang Y, <strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK. 2025. Wing morphology of Anchiornis huxleyi and the evolution of molt strategies in paravian dinosaurs. <span class="italic">Communications Biology</span> 8: 1633.',
+      'Lowi-Merri TM, Hu H, <strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK, Benson RBJ, Claramont S, Evans DC. 2025. Enlargement of sternum traits facilitated the evolution of powered flight in birds. <span class="italic">Nature Ecology & Evolution</span> 9(9): 1705–1718.',
+      'Napoli JG, Fabbri M, Ruebenstahl AA, <strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK, Bhullar BA, Norell MA. 2025. Reorganization of the theropod wrist preceded the origin of avian flight. <span class="italic">Nature</span> 644(8077): 699–705.',
+      '<strong class="font-bold"><span class="font-bold">O\'Connor</span></strong> JK, Wang X-L, Clark AD, Kuo P-C, Davila R, Wang Y, Zheng X-T, Zhou Z-H. 2025. A new small-bodied longipterygid (Aves: Enantiornithes) from the Aptian Jiufotang Formation preserving unusual gastroliths. <span class="italic">Palaeontologia Electronica</span>.',
     ],
   },
   {
