@@ -54,7 +54,7 @@ const websiteJsonLd = {
         "https://www.researchgate.net/profile/Jingmai-Oconnor",
         "https://scholar.google.com/citations?user=BzgZsCoAAAAJ&hl=en",
         "https://twitter.com/Paleontologista",
-        "https://www.linkedin.com/in/jingmai-o-connor-4ab8a92a4/",
+        "https://www.linkedin.com/in/jingmai-oconnor",
       ],
     },
   ],
@@ -104,9 +104,12 @@ export default function Page() {
           />
         </div>
         <div className="flex flex-col gap-4 flex-1 min-w-[300px]">
-          <Heading as="h1" size="display">Hi!</Heading>
+          <Heading as="h1" size="display">
+            Hi!
+          </Heading>
           <Heading as="h2" size="intro">
-            I’m paleontologist Jingmai O'Connor aka paleontologista aka the punk rock paleontologist.
+            I’m paleontologist Jingmai O'Connor aka paleontologista aka the punk rock
+            paleontologist.
           </Heading>
           <div className="flex flex-col gap-4 rounded-4xl w-fit">
             <Link href="/biography" className={buttonVariants({ variant: "outline" })}>
@@ -130,7 +133,9 @@ export default function Page() {
       </div>
 
       <div className="w-full pt-24 py-12 mx-auto max-w-7xl px-4">
-        <Heading as="h2" size="section">Areas of Expertise</Heading>
+        <Heading as="h2" size="section">
+          Areas of Expertise
+        </Heading>
 
         <SeparatorLine />
 
@@ -148,12 +153,16 @@ export default function Page() {
 
       <div className="pt-24 w-full bg-background-blue px-4">
         <div className="flex flex-col md:flex-row justify-between gap-4 mx-auto max-w-7xl">
-          <Heading as="h4" size="subsection"
+          <Heading
+            as="h4"
+            size="subsection"
             text="Personal notes and thoughts about work I’m passionate about"
             className="text-white max-w-full md:max-w-sm"
           />
           <div className="flex flex-col items-end text-right">
-            <Heading as="h2" size="section" className="text-white">Research</Heading>
+            <Heading as="h2" size="section" className="text-white">
+              Research
+            </Heading>
             <Link
               href="/research-highlights"
               className="text-white justify-self-end hover:underline hover:text-white"
@@ -164,27 +173,31 @@ export default function Page() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-18 py-24 justify-items-center md:justify-items-start mx-auto max-w-7xl">
-          {researchHighlights.filter((r) => r.featured).map((r) => {
-            return (
-              <Link
-                key={r.title}
-                href={`/research-highlights/${r.slug}`}
-                className="transform transition-transform duration-200 hover:scale-[1.01]"
-              >
-                <div className="aspect-[1/1] w-full relative">
-                  <Image src={r.image} alt={r.alt} width={500} height={500} placeholder="blur" />
-                </div>
-                <Heading as="h4" size="subsection" text={r.title} className="text-white mt-8" />
-                <p className="max-w-lg text-white mb-8">{r.summary}</p>
-              </Link>
-            );
-          })}
+          {researchHighlights
+            .filter((r) => r.featured)
+            .map((r) => {
+              return (
+                <Link
+                  key={r.title}
+                  href={`/research-highlights/${r.slug}`}
+                  className="transform transition-transform duration-200 hover:scale-[1.01]"
+                >
+                  <div className="aspect-[1/1] w-full relative">
+                    <Image src={r.image} alt={r.alt} width={500} height={500} placeholder="blur" />
+                  </div>
+                  <Heading as="h4" size="subsection" text={r.title} className="text-white mt-8" />
+                  <p className="max-w-lg text-white mb-8">{r.summary}</p>
+                </Link>
+              );
+            })}
         </div>
       </div>
 
       <div className="flex flex-col mx-auto max-w-7xl mt-24 px-4">
         <div>
-          <Heading as="h2" size="section" className="text-left">Outreach</Heading>
+          <Heading as="h2" size="section" className="text-left">
+            Outreach
+          </Heading>
           <SeparatorLine />
         </div>
         <div className="flex flex-wrap md:flex-nowrap gap-12 justify-center md:justify-start mt-12">
@@ -198,7 +211,11 @@ export default function Page() {
             />
           </div>
           <div className="flex flex-col gap-4 flex-1 min-w-[300px]">
-            <Heading as="h4" size="subsection" text="In order to maximize the impact of scientific research and utilize the power of paleontology as a gateway science, I happily engage in outreach as opportunities arise." />
+            <Heading
+              as="h4"
+              size="subsection"
+              text="In order to maximize the impact of scientific research and utilize the power of paleontology as a gateway science, I happily engage in outreach as opportunities arise."
+            />
 
             <div className="w-fit">
               <Link href="/contact" className={buttonVariants({ variant: "outline" })}>
@@ -218,10 +235,16 @@ export default function Page() {
       </div>
 
       <div className="w-full pt-48 mx-auto max-w-7xl px-4">
-        <Heading as="h2" size="section" className="text-right">Field Work</Heading>
+        <Heading as="h2" size="section" className="text-right">
+          Field Work
+        </Heading>
         <SeparatorLine />
         <div className="mt-12">
-          <Heading as="h4" size="subsection" text="I have been lucky to participate in Field Work around the world." />
+          <Heading
+            as="h4"
+            size="subsection"
+            text="I have been lucky to participate in Field Work around the world."
+          />
           <Image
             className="mx-auto my-12"
             src={dbn}
