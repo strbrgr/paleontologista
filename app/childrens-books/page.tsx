@@ -8,7 +8,8 @@ import birdPrimeval from "@/app/childrens-books/img/bird_primeval.webp";
 
 export const metadata = createPageMetadata({
   title: "Children's Books",
-  description: "Children’s books by Jingmai O'Connor.",
+  description:
+    "Explore children’s books about dinosaurs, birds, and prehistoric life by paleontologist Jingmai O'Connor.",
   path: "/childrens-books",
 });
 
