@@ -1,17 +1,27 @@
-import { HeaderFive, HeaderSix } from "@/components/ui/typography";
+import { Heading } from "@/components/ui/typography";
 import { fieldWork } from "@/app/field-work/fieldWork";
 import { outreach } from "./outreach";
 import Layout from "@/components/ui/layout";
 import { StaticImageData } from "next/image";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "CV",
   description: "Professional Experience of Jingmai O'Connor",
-};
+  path: "/cv",
+});
 
 const currentPosition: { year: string; content: string[] }[] = [
   {
-    year: "2020–present",
+    year: "2026–present",
+    content: [
+      '<span class="font-bold">Curator of Fossil Reptiles</span>',
+      "Field Museum of Natural History",
+      "Chicago, Illinois",
+    ],
+  },
+  {
+    year: "2020–2026",
     content: [
       '<span class="font-bold">Associate Curator of Fossil Reptiles</span>',
       "Field Museum of Natural History",
@@ -21,6 +31,13 @@ const currentPosition: { year: string; content: string[] }[] = [
 ];
 
 const facultyPositions: { year: string; content: string[] }[] = [
+  {
+    year: "2025–present",
+    content: [
+      "Lecturer",
+      "School of the Art Institute, Chicago",
+    ],
+  },
   {
     year: "2022–present",
     content: [
@@ -89,6 +106,22 @@ const educationAndTraining: { year: string; content: string[] }[] = [
 
 const professionalAppointments: { year: string; content: string[] }[] = [
   {
+    year: "2026–present",
+    content: ["President, Society of Avian Paleontology and Evolution"],
+  },
+  {
+    year: "2026–present",
+    content: [
+      'Editorial board member, <span class="italic">Acta Palaeontologica Sinica</span>',
+    ],
+  },
+  {
+    year: "2025–present",
+    content: [
+      'Handling Editor, <span class="italic">Palaeontologica Electronica</span>',
+    ],
+  },
+  {
     year: "2025–present",
     content: ['Ornithology editor, <span class="italic">Palaeoworld</span>'],
   },
@@ -146,15 +179,21 @@ const professionalAppointments: { year: string; content: string[] }[] = [
 
 const awardsAndFellowships: { year: string; content: string[] }[] = [
   {
+    year: "2026",
+    content: [
+      'NSF-BSF BIO EP research grant: <span class="italic">Evolution of the aerodynamic feathered wing: development of shape-function relationship through deep time</span> <span class="font-bold">($811,850)</span>',
+    ],
+  },
+  {
     year: "2024",
     content: [
       "Rock Star Award, Cranbrook Institute of Science",
-      "Negaunee Seed Fund ($35,000 USD)",
+      'Negaunee Seed Fund <span class="font-bold">($35,000 USD)</span>',
     ],
   },
   {
     year: "2023",
-    content: ["Negaunee Innovation Award ($55,000 USD)"],
+    content: ['Negaunee Innovation Award <span class="font-bold">($55,000 USD)</span>'],
   },
   {
     year: "2019",
@@ -239,8 +278,16 @@ const awardsAndFellowships: { year: string; content: string[] }[] = [
 
 const teachingExperience: { year: string; content: string[] }[] = [
   {
+    year: "2026",
+    content: [
+      'Science 3012: Birds are Dinosaurs, School of the Art Institute Chicago; Guest lecturer: Origins and Extinctions: Rocks and Life in Deep Time (Macalester College), The Scientific Image: Formalism, Abstraction, Realism (University of Chicago), Dinosaur Evolution and Extinction (Columbia College Chicago)',
+    ],
+  },
+  {
     year: "2025",
-    content: ["Guest lecturer: Life during the age of dinosaurs (UC Berkeley)"],
+    content: [
+      'Science 3550: Rise and Fall of Dinosaurs, School of the Art Institute Chicago; Guest lecturer: Life during the age of dinosaurs (UC Berkeley), Origins and Extinctions: Rocks and Life in Deep Time (Macalester College)',
+    ],
   },
   {
     year: "2024",
@@ -300,9 +347,17 @@ const teachingExperience: { year: string; content: string[] }[] = [
 
 const studentsSupervised: { year: string; content: string[] }[] = [
   {
-    year: "2025–incoming",
+    year: "2025–present",
     content: [
       '<span class="font-bold">Isaiah McKinney</span>, University of Chicago',
+    ],
+  },
+  {
+    year: "2024–present",
+    content: [
+      '<span class="font-bold">Chuyan Wan</span>, Northwestern University, Ph.D. (committee member)',
+      '<span class="font-bold">Kevin Prehm</span>, DePaul University, M.Sc. (committee member)',
+      '<span class="font-bold">Romain Palgrem</span>, University of Alberta, M.Sc. (committee member)',
     ],
   },
   {
@@ -406,12 +461,6 @@ const postdoctoralResearchersSupervised: { year: string; content: string[] }[] =
 
 const undergraduateStudentsSupervised: { year: string; content: string[] }[] = [
   {
-    year: "2024–present",
-    content: [
-      '<span class="font-bold">Spencer Saines</span> (University of Illinois Urbana-Champaign) – Green River birds',
-    ],
-  },
-  {
     year: "2023–present",
     content: [
       '<span class="font-bold">Sahaara Clark</span> (University of California, Santa Barbara) - Brodavidae',
@@ -433,6 +482,12 @@ const undergraduateStudentsSupervised: { year: string; content: string[] }[] = [
 
 const recentGraduatesSupervised: { year: string; content: string[] }[] = [
   {
+    year: "2025–present",
+    content: [
+      '<span class="font-bold">Sean Herrington</span> – Cretaceous bird teeth microstructure',
+    ],
+  },
+  {
     year: "2024",
     content: [
       '<span class="font-bold">Jessica Zarosl</span> – Hell Creek neornithine',
@@ -442,7 +497,7 @@ const recentGraduatesSupervised: { year: string; content: string[] }[] = [
     year: "2022–present",
     content: [
       '<span class="font-bold">Christian Cooper</span> – Histology of Baptornis',
-      '<span class="font-bold">Ryan Davila</span> – Forelimb biomechanics of T. rex',
+      '<span class="font-bold">Ryan Davila</span> – Enantiornithine forelimb in amber',
     ],
   },
   {
@@ -497,9 +552,15 @@ const memberships: { year: string; content: string[] }[] = [
 
 const invitedPresentations: { year: string; content: string[] }[] = [
   {
+    year: "2026",
+    content: [
+      "Utah Natural History Museum DinoFest (Keynote), Burpee Museum Paleofest (Keynote), Northwestern University, Harvard Ornithology Panel, SoCal Paleontological Society, Urban Birding Festival, School Science and Mathematics Association Annual Conference (Keynote)",
+    ],
+  },
+  {
     year: "2025",
     content: [
-      "Museum of the Rockies, Montana State University, Clemson University",
+      "Museum of the Rockies Dinosaurs and MOR (Keynote), Montana State University, Clemson University, Kane County Audubon Society",
     ],
   },
   {
@@ -553,11 +614,11 @@ const invitedPresentations: { year: string; content: string[] }[] = [
 const exhibitions: { year: string; content: string[] }[] = [
   {
     year: "2026",
-    content: ["Field Museum: Pokémon Museum"],
+    content: ["Field Museum: Pokémon Museum (supporting advisor)"],
   },
   {
     year: "2025",
-    content: ["Field Museum: After the Impact"],
+    content: ["Field Museum: After the Age of Dinosaurs (supporting advisor)"],
   },
   {
     year: "2024",
@@ -576,9 +637,22 @@ const exhibitions: { year: string; content: string[] }[] = [
 
 const symposiaOrganized: { year: string; content: string[] }[] = [
   {
-    year: "2021",
+    year: "2027",
+    content: [
+      "87th Meeting of the Society of Vertebrate Paleontology, co-chair host committee",
+      "New fossils inform on the tempo and mode of the dinosaur–bird transition, 3rd Asian Palaeontological Congress",
+    ],
+  },
+  {
+    year: "2022",
     content: [
       "The appearance and loss of flight in paravians, 6th International Palaeontological Congress",
+    ],
+  },
+  {
+    year: "2014",
+    content: [
+      "Origin and early evolution of birds, 4th International Palaeontological Congress",
     ],
   },
 ];
@@ -598,9 +672,9 @@ function Content(props: {
 }) {
   return (
     <div className="mb-12">
-      <HeaderFive text={props.header} />
-      {props.content.map((item) => (
-        <div className="flex flex-row mb-4" key={item.year}>
+      <Heading as="h5" size="label" text={props.header} />
+      {props.content.map((item, idx) => (
+        <div className="flex flex-row mb-4" key={`${item.year}-${idx}`}>
           <p className="min-w-40 font-bold">{item.year}</p>
           <div className="flex flex-col">
             {item.content.map((v, idx) => (
@@ -618,8 +692,8 @@ export default function Page() {
     <Layout>
       <div className="max-w-2xl mx-auto">
         <div className="mb-12">
-          <HeaderFive text="Jingmai Kathleen O'Connor" />
-          <HeaderFive text="邹晶梅" />
+          <Heading as="h5" size="label" text="Jingmai Kathleen O'Connor" />
+          <Heading as="h5" size="label" text="邹晶梅" />
         </div>
         <Content header="Current Position" content={currentPosition} />
         <Content header="Faculty Positions" content={facultyPositions} />
@@ -662,7 +736,7 @@ export default function Page() {
         />
 
         <div className="mb-12">
-          <HeaderFive text="Field Work In Paleontology" />
+          <Heading as="h5" size="label" text="Field Work In Paleontology" />
           {fieldWork.map((item) => (
             <div className="flex flex-row mb-4" key={item.year}>
               <p className="min-w-40 font-bold">{item.year}</p>
@@ -683,29 +757,31 @@ export default function Page() {
           content={invitedPresentations}
         />
 
-        <HeaderFive text="Media Coverage & Appearances" />
+        <Heading as="h5" size="label" text="Media Coverage & Appearances" />
         <div className="mb-6">
-          <HeaderSix text="Printed interviews" />
+          <Heading as="h6" size="small" text="Printed interviews" />
           <p>
             Current Biology (2016), Nature (2017), Smithsonian Magazine (2018),
             Geo Kompakt (2018), Rewire (2019), Massive Science (2020), USC
             Trojan Family (2020), Chicago Sun Times (2020, 2023), Medium (2021),
-            Lion’s Roar Magazine (2021), Chicago Magazine (2023)
+            Lion’s Roar Magazine (2021), Chicago Magazine (2023), Louis Vuitton
+            City Guide (2026)
           </p>
         </div>
         <div className="mb-6">
-          <HeaderSix text="Podcasts" />
+          <Heading as="h6" size="small" text="Podcasts" />
           <p>
             Friends Like Us (2015), We Know Dino (2018), VitalCorps Salon
             (2019), Paleonerds (2020), BBC One Earth (2021), If/Then (2021),
             Brains On (2021), Pulsar (2021), Unexplainable (2021), NPR Everyone
             & Their Mom (2022), Solve It (2022), Talk Nerdy (2022), Cranbook
             Museum (2022), Jura-sick (2023), Ignition Sequence (2024), NPR
-            Shortwave (2024), Moment of Um (2025), Brains On (2025)
+            Shortwave (2024), Moment of Um (2025), Brains On (2025), ScienceStuff
+            (2025)
           </p>
         </div>
         <div className="mb-12">
-          <HeaderSix text="Documentaries" />
+          <Heading as="h6" size="small" text="Documentaries" />
           <p>
             Science Skills! Paleontology (Science Insider, 2022), Breakthrough:
             Women in STEM (Science Friday, 2019), SELF scientist profile (CAS,
@@ -720,26 +796,26 @@ export default function Page() {
         <Content header="Outreach" content={outreach} />
         <Content header="Exhibitions" content={exhibitions} />
 
-        <HeaderFive text="Additional Services" />
+        <Heading as="h5" size="label" text="Additional Services" />
         <div className="mb-6">
-          <HeaderSix text="Peer Reviews" />
+          <Heading as="h6" size="small" text="Peer Reviews" />
           <p>
             Anales de Paleontologie, Atti della Società Italiana di Scienze
             Naturali e del Museo Civico di Storia Naturale di Milano, Avian
-            Research, Biology Letters, BMC Biology (2), Communications Biology
+            Research, Biology Letters, BMC Biology (3), Communications Biology
             (2), Cretaceous Research (11), Current Biology (7), eLife (4),
             Evolution, Fossil Studies, Frontiers in Earth Science,
             Geoconservation Research, Geodiversitas, Historical Biology (5),
-            iScience (2), Journal of Anatomy, Journal of Evolutionary Biology
+            iScience (5), Journal of Anatomy, Journal of Evolutionary Biology
             (3), Journal of Morphology (2), Journal of Ornithology, Journal of
             Paleontology (3), Journal of Systematic Palaeontology (6), Journal
-            of Vertebrate Paleontology (13), Lethaia, National Science Review
+            of Vertebrate Paleontology (14), Lethaia, National Science Review
             (3), Nature (6), Nature Communications, Nature Ecology and Evolution
             (2), Naturwissenschaften, New Mexico Natural History Museum Bulletin
             (3), Paleobiology, Palaeontology (3), Palaeontological Polonica,
-            Palaeoworld, PeerJ (4), Philosophical Transactions of the Royal
-            Society B, PLoS ONE (5), Proceedings of the National Academy of
-            Science (1), Proceedings of the Royal Society B (3), Science (4),
+            Palaeoworld (2), PeerJ (4), Philosophical Transactions of the Royal
+            Society B (2), PLoS ONE (5), Proceedings of the National Academy of
+            Science (4), Proceedings of the Royal Society B (5), Science (4),
             Science Advances (4), Scientific Reports (3), Spanish Journal of
             Palaeontology, Systematic Palaeontology (2), The Anatomical Record,
             The Innovation (2), Vertebrata Palasiatica (6), Zoological Journal
@@ -748,11 +824,11 @@ export default function Page() {
         </div>
 
         <div className="mb-12">
-          <HeaderSix text="Grant Reviews" />
+          <Heading as="h6" size="small" text="Grant Reviews" />
           <p>
             Hong Kong Research Grants Council (6); Medical Research Council,
             UKRI (2); Royal Society University Research Fellowship (1); Swiss
-            National Science Foundation.
+            National Science Foundation, Veni Science.
           </p>
         </div>
 
@@ -763,7 +839,7 @@ export default function Page() {
         />
 
         <div className="mb-12">
-          <HeaderFive text="Promoting Equity Diversity and Inclusion" />
+          <Heading as="h5" size="label" text="Promoting Equity Diversity and Inclusion" />
           <p>
             Palaeontologists Against Systemic Racism Society (founding member,
             2022)

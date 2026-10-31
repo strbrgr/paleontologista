@@ -25,6 +25,17 @@ export const fieldWork: {
   }[];
 }[] = [
     {
+      year: "2026",
+      content: [
+        {
+          img: null,
+          imageAspectRatio: null,
+          location:
+            '<span class="font-bold">Wyoming–Montana, USA.</span> Prospecting in Wyoming; microsite excavation and sediment processing and prospecting the Hell Creek Formation in Montana (expedition leader)',
+        },
+      ],
+    },
+    {
       year: "2025",
       content: [
         {
@@ -116,6 +127,12 @@ export const fieldWork: {
           imageAspectRatio: null,
           location:
             '<span class="font-bold">Romania.</span> American Museum of Natural History expedition prospecting and quarrying in Cretaceous deposits in the Hateg Basin and near Sebes',
+        },
+        {
+          img: null,
+          imageAspectRatio: null,
+          location:
+            '<span class="font-bold">Free State, South Africa.</span> University of Witwatersrand expedition and quarrying in Jurassic deposits collecting dinosaurs and mammals',
         },
       ],
     },

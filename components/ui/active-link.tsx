@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
-import path from "path";
 
 interface ActiveLinkProps {
   href: string;
@@ -15,8 +14,8 @@ interface ActiveLinkProps {
 export function ActiveLink({ href, children, className }: ActiveLinkProps) {
   const pathname = usePathname();
   const isActive = (href: string) => {
-    if (href === "/research") {
-      return pathname === href || pathname.startsWith("/research/");
+    if (href === "/research-highlights") {
+      return pathname === href || pathname.startsWith("/research-highlights/");
     }
     return pathname === href;
   };

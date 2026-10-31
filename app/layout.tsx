@@ -17,20 +17,30 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://paleontologista.com"),
-  alternates: {
-    canonical: "/",
-  },
   title: {
     default: "Jingmai O'Connor",
     template: "%s | Jingmai O'Connor",
   },
   description:
-    "I am Dr. Jingmai O’Connor, Associate Curator of Fossil Reptiles at the Field Museum of Natural History in Chicago.",
+    "I am Dr. Jingmai O’Connor, Curator of Fossil Reptiles at the Field Museum of Natural History in Chicago.",
+  authors: [{ name: "Jingmai O'Connor" }],
+  creator: "Jingmai O'Connor",
+  openGraph: {
+    type: "website",
+    siteName: "Jingmai O'Connor",
+    title: "Jingmai O'Connor",
+    description: "Curator of Fossil Reptiles at the Field Museum of Natural History in Chicago.",
+    images: [
+      {
+        url: "/opengraph-image.jpg",
+        alt: "Jingmai O'Connor",
+      },
+    ],
+  },
   twitter: {
     card: "summary_large_image",
     title: "Dr. Jingmai O'Connor",
-    description:
-      "Associate Curator of Fossil Reptiles at the Field Museum of Natural History in Chicago.",
+    description: "Curator of Fossil Reptiles at the Field Museum of Natural History in Chicago.",
     creator: "@paleontologista",
     images: ["https://www.paleontologista.com/opengraph-image.jpg"],
   },
@@ -40,6 +50,10 @@ function Footer() {
   const links = [
     { name: "Instagram", url: "https://instagram.com/paleontologista" },
     { name: "Facebook", url: "https://www.facebook.com/jingmai.oconnor" },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/jingmai-o-connor-4ab8a92a4/",
+    },
     {
       name: "ResearchGate",
       url: "https://www.researchgate.net/profile/Jingmai-Oconnor",

@@ -1,25 +1,16 @@
 import { SeparatorLine } from "@/components/ui/separator-line";
-import { HeaderFive } from "@/components/ui/typography";
+import { Heading } from "@/components/ui/typography";
 import { fieldWork } from "@/app/field-work/fieldWork";
 import Image from "next/image";
 import Layout from "@/components/ui/layout";
-import { ImageType } from "@/components/ui/image";
+import { getImageDimensions, ImageType } from "@/components/ui/image";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata = {
+export const metadata = createPageMetadata({
   title: "Field Work",
   description: "I have taken part in a variety of field trips.",
-};
-
-const getImageDimensions = (type: ImageType) => {
-  switch (type) {
-    case ImageType.Square:
-      return { width: 500, height: 500 };
-    case ImageType.Vertical:
-      return { width: 375, height: 500 };
-    case ImageType.Horizontal:
-      return { width: 800, height: 600 };
-  }
-};
+  path: "/field-work",
+});
 
 export default function Page() {
   return (
@@ -34,11 +25,17 @@ export default function Page() {
           {fieldWork.map((fw, idx) => {
             return (
               <div key={idx} className="mb-12">
-                <HeaderFive text={fw.year.toString()} />
+                <Heading as="h5" size="label" text={fw.year.toString()} />
                 {fw.content.map((c, idx) => {
-                  const { width, height } = getImageDimensions(
+                  const dimensions = getImageDimensions(
                     c.imageAspectRatio || ImageType.Square,
                   );
+                  const width = c.img
+                    ? Math.min(dimensions.width, c.img.width)
+                    : dimensions.width;
+                  const height = c.img
+                    ? Math.round((width * c.img.height) / c.img.width)
+                    : dimensions.height;
                   return (
                     <div key={idx} className="mb-8">
                       {c.img && (
@@ -49,7 +46,7 @@ export default function Page() {
                             width={width}
                             height={height}
                             placeholder="blur"
-                            priority={idx === 0}
+                            preload={idx === 0}
                           />
                         </div>
                       )}

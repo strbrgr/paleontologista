@@ -5,14 +5,15 @@ import yosef from "@/app/oconnor-lab/img/past_lab_yosef.jpg";
 import matteo from "@/app/oconnor-lab/img/past_lab_matteo.jpg";
 import dbn_logo from "@/app/oconnor-lab/img/dead_bird_nerds_logo.jpg";
 import Image, { StaticImageData } from "next/image";
-import { HeaderFive, HeaderFour } from "@/components/ui/typography";
+import { Heading } from "@/components/ui/typography";
 import Layout from "@/components/ui/layout";
-import { Metadata } from "next";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "O'Connor Lab",
   description: 'Information about my Lab group the "Dead Bird Nerds".',
-};
+  path: "/oconnor-lab",
+});
 
 const labMembers: {
   name: string;
@@ -84,7 +85,7 @@ export default function Page() {
           width={500}
           height={500}
           placeholder="blur"
-          priority={true}
+          preload
         />
         <div className="my-12">
           <p>
@@ -115,17 +116,20 @@ export default function Page() {
           </p>
         </div>
 
-        <HeaderFour text="Current Members" />
+        <Heading as="h4" size="subsection" text="Current Members" />
         {labMembers.map((m, idx) => {
+          const width = 375;
+          const height = Math.round((width * m.image.height) / m.image.width);
+
           return (
             <div key={idx} className="mb-12">
-              <HeaderFive text={m.name} />
+              <Heading as="h5" size="label" text={m.name} />
               <div className="flex justify-center my-4">
                 <Image
                   src={m.image}
                   alt={`Photo of lab member ${m.name}`}
-                  width={375}
-                  height={500}
+                  width={width}
+                  height={height}
                   placeholder="blur"
                 />
               </div>
@@ -157,17 +161,20 @@ export default function Page() {
           );
         })}
 
-        <HeaderFour text="Past Members" />
+        <Heading as="h4" size="subsection" text="Past Members" />
         {pastLabMembers.map((m, idx) => {
+          const width = 500;
+          const height = Math.round((width * m.image.height) / m.image.width);
+
           return (
             <div key={idx} className="mb-12">
-              <HeaderFive text={m.name} />
+              <Heading as="h5" size="label" text={m.name} />
               <div className="flex justify-center my-4">
                 <Image
                   src={m.image}
                   alt={`Photo of past lab member ${m.name}`}
-                  width={500}
-                  height={500}
+                  width={width}
+                  height={height}
                   placeholder="blur"
                 />
               </div>
