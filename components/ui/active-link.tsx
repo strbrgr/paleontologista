@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
-import path from "path";
 
 interface ActiveLinkProps {
   href: string;
