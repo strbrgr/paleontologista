@@ -24,6 +24,14 @@ export const metadata = {
   },
 };
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  url: "https://paleontologista.com/",
+  name: "Jingmai O'Connor",
+  alternateName: "paleontologista",
+};
+
 const expertise: { title: string; description: string }[] = [
   {
     title: "Mesozoic bird phylogeny",
@@ -50,6 +58,10 @@ const expertise: { title: string; description: string }[] = [
 export default function Page() {
   return (
     <div className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start my-12 ">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
       <div className="flex flex-wrap md:flex-nowrap py-12 gap-12 justify-center md:justify-start mx-auto max-w-7xl px-4">
         <div>
           <Image
