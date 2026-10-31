@@ -118,6 +118,9 @@ export default function Page() {
 
         <Heading as="h4" size="subsection" text="Current Members" />
         {labMembers.map((m, idx) => {
+          const width = 375;
+          const height = Math.round((width * m.image.height) / m.image.width);
+
           return (
             <div key={idx} className="mb-12">
               <Heading as="h5" size="label" text={m.name} />
@@ -125,8 +128,8 @@ export default function Page() {
                 <Image
                   src={m.image}
                   alt={`Photo of lab member ${m.name}`}
-                  width={375}
-                  height={500}
+                  width={width}
+                  height={height}
                   placeholder="blur"
                 />
               </div>
@@ -160,6 +163,9 @@ export default function Page() {
 
         <Heading as="h4" size="subsection" text="Past Members" />
         {pastLabMembers.map((m, idx) => {
+          const width = 500;
+          const height = Math.round((width * m.image.height) / m.image.width);
+
           return (
             <div key={idx} className="mb-12">
               <Heading as="h5" size="label" text={m.name} />
@@ -167,8 +173,8 @@ export default function Page() {
                 <Image
                   src={m.image}
                   alt={`Photo of past lab member ${m.name}`}
-                  width={500}
-                  height={500}
+                  width={width}
+                  height={height}
                   placeholder="blur"
                 />
               </div>

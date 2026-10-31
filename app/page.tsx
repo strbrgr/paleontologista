@@ -197,7 +197,7 @@ export default function Page() {
             src={dbn}
             alt="Group photo of Dead Birds Nerds in 2025"
             width={800}
-            height={600}
+            height={Math.round((800 * dbn.height) / dbn.width)}
             placeholder="blur"
           />
           <div className="flex justify-center">
