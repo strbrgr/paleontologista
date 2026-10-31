@@ -27,9 +27,15 @@ export default function Page() {
               <div key={idx} className="mb-12">
                 <Heading as="h5" size="label" text={fw.year.toString()} />
                 {fw.content.map((c, idx) => {
-                  const { width, height } = getImageDimensions(
+                  const dimensions = getImageDimensions(
                     c.imageAspectRatio || ImageType.Square,
                   );
+                  const width = c.img
+                    ? Math.min(dimensions.width, c.img.width)
+                    : dimensions.width;
+                  const height = c.img
+                    ? Math.round((width * c.img.height) / c.img.width)
+                    : dimensions.height;
                   return (
                     <div key={idx} className="mb-8">
                       {c.img && (
