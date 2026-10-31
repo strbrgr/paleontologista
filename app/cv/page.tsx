@@ -181,19 +181,19 @@ const awardsAndFellowships: { year: string; content: string[] }[] = [
   {
     year: "2026",
     content: [
-      'NSF-BSF BIO EP research grant: <span class="italic">Evolution of the aerodynamic feathered wing: development of shape-function relationship through deep time</span> ($811,850)',
+      'NSF-BSF BIO EP research grant: <span class="italic">Evolution of the aerodynamic feathered wing: development of shape-function relationship through deep time</span> <span class="font-bold">($811,850)</span>',
     ],
   },
   {
     year: "2024",
     content: [
       "Rock Star Award, Cranbrook Institute of Science",
-      "Negaunee Seed Fund ($35,000 USD)",
+      'Negaunee Seed Fund <span class="font-bold">($35,000 USD)</span>',
     ],
   },
   {
     year: "2023",
-    content: ["Negaunee Innovation Award ($55,000 USD)"],
+    content: ['Negaunee Innovation Award <span class="font-bold">($55,000 USD)</span>'],
   },
   {
     year: "2019",
