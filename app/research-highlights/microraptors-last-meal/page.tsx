@@ -24,7 +24,7 @@ export default function Page() {
         These specimens together indicate that <span className='italic'>Microraptor</span> was an agile, opportunistic predator that swallowed prey largely whole and head first, similar to most extant carnivorous birds and lizards.
       </p>
 
-      <ResearchImage src={microraptor} alt="A microraptor with a lizard in its stomach" width={500} height={500} />
+      <ResearchImage src={microraptor} alt="A microraptor with a lizard in its stomach" maxWidth={500} />
 
       <Heading as="h5" size="label" text='Abstract' />
       <p className="mb-4">

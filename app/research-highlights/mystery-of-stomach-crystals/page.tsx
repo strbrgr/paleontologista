@@ -17,7 +17,7 @@ export default function Page() {
       <p className="mb-4">
         There is almost no evidence of enantiornithine diet in the form of ingested remains. This is strange because thousands of well-preserved specimens have been recovered and such evidence exists for contemporaneous ornithuromorphs known from far fewer specimens. As such, any evidence pertaining to enantiornithine diet and digestive function is important.
       </p>
-      <ResearchImage src={stomach_crystals} alt="Silicified soft tissue in the abdomen of an enantiornithine bird" width={500} height={500} />
+      <ResearchImage src={stomach_crystals} alt="Silicified soft tissue in the abdomen of an enantiornithine bird" maxWidth={500} />
       <p className="mb-8">
         A referred specimen of <span className='italic'>Bohaiornis</span> was described as preserving ingested stones interpreted as rangle (stones ingested by predatory birds to clean their digestive tract)(Li et al., 2014). However, these traces were alternately interpreted as not gastroliths at all (O’Connor 2019). In order to solve this mystery, IVPP Master’s student LIU Shumin extracted a sample of the purported gastroliths and analyzed them using a number of methods. The results showed that these mysterious traces are not gastroliths, although what they are exactly remains a mystery.
       </p>

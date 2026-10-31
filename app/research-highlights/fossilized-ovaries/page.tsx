@@ -22,7 +22,7 @@ export default function Page() {
         I described nine fossil birds from the Jehol preserving remnants of the ovary. These specimens indicate that the loss of the right ovary occurred very early in avian evolution.
       </p>
 
-      <ResearchImage src={fossilizedOvaries} alt="Fossilized ovaries in an enantiornithine bird" width={500} height={500} />
+      <ResearchImage src={fossilizedOvaries} alt="Fossilized ovaries in an enantiornithine bird" maxWidth={500} />
 
       <Heading as="h5" size="label" text='Summary' />
       <p className="mb-4">

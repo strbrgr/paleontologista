@@ -24,7 +24,7 @@ export default function Page() {
         ). My team and I at the IVPP are currently working on developing techniques to help us distinguish fossil pathologies from true medullary bone.
       </p>
 
-      <ResearchImage src={medullaryBone} alt="Enantiornithine bone tissue preserving medullary bone" width={500} height={500} />
+      <ResearchImage src={medullaryBone} alt="Enantiornithine bone tissue preserving medullary bone" maxWidth={500} />
 
       <Heading as="h5" size="label" text='Abstract' />
       <p className="mb-4">

@@ -14,7 +14,7 @@ export default function Page() {
       <p className="mb-4">
         A new species of enantiornithine closely related to Longipteryx and named in honor of the Chromeo Funklordz.
       </p>
-      <ResearchImage src={chromeo} alt="Image of Jingmai O'Connor and Chromeo" width={500} height={500} />
+      <ResearchImage src={chromeo} alt="Image of Jingmai O'Connor and Chromeo" maxWidth={500} />
       </ResearchArticle>
   )
 }

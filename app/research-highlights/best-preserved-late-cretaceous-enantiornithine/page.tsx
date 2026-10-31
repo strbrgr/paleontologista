@@ -15,7 +15,7 @@ export default function Page() {
       <p className="mb-4">
         Late Cretaceous fossil birds are rare. When found, they are usually very incomplete hindering attempts to understand broad trends in avian evolution across the Cretaceous.
       </p>
-      <ResearchImage src={late_cretaceous} alt="A Late Cretaceous enantiornithine skull" width={500} height={500} />
+      <ResearchImage src={late_cretaceous} alt="A Late Cretaceous enantiornithine skull" maxWidth={500} />
 
       <Heading as="h5" size="label" text='The best-preserved Late Cretaceous enantiornithine known to date.' />
       <p className="mb-4">

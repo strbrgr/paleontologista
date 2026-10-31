@@ -22,7 +22,7 @@ export default function Page() {
         Fossilized soft tissues are rare – even more rare are traces of internal organs (integument like skin and feathers being relatively more common). In an article published in the Proceedings of the National Academy of Sciences U.S.A., I described a specimen of <span className='italic'>Archaeorhynchus spathula</span>, a primitive ornithuromorph bird, preserving traces of the lung tissue. Scanning electron microscopic images of the lung tissue revealed that the extremely subdivided functional tissue of the lung that allows modern birds to meet the high oxygen demand of powered flight was already in place 128 Ma.
       </p>
 
-      <ResearchImage src={fossilizedLungs} alt="Fossilized lungs in an Archaeorhynchus" width={500} height={500} />
+      <ResearchImage src={fossilizedLungs} alt="Fossilized lungs in an Archaeorhynchus" maxWidth={500} />
 
       <Heading as="h5" size="label" text='Abstract' />
       <p className="mb-4">

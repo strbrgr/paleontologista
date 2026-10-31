@@ -16,7 +16,7 @@ export default function Page() {
       <p className="mb-4">
         When an animal is preserved with evidence that it was rapidly buried by a collapsed sand dune, pyroclastic flow, or turbidite you can pretty safely assume that’s how the animal died.
       </p>
-      <ResearchImage src={deathBy} alt="Stones in the guts of a Yanornis" width={500} height={500} />
+      <ResearchImage src={deathBy} alt="Stones in the guts of a Yanornis" maxWidth={500} />
       <p className="mb-8">
         In fossils found in lake deposits we normally don’t know exact cause of death. However, two exceptional Early Cretaceous bird fossils from China preserve unusual traces that hint at the final moments for these birds.
       </p>

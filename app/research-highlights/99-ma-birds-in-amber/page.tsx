@@ -30,7 +30,7 @@ export default function Page() {
         So far six skeletal specimens have been uncovered, all of which have been described by me.
       </p>
 
-      <ResearchImage src={mabirds} alt="An enantiornithine bird leg trapped in amber" width={500} height={500} priority />
+      <ResearchImage src={mabirds} alt="An enantiornithine bird leg trapped in amber" maxWidth={500} priority />
 
       <Heading as="h5" size="label" text='Abstract' />
       <p className="mb-4">

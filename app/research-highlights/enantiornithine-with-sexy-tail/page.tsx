@@ -19,7 +19,7 @@ export default function Page() {
         The tail is the most diverse part of a bird’s plumage – this is because while the tail can help in flight, its not essential, and thus free to evolve elaborate sexual ornaments in certain conditions.
       </p>
 
-      <ResearchImage src={sexy_tail} alt="Yuanchuavis, an enantiornithine bird" width={500} height={500} />
+      <ResearchImage src={sexy_tail} alt="Yuanchuavis, an enantiornithine bird" maxWidth={500} />
 
       <p className="mb-8">
         <span className='italic'>Yuanchuavis</span>, a new species of pengornithid enantiornithine, preserves an elaborate tail morphology called a pin-tail, the first evidence of this tail morphology (which has evolved many times in living birds) in this diverse clade of Cretaceous birds. The pin-tail in <span className='italic'>Yuanchuavis</span> consists of a short rectricial fan together with two fully pennaceous rachis-dominated tail feathers (an extinct feather morphotype). These large, elongate feathers are inferred to have been costly (both in terms of initial energetic investment to grow them and the energetic cost associated with flight due to the increase in mass and drag) and thus represent an honest signal of fitness that evolved under sexual selection.
