@@ -40,7 +40,7 @@ export default function Page() {
                             width={width}
                             height={height}
                             placeholder="blur"
-                            priority={idx === 0}
+                            preload={idx === 0}
                           />
                         </div>
                       )}

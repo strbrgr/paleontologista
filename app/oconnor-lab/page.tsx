@@ -85,7 +85,7 @@ export default function Page() {
           width={500}
           height={500}
           placeholder="blur"
-          priority={true}
+          preload
         />
         <div className="my-12">
           <p>

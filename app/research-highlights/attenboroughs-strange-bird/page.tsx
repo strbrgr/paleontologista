@@ -10,7 +10,7 @@ const links = [
 export default function Page() {
   return (
     <ResearchArticle slug="attenboroughs-strange-bird" links={links}>
-      <ResearchImage src={imparavis} alt="Image of a enantiornithine fossil" maxWidth={375} priority />
+      <ResearchImage src={imparavis} alt="Image of a enantiornithine fossil" maxWidth={375} preload />
       <p className="mb-4">
         Alex Clark recently led a project describing a new species of enantiornithine, <span className='italic'>Imparavis attenboroughi</span>. This is the first toothless enantiornithine described from the Jehol avifauna, pushing back the record of tooth loss in this clade by 50 million years! Previously, tooth loss in dinosaurs (including birds) was strongly linked to herbivory, in particular the replacement of teeth with the gastric mill. The absence of gastroliths in all enantiornithines suggests that tooth loss in this clade was driven by other selective pressures.
       </p>

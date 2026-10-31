@@ -33,7 +33,7 @@ export default function Page() {
               width={500}
               height={500}
               placeholder="blur"
-              priority={idx < 3}
+              preload={idx < 3}
             />
           </div>
           <div className="flex flex-col flex-grow mt-4">

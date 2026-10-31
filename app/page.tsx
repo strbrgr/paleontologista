@@ -70,7 +70,7 @@ export default function Page() {
             width={375}
             height={500}
             placeholder="blur"
-            priority={true}
+            preload
           />
         </div>
         <div className="flex flex-col gap-4 flex-1 min-w-[300px]">
