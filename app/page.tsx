@@ -27,10 +27,37 @@ export const metadata: Metadata = {
 
 const websiteJsonLd = {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  url: "https://paleontologista.com/",
-  name: "Jingmai O'Connor",
-  alternateName: "paleontologista",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://paleontologista.com/#website",
+      url: "https://paleontologista.com/",
+      name: "Jingmai O'Connor",
+      alternateName: "paleontologista",
+      publisher: { "@id": "https://paleontologista.com/#person" },
+    },
+    {
+      "@type": "Person",
+      "@id": "https://paleontologista.com/#person",
+      name: "Jingmai O'Connor",
+      alternateName: "Jingmai Kathleen O'Connor",
+      url: "https://paleontologista.com/",
+      jobTitle: "Curator of Fossil Reptiles",
+      worksFor: {
+        "@type": "Organization",
+        name: "Field Museum of Natural History",
+        url: "https://www.fieldmuseum.org/",
+      },
+      sameAs: [
+        "https://instagram.com/paleontologista",
+        "https://www.facebook.com/jingmai.oconnor",
+        "https://www.researchgate.net/profile/Jingmai-Oconnor",
+        "https://scholar.google.com/citations?user=BzgZsCoAAAAJ&hl=en",
+        "https://twitter.com/Paleontologista",
+        "https://www.linkedin.com/in/jingmai-o-connor-4ab8a92a4/",
+      ],
+    },
+  ],
 };
 
 const expertise: { title: string; description: string }[] = [
@@ -61,7 +88,9 @@ export default function Page() {
     <div className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start my-12 ">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(websiteJsonLd).replace(/</g, "\\u003c"),
+        }}
       />
       <div className="flex flex-wrap md:flex-nowrap py-12 gap-12 justify-center md:justify-start mx-auto max-w-7xl px-4">
         <div>
