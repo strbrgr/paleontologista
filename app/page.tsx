@@ -6,9 +6,10 @@ import jingmai from "@/app/JingmaiOConnor2019.jpg";
 import outreach from "@/app/outreach/img/outreach.jpg";
 import dbn from "@/app/field-work/img/dead_bird_nerds_2025.jpg";
 import Image from "next/image";
+import type { Metadata } from "next";
 import { researchHighlights } from "@/lib/research-highlights";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Jingmai O'Connor",
   description:
     "Dr. Jingmai O'Connor is a paleontologist studying theropod dinosaurs, the dinosaur-bird transition, and the evolution of bird physiology.",

@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 import { researchHighlights } from "@/lib/research-highlights";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Research Highlights",
   description: "Read more about my most recent research.",
   alternates: {
