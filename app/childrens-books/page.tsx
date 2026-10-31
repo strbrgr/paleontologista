@@ -19,31 +19,30 @@ const books: {
   height: number;
   description: string;
 }[] = [
-  {
-    title: "When Dinosaurs Conquered the Skies",
-    image: whenDinosaursConqueredTheSkies,
-    width: 718,
-    height: 1000,
-    description:
-      "The incredible story of bird evolution, written by Jingmai O'Connor and illustrated by Maria Brzozowska.",
-  },
-  {
-    title: "Zoom Out: Prehistoric World",
-    image: zoomOut,
-    width: 896,
-    height: 1081,
-    description:
-      "A colorful journey through the prehistoric world, written by Jingmai O'Connor and illustrated by Owen Davey.",
-  },
-  {
-    title: "Bird Primeval",
-    image: birdPrimeval,
-    width: 1000,
-    height: 1500,
-    description:
-      "Coming in 2027 from Rex Tooth Studios.",
-  },
-];
+    {
+      title: "When Dinosaurs Conquered the Skies",
+      image: whenDinosaursConqueredTheSkies,
+      width: 718,
+      height: 1000,
+      description:
+        "The incredible story of bird evolution, written by Jingmai O'Connor and illustrated by Maria Brzozowska.",
+    },
+    {
+      title: "Zoom Out: Prehistoric World",
+      image: zoomOut,
+      width: 896,
+      height: 1081,
+      description:
+        "A colorful journey through the prehistoric world, written by Jingmai O'Connor and illustrated by Owen Davey.",
+    },
+    {
+      title: "Bird Primeval",
+      image: birdPrimeval,
+      width: 1000,
+      height: 1500,
+      description: "Coming in 2027 from Rex Tooth Studios.",
+    },
+  ];
 
 export default function Page() {
   return (
@@ -51,8 +50,8 @@ export default function Page() {
       <section className="max-w-2xl mx-auto">
         <div className="my-12">
           <p>
-            I write children’s books about dinosaurs, birds, and the deep history
-            of life.
+            One of my favorite forms of outreach it writing books for children and other early
+            learners. So far I’ve written one book with two more on the way. I hope you like them!
           </p>
         </div>
 
