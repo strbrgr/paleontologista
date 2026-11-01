@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { ExternalLinks, ExternalLink } from "@/components/ui/external-links";
 import { Heading } from "@/components/ui/typography";
@@ -43,6 +44,12 @@ export function ResearchArticle({ slug, links, children }: ResearchArticleProps)
 
   return (
     <article className="max-w-2xl mx-auto px-10 md:px-0">
+      <Link
+        href="/research-highlights"
+        className="mb-8 inline-block text-sm underline underline-offset-4 transition-opacity hover:opacity-60"
+      >
+        ← Research Highlights
+      </Link>
       <Heading as="h1" size="subsection" text={title} />
       {children}
       <ExternalLinks links={links} />
