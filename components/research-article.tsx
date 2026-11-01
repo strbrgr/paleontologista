@@ -31,7 +31,7 @@ export function ResearchImage({ src, alt, maxWidth, preload }: ResearchImageProp
         width={width}
         height={height}
         className="h-auto max-w-full"
-        sizes="(max-width: 672px) calc(100vw - 5rem), 672px"
+        sizes="(max-width: 672px) calc(100vw - 2rem), 672px"
         placeholder="blur"
         preload={preload}
       />
@@ -43,7 +43,7 @@ export function ResearchArticle({ slug, links, children }: ResearchArticleProps)
   const { title } = getResearchHighlight(slug);
 
   return (
-    <article className="max-w-2xl mx-auto px-10 md:px-0">
+    <article className="max-w-2xl mx-auto">
       <Link
         href="/research-highlights"
         className="mb-8 inline-block text-sm underline underline-offset-4 transition-opacity hover:opacity-60"
