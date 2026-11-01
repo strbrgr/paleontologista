@@ -65,15 +65,15 @@ function Footer() {
   ];
 
   return (
-    <footer className="m-6 text-center">
-      <div className="flex justify-center space-x-4 tracking-tight">
+    <footer className="mx-4 my-6 text-center">
+      <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 tracking-tight">
         {links.map((link) => (
           <a
             key={link.name}
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline"
+            className="whitespace-nowrap hover:underline"
           >
             {link.name}
           </a>
