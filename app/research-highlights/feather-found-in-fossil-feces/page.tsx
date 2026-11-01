@@ -14,10 +14,6 @@ const links = [
 export default function Page() {
   return (
     <ResearchArticle slug="feather-found-in-fossil-feces" links={links}>
-      <p className="mb-4">
-        New features from the Chicago specimen show how Archaeopteryx fed fast for flying.
-      </p>
-
       <ResearchImage
         src={fossil_feces_horizontal}
         alt="Closeup of the Chicago Archaeopteryx"
