@@ -2,7 +2,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Heading } from "@/components/ui/typography";
 import { SeparatorLine } from "@/components/ui/separator-line";
 import Link from "next/link";
-import jingmai from "@/app/JingmaiOConnor2019.jpg";
+import jingmai from "@/app/JingmaiOConnor2026.webp";
 import outreach from "@/app/outreach/img/outreach.jpg";
 import dbn from "@/app/field-work/img/dead_bird_nerds_2025.jpg";
 import Image from "next/image";
@@ -85,7 +85,7 @@ const expertise: { title: string; description: string }[] = [
 
 export default function Page() {
   return (
-    <div className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start my-12 ">
+    <div className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start my-j12 ">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
